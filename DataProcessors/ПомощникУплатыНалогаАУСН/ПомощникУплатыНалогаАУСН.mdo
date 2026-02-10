@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="126a9a6d-f2fc-4433-a11b-6870b3121eaf">
+  <producedTypes>
+    <objectType typeId="08ed8fbb-1b8c-4eec-8762-7fd27f1d6616" valueTypeId="52cf1c9b-4a73-40bf-b450-9833a01c5b30"/>
+    <managerType typeId="ac8e9df9-f636-4d6f-ae9a-63dfd12d2d5b" valueTypeId="e0c3e5ee-ddeb-48b7-ae63-5714356a3cb1"/>
+  </producedTypes>
+  <name>ПомощникУплатыНалогаАУСН</name>
+  <synonym>
+    <key>ru</key>
+    <value>Помощник уплаты налога АУСН</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПомощникУплатыНалогаАУСН.Form.Форма</defaultForm>
+  <attributes uuid="f87bd0e5-1873-441c-99c2-2ce53b6e40a0">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>DefinedType.Организация</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ede59065-0201-4db4-a5d2-30806daf3c82">
+    <name>Период</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="197a0c94-6922-41e8-b124-c9b7b4d0e999">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

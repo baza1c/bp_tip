@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>DataProcessor.ОплатаСервисаБП.Command.ОплатаСервисаПростойИнтерфейс</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>DataProcessor.ОплатаСервисаБП.Command.ИзменитьТариф</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>DataProcessor.ОплатаСервисаБП.Command.ОплатаСервисаПолныйИнтерфейс</command>
+      <visible>
+        <common>true</common>
+      </visible>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsPlacement>
+    <placementFragments>
+      <group>CommandGroup.Подписки</group>
+      <commands>DataProcessor.ОплатаСервисаБП.Command.ОплатаСервисаПолныйИнтерфейс</commands>
+    </placementFragments>
+  </commandsPlacement>
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>DataProcessor.ОплатаСервисаБП.Command.ОплатаСервисаПростойИнтерфейс</commands>
+      <commands>DataProcessor.ОплатаСервисаБП.Command.ИзменитьТариф</commands>
+    </orderFragments>
+    <orderFragments>
+      <group>CommandGroup.Подписки</group>
+      <commands>DataProcessor.ОплатаСервисаБП.Command.ОплатаСервисаПолныйИнтерфейс</commands>
+      <commands>DataProcessor.ОплатаСервисаБП.Command.ВыбратьТариф</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>

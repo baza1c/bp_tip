@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d664291d-f77a-4338-b850-cf9cc123f53c">
+  <producedTypes>
+    <selectionType typeId="6853f33a-822a-43e6-9f55-f359e42e9180" valueTypeId="e4855b8e-8856-4fb9-974d-151bcffe0a19"/>
+    <listType typeId="094edd35-c34c-476c-9184-94ec2cde16b4" valueTypeId="415a191f-3a09-4a79-8ce0-2b5a4f8a1d0b"/>
+    <managerType typeId="61e9e4ab-c844-4b66-accf-38f1d26d1ee4" valueTypeId="859d95a8-a34c-4bab-b0ec-ce6ffcd805ff"/>
+    <recordSetType typeId="58de097a-c59c-417e-83c9-76e517c0ca05" valueTypeId="1f430d02-9f57-40d6-94ac-3575bd221091"/>
+    <recordKeyType typeId="d7a8344d-c4e7-47e0-afa1-43ab7aaf9f41" valueTypeId="011e5870-cd45-4fa7-bc9b-5dda888e9615"/>
+    <recordType typeId="62ab58e1-dcd1-4241-8d93-4151897db92b" valueTypeId="1795de57-6906-44d2-8d8c-6419cc25006a"/>
+    <recordManagerType typeId="d1ba7c00-fe8c-4fda-a308-7a66448c98fa" valueTypeId="e1327201-d9fa-4ae5-ba6c-33acff5138b0"/>
+  </producedTypes>
+  <name>НастройкиАвтозагрузкиОтчетовМаркетплейсов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки автозагрузки отчетов маркетплейсов</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="58fc5942-bb1c-4a24-8877-c4462be744d3">
+    <name>ДеньЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>День загрузки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e33d413e-1baf-4c6a-b130-1cb9f7391ee9">
+    <name>ДатаПоследнейЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата последней загрузки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4dfb5ffa-b36d-46dc-8a0e-088dffc780b5">
+    <name>ИдентификаторЗадания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор задания</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="68515d3f-e7ad-4e9a-8426-fb4413f145dc">
+    <name>ОшибкаЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибка загрузки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="663a54bf-1fde-4ab8-a540-e62ad2648377">
+    <name>Периодичность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периодичность</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПериодичностьОтчетовМаркетплейсов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="195ad8bf-0a43-4248-b37c-bb9f03e5dfe3">
+    <name>ФормаНастройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настройки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

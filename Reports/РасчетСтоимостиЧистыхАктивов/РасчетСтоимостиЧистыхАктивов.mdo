@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="211853a3-75ba-4c41-950d-b7b84b38d2da">
+  <producedTypes>
+    <objectType typeId="e55d34dd-7cf2-4430-8dbb-dc1d5f08864a" valueTypeId="e42e02f8-cd38-472b-8f8d-82cd1fbc944a"/>
+    <managerType typeId="183d73a1-3d02-418f-8a6d-c81ba180ca6d" valueTypeId="3c8db43c-24ad-4534-a042-d8969498a854"/>
+  </producedTypes>
+  <name>РасчетСтоимостиЧистыхАктивов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет стоимости чистых активов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.РасчетСтоимостиЧистыхАктивов.Form.ФормаОтчета</defaultForm>
+  <attributes uuid="64d1fcce-bf46-4cc3-9e4f-89b42a1a7186">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация, по которой формируется расчет чистых активов</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b83fe936-9843-4f2c-af57-70f42c13ed17">
+    <name>Период</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Период, за который формируется отчет</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="97131797-ba06-4f18-a192-a8ccb7c9916e">
+    <name>СпособЗаполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ заполнения</value>
+    </synonym>
+    <comment>1 - по данным бухгалтерской отчетности. 0 - по данным учета</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="595eca03-d0bd-40c2-aead-033a76a9a8e7">
+    <name>БухгалтерскаяОтчетность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бухгалтерская отчетность</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.РегламентированныйОтчет</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="16e9bbe4-f032-4cbd-8482-dd314b260ad1">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="2552a40e-055a-40e7-907e-0613df47cc45">
+    <name>РасчетСтоимостиЧистыхАктивов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет стоимости чистых активов</value>
+    </synonym>
+  </templates>
+  <commands uuid="5cbacca5-952c-481d-883f-aae422d83bcc">
+    <name>РасчетСтоимостиЧистыхАктивов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет стоимости чистых активов</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

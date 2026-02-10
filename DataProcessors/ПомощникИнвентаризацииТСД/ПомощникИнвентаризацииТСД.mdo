@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1222be85-4a04-424a-b098-24e3f6ac82c0">
+  <producedTypes>
+    <objectType typeId="123fa17f-0b3a-4c62-9134-c3c6e548df28" valueTypeId="1fca68fe-e8d5-47a8-bfa3-4c4a8e8464eb"/>
+    <managerType typeId="40ea8fff-8c5f-4ebf-bf5d-940a18f27821" valueTypeId="87fde05b-8a4b-496b-9d37-f61fa04c8a5e"/>
+  </producedTypes>
+  <name>ПомощникИнвентаризацииТСД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Помощник инвентаризации с ТСД</value>
+  </synonym>
+  <defaultForm>DataProcessor.ПомощникИнвентаризацииТСД.Form.Форма</defaultForm>
+  <extendedPresentation>
+    <key>ru</key>
+    <value>Инвентаризация с использованием ТСД</value>
+  </extendedPresentation>
+  <attributes uuid="64ca5aad-cbb1-410f-bae1-e733bde9b572">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="02e68ddb-53f6-40eb-b231-662ddae321c1">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="20d1b834-6f09-4afa-9bfe-a0d8254b794f">
+    <name>ДокументИнвентаризации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ инвентаризации</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ИнвентаризацияТоваровНаСкладе</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="4bcda6c2-bc47-4b03-b491-42faba64ca7f">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1fa33f76-8239-46de-8733-c1767c82c6c4">
+    <name>ФормаПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма проверки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="511083a5-d815-401d-a39d-5ecb98b585df">
+    <name>ПечатьНеизвестныеШтрихкоды</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать неизвестные штрихкоды</value>
+    </synonym>
+  </templates>
+  <commands uuid="48db12a8-f9fb-4f18-a153-ff204d4cb411">
+    <name>ПомощникИнвентаризацииТСД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инвентаризация с ТСД</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

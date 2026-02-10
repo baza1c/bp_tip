@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d3938a29-aaa2-4c90-863e-1faf50788ae4">
+  <producedTypes>
+    <selectionType typeId="d031775e-875e-42df-8c7c-af646e8673c8" valueTypeId="9df1767d-765a-4fb7-a07c-b34a823b179d"/>
+    <listType typeId="2be4901f-53b7-4708-8437-eab282f5d3e7" valueTypeId="05673ce9-972d-4785-bf52-97343632ffdc"/>
+    <managerType typeId="0c5dd767-4fb7-4236-a46c-41d05cbbc40e" valueTypeId="9fc047f3-0567-4146-aba2-c3d715f993d5"/>
+    <recordSetType typeId="7606a44d-1732-4c81-b31f-c58caee1fae6" valueTypeId="d4427aef-b1c0-4d44-8f7c-a6cb16251409"/>
+    <recordKeyType typeId="66d59418-fd2b-4494-be00-849567d5cb6b" valueTypeId="831a01aa-6435-4c34-b294-2bf634fd52ac"/>
+    <recordType typeId="aae1357a-b7bd-4c8a-8758-7c8f88051e14" valueTypeId="5b175a5b-84ff-4b67-9e1b-0aa4518f0216"/>
+    <recordManagerType typeId="54f5bff7-81bf-4f48-8702-198f16139492" valueTypeId="d38f10f1-0623-4fab-be87-2e126eafdf9a"/>
+  </producedTypes>
+  <name>НМАПриПереходеНаФСБУ14</name>
+  <synonym>
+    <key>ru</key>
+    <value>Список нематериальных активов при переходе на ФСБУ 14</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="5bb76b36-d205-481f-ac54-e5d602a87cd6">
+    <name>ДействиеПриПереходе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действие при переходе</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ДействияПриПереходеНаФСБУ14</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b0e9bc48-a2c5-4d1b-843a-f2a56a3317f8">
+    <name>СчетУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет учета</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Хозрасчетный</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="614658aa-b45c-45ef-8ae3-5bc4d725ae08">
+    <name>НематериальныйАктив</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нематериальный актив</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НематериальныеАктивы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c490452b-119d-44e7-aff4-749a0cbab721">
+    <name>ДатаПринятияКУчету</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата принятия к учету</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8603fd17-0032-4d71-9189-fa33537f30cc">
+    <name>СчетСписания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет списания</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Хозрасчетный</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="45b71159-9ffc-4567-bd89-134d66a1f058">
+    <name>ПодразделениеСписания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение списания</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="eeab8344-56cc-496a-9365-9bf2e546c920">
+    <name>СубконтоСписания1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто 1</value>
+    </synonym>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="20ed8100-8c43-41b6-b310-1bcc8d70dec0">
+    <name>СубконтоСписания2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто 2</value>
+    </synonym>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d220b0d5-0eb5-417b-b7ab-fc4a1d91fe48">
+    <name>СубконтоСписания3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто 3</value>
+    </synonym>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ca9535ec-8b34-4220-8961-445b138b11fa">
+    <name>НеопределенныйСрокПолезногоИспользования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Неопределенный срок полезного использования</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1f98f69a-1b4a-48e4-822a-cb00c550dfa9">
+    <name>СпособНачисленияАмортизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ начисления амортизации</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СпособыНачисленияАмортизацииНМА</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="91e4c8f5-9454-4efb-aaba-d95e9cf47820">
+    <name>СрокПолезногоИспользования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок полезного использования, мес.</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0f63c789-dc5d-4df4-bc56-64367fbdd447">
+    <name>ОбъемПродукцииРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предполагаемый объем продукции (работ) в натуральных ед.</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5b9d803b-7831-4ef1-b0d4-48b1e52efd85">
+    <name>Коэффициент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="11a7f68c-fca7-44f6-bafa-492df481efdd">
+    <name>ЛиквидационнаяСтоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ликвидационная стоимость</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ДенежнаяСуммаНеотрицательная</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="69134689-977e-45fa-a49a-f2053dda8d5a">
+    <name>СпособОтраженияРасходов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ отражения расходов</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпособыОтраженияРасходовПоАмортизации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1d0bb11d-d2d3-450b-96fa-805118f40916">
+    <name>ПервоначальнаяСтоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Первоначальная стоимость</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ДенежнаяСуммаНеотрицательная</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="dbc94b95-20eb-43d8-bfa3-5b7298d858d3">
+    <name>Амортизация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Амортизация</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ДенежнаяСуммаНеотрицательная</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d8c9ccc9-e54a-4335-b335-e35900dc5952">
+    <name>Обесценение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обесценение</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ДенежнаяСуммаНеотрицательная</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="73f44ced-fc11-44fd-80cd-f151f0822179">
+    <name>ОбесценениеДоступноеДляВосстановления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обесценение, доступное для восстановления</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ДенежнаяСуммаНеотрицательная</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e1165db4-dd83-4861-ab97-08ddf8bf3a9b">
+    <name>СчетАмортизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет амортизации</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Хозрасчетный</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f8c10dfe-94fa-46cd-b044-3f9d6d420c30">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2b298274-c9bf-406e-9e70-a85fcc0e2c93">
+    <name>ПозицияСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Позиция списка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d1764797-0d44-4002-aaad-abffe8843a75">
+  <producedTypes>
+    <selectionType typeId="c191a237-eb90-43f6-aaa4-a1ada30447ac" valueTypeId="7ceefe6b-eb98-479e-b961-1a6fd58e692d"/>
+    <listType typeId="6e32669e-8f1b-4373-8bef-f082bd085a13" valueTypeId="750b864a-f0c2-4bda-92f6-4b7da0d4e43d"/>
+    <managerType typeId="0e028927-87ac-4f8e-812f-47525387fddb" valueTypeId="0418ae94-992e-4e88-bb8b-8267ecd171f7"/>
+    <recordSetType typeId="66ee442e-2db7-47f2-ab6a-8bd7870b1a9b" valueTypeId="57af7965-86ae-4c29-95ff-c0f2ad844a57"/>
+    <recordKeyType typeId="714cd1da-05da-44e7-ad63-3406f31931ba" valueTypeId="12e3caba-441b-417d-b4d6-aceb05d1e270"/>
+    <recordType typeId="623589e5-915b-482c-8849-e33222c92dca" valueTypeId="ab0ffe8e-e34f-4a16-b232-aaa70a6e35b1"/>
+    <recordManagerType typeId="97a4150d-156c-4ca4-a334-0d4573e2cdbe" valueTypeId="002a2041-6a84-4b4c-aa73-6a541d4b3678"/>
+  </producedTypes>
+  <name>КоличествоНепрочитанныхОповещенийПлатформыСамозанятые</name>
+  <synonym>
+    <key>ru</key>
+    <value>Количество непрочитанных оповещений платформы Самозанятые</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.КоличествоНепрочитанныхОповещенийПлатформыСамозанятые.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.КоличествоНепрочитанныхОповещенийПлатформыСамозанятые.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a223f33b-0394-4074-9c26-a73fc050315c">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="ad985b2c-0876-49e0-8582-491cb6091cae">
+    <name>ДатаИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата изменения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="e7366520-a21c-44ca-83e5-4fbdb2977809">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="26dad346-31df-4399-a613-4a9e257cb41b">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5815f818-4201-4b21-93d4-b31ed47928ea">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2e00a50e-6d36-48e9-abed-40e0989d298e">
+  <producedTypes>
+    <selectionType typeId="d956eb3b-e9a9-4a8c-a646-a017c67f18d0" valueTypeId="f5719920-3929-44f7-b550-95237bf46d7d"/>
+    <listType typeId="3ce2a48d-e944-4f58-b80c-91e1327cdf59" valueTypeId="9a8cdb70-9bf5-4d6e-b89f-63f5a62d4a98"/>
+    <managerType typeId="41ad7812-e715-4ca2-b75a-c58f02d8cb31" valueTypeId="3100b911-7113-4bf6-bd6a-e0960edffae1"/>
+    <recordSetType typeId="7165f43a-76ac-43f0-af34-c81ea56c1eff" valueTypeId="9ec7ed11-87c9-460d-9d4d-a035d9b00730"/>
+    <recordKeyType typeId="ad1797b1-53cd-4c6c-94a3-c449b3017330" valueTypeId="35a30cd1-3919-41d8-9d57-62b476df0d4f"/>
+    <recordType typeId="b6332a2b-07d5-415e-abe2-bbede40d5db6" valueTypeId="4eed0259-ee44-4819-bec9-11eeb54e2dfa"/>
+    <recordManagerType typeId="5cf5cae4-b28e-4235-9851-675f11e50b79" valueTypeId="6031261c-0b6c-42a4-9e5f-48e7d7a23324"/>
+  </producedTypes>
+  <name>ДокументыПоКассовымЧекамПодотчетныхЛиц</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы по кассовым чекам подотчетных лиц</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="22298900-6fc7-4385-8b9b-2c68adfee823">
+    <name>КассовыйЧек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кассовый чек</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.КассовыйЧекПодотчетногоЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e979de73-4541-40aa-8526-2f1e96499052">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.АвансовыйОтчет</types>
+      <types>DocumentRef.ПутевойЛист</types>
+      <types>DocumentRef.РасходыПредпринимателя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

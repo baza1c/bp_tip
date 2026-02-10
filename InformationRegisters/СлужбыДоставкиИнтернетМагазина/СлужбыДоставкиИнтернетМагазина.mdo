@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1837b2db-c7ac-4634-b565-7ddb42365c2b">
+  <producedTypes>
+    <selectionType typeId="fb34ebcc-760f-4ddf-aa14-c7fdd60c840e" valueTypeId="54d8ae8e-ad9c-47ee-912c-d899715e61f1"/>
+    <listType typeId="df0f0e57-41bf-4625-b5d1-2f4bc5eed138" valueTypeId="8600200a-bbfa-4042-b27e-8aff86af1d4c"/>
+    <managerType typeId="2a640aad-79e7-439f-af5b-44d1f70df903" valueTypeId="01752c1b-0b8d-41df-85ff-6db7b2d15aea"/>
+    <recordSetType typeId="334ee150-b0fd-41e0-8809-0ad618e714cd" valueTypeId="7741e20b-d9d8-4bcb-a77c-00655ae7c889"/>
+    <recordKeyType typeId="774b8b8f-28aa-4964-8708-38d1b15689fb" valueTypeId="454bf166-5aa4-47a4-a3d7-29209fddc5fa"/>
+    <recordType typeId="5bde16f8-902c-47c9-9a75-c1131eb1017a" valueTypeId="18b253cc-9f12-452b-80fe-389e06cbb231"/>
+    <recordManagerType typeId="2c9cbdbc-300c-4043-b65a-d2a3a4acdcbf" valueTypeId="90df2130-d93f-4df4-95dd-73b16bb083bd"/>
+  </producedTypes>
+  <name>СлужбыДоставкиИнтернетМагазина</name>
+  <synonym>
+    <key>ru</key>
+    <value>Службы доставки интернет-магазина</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СлужбыДоставкиИнтернетМагазина.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СлужбыДоставкиИнтернетМагазина.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="cc4ba5fc-efa6-420d-bce9-4aaea5a952b1">
+    <name>СпособДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ доставки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпособыДоставки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="9262ad4d-c307-4d7e-a5b0-bfcd79c94eb8">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cede62f7-2bcc-445d-8bbc-2430a5018ff2">
+    <name>НаименованиеСлужбыДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="26db209d-f4f8-4d80-a948-961cb306486a">
+    <name>ИдентификаторСлужбыДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="fabbdac8-64f8-475f-9c6a-c08038b5fb8d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d2bf29fb-cb55-4b99-ae47-91245fad9d85">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

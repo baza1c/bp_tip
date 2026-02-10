@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f5be8fb5-3bde-482d-a573-06493722aa6a">
+  <producedTypes>
+    <objectType typeId="14d4945c-bcf4-4f6b-ba96-fa6fe012ac91" valueTypeId="966f17f7-5bda-4655-b08f-7f20fa909cca"/>
+    <managerType typeId="f997f017-b100-421f-a127-810f9f525db4" valueTypeId="69d30e29-5564-4e01-a4e9-670d624c87db"/>
+  </producedTypes>
+  <name>ПомощникНачисленияРезервовПоОплатеТруда</name>
+  <synonym>
+    <key>ru</key>
+    <value>Помощник начисления резервов по оплате труда</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПомощникНачисленияРезервовПоОплатеТруда.Form.Форма</defaultForm>
+  <attributes uuid="663274ab-0f5e-403c-9eee-3dba9265b389">
+    <name>МесяцНачисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Месяц начисления</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ДФ='ММММ гггг'</value>
+    </format>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1185cfe3-5b7f-4a78-b320-7a2d84fadd9c">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="01bb66b7-3d1f-4321-9508-55ecc0f6c578">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4cfdea39-4c7b-4f2e-a01f-d1220e020857">
+    <name>ФормаСпискаДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка документов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

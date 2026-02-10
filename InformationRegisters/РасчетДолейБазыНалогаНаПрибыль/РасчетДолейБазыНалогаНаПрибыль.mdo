@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8473de09-3a9f-435a-9c1f-c9b2e11d76d1">
+  <producedTypes>
+    <selectionType typeId="d80c2738-da6a-450c-aaaa-a044fdab6e43" valueTypeId="1b227b17-72fe-4d44-8528-064bc9c21a15"/>
+    <listType typeId="ea572ed5-667f-4d46-9df0-95b9a3a62426" valueTypeId="b15deac0-1683-4eb0-92c5-a9f0aca1ef25"/>
+    <managerType typeId="d16aeb45-c75c-4a26-b613-b81bc9f22194" valueTypeId="4922b9d0-913c-4e65-81c1-de218c46d4cb"/>
+    <recordSetType typeId="c4b2caa3-6387-4d9b-9618-9f48e10acd10" valueTypeId="5549eb40-edd9-4145-9830-63ac8a162ba8"/>
+    <recordKeyType typeId="b4d956eb-1632-45b9-b443-9b7c776fe5c1" valueTypeId="62667d8e-84a2-4adc-8448-cff84711d478"/>
+    <recordType typeId="ac770d8b-cfce-4d96-ae40-139aa634882a" valueTypeId="21cfe098-9daa-4fee-bdbd-6eabb1f9352f"/>
+    <recordManagerType typeId="4fdac932-36a1-4fe0-8016-370b31457861" valueTypeId="28414220-84c8-498e-acde-ea6fd384275f"/>
+  </producedTypes>
+  <name>РасчетДолейБазыНалогаНаПрибыль</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет долей базы налога на прибыль</value>
+  </synonym>
+  <comment>Расчет долей базы налога на прибыль</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <writeMode>RecorderSubordinate</writeMode>
+  <resources uuid="b953a440-268e-4cc9-ba38-5b1cb8d94d46">
+    <name>ДоляНалоговойБазы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доля налоговой базы</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>18</precision>
+        <scale>17</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="cc36265d-5acb-42ec-ad80-fa9066a245a5">
+    <name>СреднесписочнаяЧисленность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Среднесписочная численность</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Average number of employees</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+  </resources>
+  <resources uuid="4bb24df3-7100-4912-a99d-df730ee97a74">
+    <name>РасходыПоОплатеТруда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расходы по оплате труда</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5002d93e-0afb-4523-9012-df2ebb8ab718">
+    <name>СтоимостьАмортизируемогоИмущества</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость амортизируемого имущества</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="cf63c2b5-f2f6-4a99-b5a8-0f17fca51540">
+    <name>СтоимостьОСПрошлыхМесяцев</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость ОС на начало прошлых месяцев и текущего</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="eea2f17e-0c77-4156-a0bd-4a1726608d18">
+    <name>СтоимостьОССледующегоМесяца</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость ОС на начало следующего месяца</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="348fdb8a-7a10-4825-b1ae-fd1363bb416c">
+    <name>НалоговаяБаза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налоговая база с учетом доли</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8bd8e8ad-c49e-4a39-a0dd-bd12dc4bdbf4">
+    <name>Закрыто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Деятельность прекращена</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="e99539fe-77ca-4557-a563-e9b3c7cf29bc">
+    <name>ПериодРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период расчета</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="dc6ba961-420c-4e5a-b4df-1264135f8fb0">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2966d7b3-d762-4883-9ebd-ac9c1dfd2729">
+    <name>РегистрацияВНалоговомОргане</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрация в налоговом органе</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РегистрацииВНалоговомОргане</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

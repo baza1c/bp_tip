@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d512bdb6-7bd5-4d43-8c4f-c9c1a78a5d99">
+  <producedTypes>
+    <selectionType typeId="0a3030c8-41e5-499b-830c-e33477eb98f5" valueTypeId="c3add5c3-8069-4923-b167-72b5e5a9e5e1"/>
+    <listType typeId="496f434f-52ed-4574-ab9f-70bc48c071fd" valueTypeId="3ece5c29-3c4c-49b8-ae54-f4ffebfee07e"/>
+    <managerType typeId="e1d8db72-d883-45f6-93e3-e1a8501b17a4" valueTypeId="8c6d8396-38a6-4151-b6c9-9c47096ff2de"/>
+    <recordSetType typeId="3a9bed88-0e18-4bb5-a26f-7d14b9eecdd5" valueTypeId="12b65873-e8bd-4a0e-a8ca-42545f2a927e"/>
+    <recordKeyType typeId="94fd6390-3d91-4196-af40-c555bbf436b6" valueTypeId="b3d5386f-7bfe-4878-a4a7-f4d165b82323"/>
+    <recordType typeId="167cfd9c-f059-40cb-9743-3d77ef8c0fa3" valueTypeId="0309db12-7bc2-4b5d-bc3c-07055c00eb8d"/>
+    <recordManagerType typeId="d0631078-5cda-4c1f-bc7a-a21830a13d67" valueTypeId="a45729ee-7c4a-43f1-b39a-bf8de8919e8e"/>
+  </producedTypes>
+  <name>ПорядокРаботыСЛидами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Порядок работы с лидами</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Порядок работы с лидом</value>
+  </recordPresentation>
+  <resources uuid="4536d578-5018-4971-bf47-1fab56ff1f15">
+    <name>ПорядокКанбан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок канбан</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="cbe1a66f-1846-4a2d-90f1-1f6836329b83">
+    <name>ДатаИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата изменения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="07d03ba1-54c4-4bda-afbd-371de64cc95c">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СостоянияРаботыСЛидами</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9472e101-3aa0-497f-a275-1cc183606ae6">
+    <name>Лид</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лид</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КонтактныеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.Лид</name>
+      <value xsi:type="core:BooleanValue">
+        <value>true</value>
+      </value>
+    </choiceParameters>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

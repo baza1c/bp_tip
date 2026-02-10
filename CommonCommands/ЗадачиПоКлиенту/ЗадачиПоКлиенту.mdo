@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c34bb57f-8316-4352-9d5a-202bcc0e3954">
+  <name>ЗадачиПоКлиенту</name>
+  <synonym>
+    <key>ru</key>
+    <value>Задачи</value>
+  </synonym>
+  <comment>Задачи, созданные на основании выбранного клиента</comment>
+  <group>FormNavigationPanelGoTo</group>
+  <commandParameterType>
+    <types>CatalogRef.КонтактныеЛица</types>
+    <types>CatalogRef.Контрагенты</types>
+  </commandParameterType>
+  <representation>Auto</representation>
+  <toolTip>
+    <key>ru</key>
+    <value>Связанные задачи</value>
+  </toolTip>
+  <picture xsi:type="core:PictureRef">
+    <picture>StdPicture.Task</picture>
+  </picture>
+</mdclass:CommonCommand>

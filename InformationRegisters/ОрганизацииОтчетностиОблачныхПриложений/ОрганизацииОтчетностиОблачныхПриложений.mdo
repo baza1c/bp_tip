@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="db061457-8974-43f2-bdbc-c6e2bfea1ca1">
+  <producedTypes>
+    <selectionType typeId="09474fc7-de9c-4680-a78e-ab166f543b2c" valueTypeId="5caa0d64-df98-40ef-963c-5e582ef956c9"/>
+    <listType typeId="8f50ae81-e25b-4ca4-b073-e869a6d0931e" valueTypeId="3d032076-aaed-400d-9019-935a865943d1"/>
+    <managerType typeId="b571f0a9-9033-4f66-b709-f6fdac1ed55b" valueTypeId="b3643ffb-e209-403e-80c0-da3fc06e527f"/>
+    <recordSetType typeId="be4f95fd-37ca-425a-a75f-bd9403e22a95" valueTypeId="28eb5a20-6556-4f32-9b83-6922baf3ac42"/>
+    <recordKeyType typeId="f72b4122-b1ba-49b3-b094-a142b9b82820" valueTypeId="00285f65-8885-40f1-b1eb-a4269ea65dff"/>
+    <recordType typeId="9d083b30-3014-4dd8-a73a-c78552aeaf05" valueTypeId="0ef3c207-bbde-45df-853f-b1a5b5b46384"/>
+    <recordManagerType typeId="39feff0a-9930-4941-a2bb-e1b02a7047b6" valueTypeId="7bc4c3e5-c09a-4103-aaac-a7e08836fea2"/>
+  </producedTypes>
+  <name>ОрганизацииОтчетностиОблачныхПриложений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Организации отчетности облачных приложений</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="912a7fdd-bb19-4c23-a5db-01aa764d220e">
+    <name>ВыводитьВКалендарь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выводить в календарь</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="b8793833-cf24-4620-a961-9ad033be2e79">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7a1585d2-5440-4162-ab41-d9404399f0df">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОрганизацииОблачныхПриложений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6cd3099a-f27b-4252-8f66-93f0ebdf4251">
+    <name>Приложение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОблачныеПриложения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

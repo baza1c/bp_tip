@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ccbe8c48-a589-465a-a365-3c32a15d5710">
+  <producedTypes>
+    <objectType typeId="229bfb4c-51b3-4c6b-8869-d1a4fe9a0c44" valueTypeId="c765c891-3fcf-4a35-9354-753c1b7c7aa7"/>
+    <managerType typeId="2a65119c-2308-4d5f-b866-73e9fbdaa091" valueTypeId="e179e081-41e0-4f41-a628-86bb19e5e720"/>
+  </producedTypes>
+  <name>ПомощникИнвентаризации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Помощник инвентаризации</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПомощникИнвентаризации.Form.Форма</defaultForm>
+  <attributes uuid="2a8f7d1b-cac0-4896-8569-64aa10ae4dd2">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9203b78b-549e-46bc-ae2d-dee974a4030c">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>На дату</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="5ef33c9b-af42-41e9-a729-0d65fe281478">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="ca91fbe2-b951-4c21-81f8-6e6ecf216432">
+    <name>ПФ_MXL_Реестр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реестр</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="65d103ab-7c96-42da-8b35-5c352342c65d">
+  <producedTypes>
+    <objectType typeId="6194fed3-1dc0-4631-9807-d3ae313da6a9" valueTypeId="4b9f2df5-4f14-434b-9384-3b5c98d98346"/>
+    <managerType typeId="c6f8ad0b-f24c-4b8e-a2f9-dda75a7fe988" valueTypeId="aa4aa700-2ace-4f66-88c3-310216fcf601"/>
+  </producedTypes>
+  <name>ПомощникПереходаСУСННаОСНО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Помощник перехода с УСН на ОСНО</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПомощникПереходаСУСННаОСНО.Form.Форма</defaultForm>
+  <attributes uuid="4072e28a-0305-4077-a674-478f759faaac">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1972c8aa-d107-4c57-80c8-aec5e79a85b3">
+    <name>ДатаПерехода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата перехода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="77c8c763-72c3-4914-b6b2-ba34f827573e">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="595e3450-5e48-46df-84bb-8232237c24ef">
+    <name>ФормаРасшифровкаСуммы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма расшифровка суммы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="d6da0aa2-7e13-499b-a651-b7c9e1196a3c">
+    <name>РасшифровкаСуммы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка суммы</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:DataProcessor>

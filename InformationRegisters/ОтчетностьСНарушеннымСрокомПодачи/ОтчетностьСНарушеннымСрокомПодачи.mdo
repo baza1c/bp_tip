@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="61d9e171-fbc4-4e66-88af-6588698023f1">
+  <producedTypes>
+    <selectionType typeId="a548f68f-0fd7-4da0-a9a8-a0150044cc49" valueTypeId="09a5f0f9-2dfc-489e-893b-4a25bb66fe27"/>
+    <listType typeId="04158cda-d3fd-4299-845d-8ee68d39f29f" valueTypeId="61a2e147-1b03-4e3c-a827-a80a597c48b0"/>
+    <managerType typeId="57191c72-f8e3-4a12-bebe-36447ee1cdf6" valueTypeId="7b7ba031-dfaa-476d-8131-fb0682f7059f"/>
+    <recordSetType typeId="11650dc1-faee-423c-96cf-e5c8a76a4a1c" valueTypeId="896cb219-c0d9-4541-a511-58c37abc50fa"/>
+    <recordKeyType typeId="8032a59c-b503-4a82-aae0-87b440a6506b" valueTypeId="7967ed37-fcf7-4bbf-ab94-1bdaadce10f4"/>
+    <recordType typeId="75f48f69-b088-4edf-8ef3-903066e283b1" valueTypeId="512d705b-452c-4b59-b85c-aba9c53f53f4"/>
+    <recordManagerType typeId="ec5906fc-ba89-474e-891d-529d8fe02f0e" valueTypeId="b34b8e0f-eaf2-4f1c-bbeb-8c18a678083a"/>
+  </producedTypes>
+  <name>ОтчетностьСНарушеннымСрокомПодачи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчетность с нарушенным сроком подачи</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="8b0be0b9-bb65-4b04-ac88-d8990744c1b8">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="b5742ccc-36c0-48a3-bfcb-97ffdc7c8912">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c02f3706-768e-4578-b10d-41f2fc2486b9">
+    <name>РегламентированныйОтчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регламентированный отчет</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.РегламентированныйОтчет</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Организация</name>
+      <field>InformationRegister.ОтчетностьСНарушеннымСрокомПодачи.Dimension.Организация</field>
+    </choiceParameterLinks>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

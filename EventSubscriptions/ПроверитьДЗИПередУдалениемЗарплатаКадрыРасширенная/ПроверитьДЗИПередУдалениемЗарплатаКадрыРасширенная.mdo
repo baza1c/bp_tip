@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ed12d00e-1de0-40f2-b9b3-4a1442c2070f">
+  <name>ПроверитьДЗИПередУдалениемЗарплатаКадрыРасширенная</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверить дату запрета изменения перед удалением</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.БронированиеГражданПребывающихВЗапасе</types>
+    <types>DocumentObject.СверкаСВоеннымКомиссариатом</types>
+    <types>DocumentObject.СообщениеОНеСостоящихНаВоинскомУчетеГражданах</types>
+    <types>DocumentObject.ИзмененияСведенийСотрудниковДляВоенкомата</types>
+    <types>DocumentObject.ПервоначальнаяПостановкаНаВоинскийУчет</types>
+    <types>DocumentObject.ХодатайствоОБронированииГражданПребывающихВЗапасе</types>
+    <types>DocumentObject.СведенияОПриемеПереводеИУвольненииДляВоенкомата</types>
+    <types>DocumentObject.ИзвещениеОПриемеИлиУвольненииДляВоенкомата</types>
+    <types>DocumentObject.СведенияОПодлежащихВоинскомуУчетуГражданах</types>
+    <types>DocumentObject.ОтменаБронированияГражданПребывающихВЗапасе</types>
+    <types>DocumentObject.СверкаСДокументамиВоинскогоУчета</types>
+  </source>
+  <event>BeforeDelete</event>
+  <handler>CommonModule.ДатыЗапретаИзменения.ПроверитьДатуЗапретаИзмененияПередУдалением</handler>
+</mdclass:EventSubscription>

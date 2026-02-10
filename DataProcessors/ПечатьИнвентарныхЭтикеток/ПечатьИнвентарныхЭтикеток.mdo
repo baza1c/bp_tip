@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7947ce5c-9c43-485e-81d7-8db84e11c5bb">
+  <producedTypes>
+    <objectType typeId="0117aab2-3f5d-48b1-9b1a-cf68067ad055" valueTypeId="6b140ac4-0075-406d-8ab0-f2cde46ea693"/>
+    <managerType typeId="4519b4a3-017a-47fc-9a6a-8b0cf4036af6" valueTypeId="3d551278-b7f0-4e25-a513-be8e34b5638d"/>
+  </producedTypes>
+  <name>ПечатьИнвентарныхЭтикеток</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать инвентарных этикеток</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПечатьИнвентарныхЭтикеток.Form.Форма</defaultForm>
+  <attributes uuid="fa8609ff-ae81-4656-8de0-f3337d7973e7">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2c1f6221-8a31-40fe-80d7-d535fb9cb18c">
+    <name>РазмерБумаги</name>
+    <synonym>
+      <key>ru</key>
+      <value>Размер бумаги</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="a14834c3-2db5-4902-b3df-76c87b706b91">
+    <name>РазмерЭтикетки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Размер этикетки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="8ee1dd34-5b25-40e9-ac1e-053bd30c1ba7">
+    <name>СразуНаПринтер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сразу на принтер</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1ca2b16b-3267-4857-9da1-b21d05bb1cf6">
+    <name>ПечатьИзДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать из документа</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="2ef1956d-8588-4ba6-bd9c-0fe69a06f250">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c1063ac5-6b94-4a74-8914-98098377421f">
+    <name>ФормаНастройкиПечати</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настройки печати</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="810c94c8-9468-4a1c-ba1a-1485bd080b08">
+    <name>Этикетка_58х30</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этикетка 58х30</value>
+    </synonym>
+  </templates>
+  <templates uuid="9ca8bd5b-2749-4d9e-a1cb-62537985d7e0">
+    <name>Этикетка_58х40</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этикетка 58х40</value>
+    </synonym>
+  </templates>
+  <templates uuid="277be578-c6f9-4792-a210-f142564eab26">
+    <name>Этикетка_58х60</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этикетка 58х60</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

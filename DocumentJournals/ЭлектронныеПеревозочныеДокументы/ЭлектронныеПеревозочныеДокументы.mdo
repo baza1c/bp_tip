@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c429f456-f763-4b15-a121-cea27f3a45e8">
+  <producedTypes>
+    <selectionType typeId="74f97886-d15f-4d04-8c99-6cac0748b26e" valueTypeId="d72d3000-8aba-47a4-8434-ef617ce509ae"/>
+    <listType typeId="51a8504f-0e52-4cc6-a1c0-b24519d965c6" valueTypeId="d9d30fe1-05b4-46ac-b286-4f68532340e1"/>
+    <managerType typeId="7ddc4f64-cc7b-44f9-abfa-2d8bd38b0fb0" valueTypeId="2cc3af88-05cb-437f-b1c7-fca9427696da"/>
+  </producedTypes>
+  <name>ЭлектронныеПеревозочныеДокументы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Электронные перевозочные документы</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ЭлектронныеПеревозочныеДокументы.Form.ФормаСписка</defaultForm>
+  <registeredDocuments>Document.ЭлектроннаяСопроводительнаяВедомость</registeredDocuments>
+  <registeredDocuments>Document.ЭлектроннаяТранспортнаяНакладная</registeredDocuments>
+  <registeredDocuments>Document.ЭлектронныйЗаказНаряд</registeredDocuments>
+  <registeredDocuments>Document.ЭлектронныйДоговорФрахтования</registeredDocuments>
+  <registeredDocuments>Document.ЭлектронныйПутевойЛист</registeredDocuments>
+  <registeredDocuments>Document.ЭлектронныйЗаказЗаявка</registeredDocuments>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="0e92a2f7-0c4c-4844-9ff9-b562364151d6">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.ЭлектроннаяСопроводительнаяВедомость.Attribute.Организация</references>
+    <references>Document.ЭлектроннаяТранспортнаяНакладная.Attribute.Организация</references>
+    <references>Document.ЭлектронныйЗаказНаряд.Attribute.Организация</references>
+    <references>Document.ЭлектронныйДоговорФрахтования.Attribute.Организация</references>
+    <references>Document.ЭлектронныйЗаказЗаявка.Attribute.Организация</references>
+    <references>Document.ЭлектронныйПутевойЛист.Attribute.Организация</references>
+  </columns>
+  <forms uuid="8d75d184-ac8b-4e99-af60-eaf8d088427f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="ad7eba98-574e-4b41-b9ba-bd810f3da69f">
+    <name>ЭлектронныеПеревозочныеДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Электронные перевозочные документы</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DocumentJournal>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c26b198e-b8da-46d5-8763-fb069e716470">
+  <name>payment</name>
+  <synonym>
+    <key>ru</key>
+    <value>Payment</value>
+  </synonym>
+  <rootURL>payment</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="13172113-c7f4-410a-b27c-f21559d9c622">
+    <name>notification</name>
+    <synonym>
+      <key>ru</key>
+      <value>Notification</value>
+    </synonym>
+    <template>/notification/{service}/*</template>
+    <methods uuid="fab24db3-8b58-406e-9b1f-178b4a123654">
+      <name>post</name>
+      <synonym>
+        <key>ru</key>
+        <value>Post</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>payment_notification_post</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="174f4477-d931-4fba-b610-b1630e01a5bc">
+    <name>require_customer_details</name>
+    <synonym>
+      <key>ru</key>
+      <value>Require customer details</value>
+    </synonym>
+    <template>/require_customer_details</template>
+    <methods uuid="9045b203-fdb6-440d-83de-49820250b05f">
+      <name>get</name>
+      <synonym>
+        <key>ru</key>
+        <value>Get</value>
+      </synonym>
+      <handler>require_customer_details_get</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

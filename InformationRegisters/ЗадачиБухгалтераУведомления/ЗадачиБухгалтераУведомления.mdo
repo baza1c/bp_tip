@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8e71c122-9f24-4235-a6b8-050fdc82e8e2">
+  <producedTypes>
+    <selectionType typeId="8a58351b-a517-471c-ba69-8f15f62ef6b5" valueTypeId="969e2e8a-6b4c-42da-a2f0-9d0a70eccd17"/>
+    <listType typeId="47025cf4-463e-47e7-8a17-63c373f0a22f" valueTypeId="4e7d2683-f49b-45fb-98fd-a8513ca55804"/>
+    <managerType typeId="a4d2b255-cbdf-4790-9de9-c59d3e7f5bef" valueTypeId="7ad663fc-d291-4765-86ae-e6715ff09655"/>
+    <recordSetType typeId="788b7d41-d77d-42c4-85d7-88854bc29b7f" valueTypeId="7626b5e4-7e16-4155-9f70-b131af535d64"/>
+    <recordKeyType typeId="faf296e0-5999-4906-9efc-603cb5cf8116" valueTypeId="ecd63e09-7969-44fd-814c-0e2064cf77cb"/>
+    <recordType typeId="f00b75ea-7647-46a2-b5b0-d4b94b68fc21" valueTypeId="e8cfc54a-4f6b-45a5-92d8-8145ac7084fa"/>
+    <recordManagerType typeId="d610e5ac-9b3c-42d7-872d-975dd65719b4" valueTypeId="0a1956d2-1ee4-4288-a3c6-72697a80d4c5"/>
+  </producedTypes>
+  <name>ЗадачиБухгалтераУведомления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уведомления об исчисленных налогах</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c45bb96e-63ba-42c9-b14c-16a19eb34baa">
+    <name>Правило</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правило</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Патенты</types>
+      <types>CatalogRef.ПравилаПредставленияОтчетовУплатыНалогов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <attributes uuid="7756dbc4-5a8a-4aba-b96d-d747154324ae">
+    <name>ПериодСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период события</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="807af77f-a0c4-4541-8ffe-7945ae85772f">
+    <name>РегистрацияВНалоговомОргане</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налоговый орган</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РегистрацииВНалоговомОргане</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="f346f6a4-c083-4de6-bdd3-41dc184a38c2">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b40e2693-a895-4154-916f-d8a1c2d8e82d">
+    <name>Уведомление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уведомление</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.УведомлениеОбИсчисленныхСуммахНалогов</types>
+      <types>DocumentRef.ЗаявлениеОЗачетеВСчетПредстоящейОбязанности</types>
+      <types>DocumentRef.ОперацияПоЕдиномуНалоговомуСчету</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

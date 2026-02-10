@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="746fdbc3-8176-4a97-9df5-fdde396ce3e2">
+  <producedTypes>
+    <selectionType typeId="bdd9c8f2-ba7c-4025-a12e-e0c7aa8723dd" valueTypeId="9f6d55cf-6a4b-4b48-9341-90a4d53def04"/>
+    <listType typeId="f2b468ae-2286-4958-954a-80b90dda7140" valueTypeId="f1e83e0b-27fb-4d7a-b314-1cf453a91e84"/>
+    <managerType typeId="867107b9-a161-4564-9aca-c3e53e850681" valueTypeId="b911e401-3bc8-4d98-a732-f8c37a2adffa"/>
+    <recordSetType typeId="8c0c04a7-f274-4d04-8e95-40c284264711" valueTypeId="c59aa299-a87f-45a2-b74b-9e75a45e6ba3"/>
+    <recordKeyType typeId="4d2932a3-3cf9-4d21-9ced-6bf43e3daa49" valueTypeId="ab0e557e-f544-4a52-b3c9-522a7dc7d168"/>
+    <recordType typeId="290d32bf-abea-41eb-ae10-c3febbc36fad" valueTypeId="6067336b-8928-47dc-b1e6-b79aa7a46fda"/>
+    <recordManagerType typeId="bb9f5a91-178c-483d-8a9e-575584c9f050" valueTypeId="bf2ef56c-eb18-45d1-87eb-43123eb63b63"/>
+  </producedTypes>
+  <name>РеквизитыПеречисленийПоИсполнительнымЛистам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Реквизиты перечислений по исполнительным листам</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.РеквизитыПеречисленийПоИсполнительнымЛистам.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.РеквизитыПеречисленийПоИсполнительнымЛистам.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Реквизиты перечисления по исполнительному листу</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Реквизиты перечисления</value>
+  </listPresentation>
+  <resources uuid="5ee8326e-af9f-4efe-b4da-d5aec89d2a2e">
+    <name>ПеречислениеВБюджет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требуется указывать реквизиты платежа в бюджет</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0d6b0ae2-d2d4-4747-b8cd-fa5677f39818">
+    <name>СтатусСоставителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус составителя</value>
+    </synonym>
+    <comment>поле 101 &quot;Статус плательщика&quot;</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>2</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="8698d388-4a2e-499c-9e77-9162adb93adb">
+    <name>ОчередностьПлатежа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Очередность платежа</value>
+    </synonym>
+    <comment>поле 21 &quot;Очередность платежа&quot;</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="a32a3843-fc45-48ed-a7b4-5383923f12d9">
+    <name>КодБК</name>
+    <synonym>
+      <key>ru</key>
+      <value>КБК</value>
+    </synonym>
+    <comment>поле 104 &quot;КБК&quot;</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="8b44a4d6-d815-4769-a31d-dab8eab8be0a">
+    <name>КодОКАТО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код по ОКТМО</value>
+    </synonym>
+    <comment>поле 105 &quot;ОКТМО&quot;</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>11</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="5285a40d-9089-4872-81a0-be2e0dba0d5d">
+    <name>ПоказательОснования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель основания</value>
+    </synonym>
+    <comment>поле 106 &quot;Показатель основания&quot;</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>2</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="3e8d93f6-26ea-450c-8976-886781362f15">
+    <name>ПоказательПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель периода</value>
+    </synonym>
+    <comment>поле 107 &quot;Показатель периода&quot;</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="f67e035a-70e7-42f7-a2a6-59a640b5d367">
+    <name>ПоказательНомера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель номера</value>
+    </synonym>
+    <comment>поле 108 &quot;Показатель номера&quot;</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>18</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="937fcc40-8ae7-4606-a941-489ebbf52275">
+    <name>ПоказательДаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель даты</value>
+    </synonym>
+    <comment>поле 109 &quot;Показатель даты&quot;</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="78adb4bd-1eb4-42c8-a4d6-04cb0977d9c9">
+    <name>НазначениеПлатежа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Назначение платежа</value>
+    </synonym>
+    <comment>поле 24 &quot;Назначение платежа&quot;</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>210</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d82ba06b-3c25-4923-8bf8-cfa2aae20254">
+    <name>ИдентификаторПлатежа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор платежа</value>
+    </synonym>
+    <comment>поле 22 &quot;Код&quot;</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="4d8afff9-e810-49f0-9d67-736f6718ef4e">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e0d379cb-5c85-4d15-8985-29f2e9b1c018">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="780b00ac-63cf-4d94-9f61-e83974ccdad0">
+    <name>ИсполнительныйЛист</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнительный лист</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ИсполнительныйЛист</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Организация</name>
+      <field>InformationRegister.РеквизитыПеречисленийПоИсполнительнымЛистам.Dimension.Организация</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Отбор.ФизическоеЛицо</name>
+      <field>InformationRegister.РеквизитыПеречисленийПоИсполнительнымЛистам.Dimension.Сотрудник</field>
+    </choiceParameterLinks>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="1d76a2da-9be5-4fa9-a0d2-396bc7cd52d2">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fccab509-77f4-4dd1-b44f-9a9b18fb4fd4">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="465e31a7-5299-40a3-a0a7-43ec4b24173e">
+    <name>ФормаРеквизитыПлатежа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реквизиты платежа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4460e0d3-7dff-49d0-a2a2-cc02f2433958">
+  <name>СПАРКРискиПриИзмененииОпции</name>
+  <synonym>
+    <key>ru</key>
+    <value>СПАРК Риски при изменении опции</value>
+  </synonym>
+  <source>
+    <types>ConstantValueManager.ИспользоватьСервисСПАРКРиски</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.СПАРКРискиБП.СПАРКРискиПриИзмененииОпцииПриЗаписи</handler>
+</mdclass:EventSubscription>

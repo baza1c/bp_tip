@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2c6ea661-2420-47f2-922c-3a21831396c8">
+  <producedTypes>
+    <selectionType typeId="95608b0d-4271-4dca-a7b7-95cd08ca2bd8" valueTypeId="71b667a0-839c-4eec-b201-a92c997a24f5"/>
+    <listType typeId="d2960e31-212a-4c36-a130-796933c10631" valueTypeId="cb4bdfdc-0de2-4110-9de0-6cd9db0efa3a"/>
+    <managerType typeId="06f526e7-fb17-4c11-8321-8c14577cf1c8" valueTypeId="e45d8ad2-459f-4d62-80af-3b4af3e66431"/>
+    <recordSetType typeId="85ebe50e-e1c5-4571-b928-c67de653a68b" valueTypeId="c8d8c636-db62-4bc0-8281-0a885877fb24"/>
+    <recordKeyType typeId="163eb4bc-538b-4b71-a084-05b75d6fd3d3" valueTypeId="4b74fc4d-9bb3-44ae-9b0b-6c410b6eaf43"/>
+    <recordType typeId="767e3179-fe70-49f4-9dc7-a2dc4bff062c" valueTypeId="042529f2-99c4-4d24-ae7c-24b4dbacfb6d"/>
+    <recordManagerType typeId="60bb3947-17f5-4739-8797-62bfb6d5d7f5" valueTypeId="e8b2fd8f-b8fc-4b4f-aef3-f3b4e796ff06"/>
+  </producedTypes>
+  <name>ЗначенияХарактеристикПотребителяРекламы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Значения характеристик потребителя рекламы</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ЗначенияХарактеристикПотребителяРекламы.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ЗначенияХарактеристикПотребителяРекламы.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Значение характеристики потребителя</value>
+  </recordPresentation>
+  <attributes uuid="68c88e16-5204-4384-a4f0-bb5e62337edd">
+    <name>ДатаОбновления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата обновления</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="b1b52f72-af17-4105-8c55-e75db99f3ac7">
+    <name>ВладелецХарактеристики</name>
+    <synonym>
+      <key>ru</key>
+      <value>Владелец характеристики</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ВладелецХарактеристикиРекламы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="92968888-7489-4f5e-833c-0a914ddade4a">
+    <name>Характеристика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ВидХарактеристикиРекламы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a68f4a78-c116-4c44-98a1-de1c16068e3e">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ЗначениеХарактеристикиРекламы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="524d985c-8dc5-4bc8-91e6-d69c5c8a44d4">
+    <name>ТекущееЗначениеХарактеристики</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текущее значение характеристики</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ЗначениеХарактеристикиРекламы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="9ba30357-6654-4ae5-86fb-6e477aa81bcf">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fde34613-f798-4d47-87a5-2af0081c692c">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

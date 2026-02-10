@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a541febb-db0b-4b21-be2c-677daebda537">
+  <producedTypes>
+    <objectType typeId="e77a41c3-eca6-44aa-85cc-f188165015dd" valueTypeId="97f2b8b4-0753-47fe-a51f-37036f8c2975"/>
+    <refType typeId="67e952d8-c694-4237-98d4-948020588410" valueTypeId="b1774a9a-9207-493d-977a-5942d46975a6"/>
+    <selectionType typeId="1f3b9e98-db2a-4c19-8ba7-627ff7b72198" valueTypeId="ed9a8b9b-250d-4485-99e7-7b197e1fa92e"/>
+    <listType typeId="b6c41073-515e-4809-9dca-af2371fe66f5" valueTypeId="55c2d3d0-8bfb-4007-af92-84dfe2b24851"/>
+    <managerType typeId="11b8ad65-7812-422c-ace3-0f75a81786be" valueTypeId="f8e549dd-bb78-4e06-bf58-76cac5100804"/>
+  </producedTypes>
+  <name>УведомлениеОКонтролируемыхСделках</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уведомление о контролируемых сделках</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.УведомлениеОКонтролируемыхСделках.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Уведомления о контролируемых сделках</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.УведомлениеОКонтролируемыхСделках.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.УведомлениеОКонтролируемыхСделках.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.УведомлениеОКонтролируемыхСделках.Form.ФормаВыбора</defaultChoiceForm>
+  <posting>Deny</posting>
+  <registerRecordsDeletion>AutoDeleteOff</registerRecordsDeletion>
+  <sequenceFilling>AutoFillOff</sequenceFilling>
+  <registerRecords>AccumulationRegister.КонтролируемыеСделкиОрганизаций</registerRecords>
+  <attributes uuid="46e3a0b4-3118-4a5b-9da8-ff61c91a4372">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cf97d8c2-c7b8-44b6-92ab-af0d31134cfd">
+    <name>ОтчетныйГод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчетный год</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="763f3d2d-7737-4085-8b50-2ccbc67604a4">
+    <name>НомерКорректировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер корректировки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="861a1c48-b8e2-428f-b09d-a6fd43d8fde7">
+    <name>ВерсияУведомления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия уведомления</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f89180c6-8a34-42b2-94c5-ff982c85e067">
+    <name>ДатаФормированияСпискаСделок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата формирования списка сделок</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="70969ade-9ce8-4b47-af67-38aada644825">
+    <name>ДатаЗаполненияУведомления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата заполнения уведомления</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="21bb0fe3-5059-417e-94eb-1d46bdd267e6">
+    <name>КодМестаПредставления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код места представления</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>3</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4400310a-2221-4136-bb29-f0dddda5b6db">
+    <name>ГруппироватьСделкиСОдинаковойЦеной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группировать сделки с одинаковой ценой</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="33b48243-c4c7-4b7d-a03e-0415a64db2bb">
+    <name>КодФормыРеорганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код формы реорганизации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="35023e37-1715-4556-ac15-1d734fb34f2d">
+    <name>ИННРеорганизованнойОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИНН реорганизованной организации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6250aaef-d880-49d4-9c5a-ecd7ad0f5b4a">
+    <name>КППРеорганизованнойОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>КППРеорганизованной организации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>9</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7b4cb7b7-bab6-4065-9745-976fbe053569">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Произвольный текст</value>
+    </toolTip>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="7d7071e3-22e3-48cc-a622-ce829eddd0d2">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fe7404c4-5f0b-4c2b-98cf-e98126ed3ca1">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2b39bdce-01bf-469c-bf3a-2a1613b6b7a7">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="dd2b5937-74a7-4bfc-882e-7738eb65ac7b">
+    <name>ФормаПечатиУведомления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма печати уведомления</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cdc855ef-3e5d-4c83-b7ca-4c075ed1adf4">
+    <name>НастройкиЗаполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки заполнения</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="453ec1cf-f0f7-4c2b-9740-25f10676c3b6">
+    <name>ФормаОшибок</name>
+    <synonym>
+      <key>ru</key>
+      <value>.</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="569a2622-28a8-4a32-8b4e-166815d57f71">
+    <name>ФормаВыгрузкиВXML</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выгрузки ВXML</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="873cdb43-afea-4090-932b-4e64f47031fb">
+    <name>СправкаОПодготовкеУведомления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справка о подготовке уведомления</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="546710e4-6a36-4a95-bb0b-e51d744ca8da">
+    <name>СтруктураXML501</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структура XML 5.01</value>
+    </synonym>
+  </templates>
+  <templates uuid="3d7b5798-9e5b-4bb2-bf5c-7e86460ca51c">
+    <name>Страница1А</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страница1 А</value>
+    </synonym>
+  </templates>
+  <templates uuid="ab953e62-b288-4d1d-9fda-7f8d8b1dfa49">
+    <name>Страница1Б</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страница1 Б</value>
+    </synonym>
+  </templates>
+  <templates uuid="579172f3-b1b3-49ed-9cc5-590a199be077">
+    <name>Раздел2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел2</value>
+    </synonym>
+  </templates>
+  <templates uuid="d20d4e21-ab5c-4995-bb16-75ca9888d539">
+    <name>Раздел3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел3</value>
+    </synonym>
+  </templates>
+  <templates uuid="3f8e0f27-c736-4e69-9a09-78d04ef5f073">
+    <name>Лист1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лист1</value>
+    </synonym>
+  </templates>
+  <templates uuid="173117ad-3231-4822-83f2-6a3dc3364628">
+    <name>Лист2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лист2</value>
+    </synonym>
+  </templates>
+  <templates uuid="109d842b-58df-4a87-a378-79317ffc8131">
+    <name>МакетВыводаОшибок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет вывода ошибок</value>
+    </synonym>
+  </templates>
+  <templates uuid="8f314265-96df-4dd4-9145-025c9e9c1291">
+    <name>ОписаниеОшибок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание ошибок</value>
+    </synonym>
+  </templates>
+  <templates uuid="683dd7d6-d542-452e-a6f8-57c4f2307bbb">
+    <name>Лист1_2018</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лист1 (2018)</value>
+    </synonym>
+  </templates>
+  <templates uuid="bfd2edc7-b991-4d24-81d4-6a077b4f6db8">
+    <name>Лист2_2018</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лист2 (2018)</value>
+    </synonym>
+  </templates>
+  <templates uuid="78aa6a8d-acea-48c6-970f-037aa824f9e6">
+    <name>Страница1А_2018</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страница1А (2018)</value>
+    </synonym>
+  </templates>
+  <templates uuid="56c6dfb0-7868-4b53-b701-fae997043764">
+    <name>Страница1Б_2018</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страница1Б (2018)</value>
+    </synonym>
+  </templates>
+  <templates uuid="90eac21a-c88a-49af-a4a9-0ed1d817c636">
+    <name>Раздел2_2018</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел2 (2018)</value>
+    </synonym>
+  </templates>
+  <templates uuid="5e758ac6-be8f-49bf-99f5-823a10c138af">
+    <name>Раздел3_2018</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел3 (2018)</value>
+    </synonym>
+  </templates>
+  <templates uuid="69b4afd8-8bd7-4a16-b995-96604042f026">
+    <name>Лист1_2019</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лист1 (2019)</value>
+    </synonym>
+  </templates>
+  <templates uuid="d8d7c8c7-54fd-498e-bc30-4d0ac6eaba40">
+    <name>Лист2_2019</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лист2 (2019)</value>
+    </synonym>
+  </templates>
+  <templates uuid="17dc6c07-94f0-4cdb-ba98-a7637e849415">
+    <name>Страница1А_2019</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страница1А (2019)</value>
+    </synonym>
+  </templates>
+  <templates uuid="7c16aaf7-3b8a-479a-8613-88489e1b2949">
+    <name>Страница1Б_2019</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страница1Б (2019)</value>
+    </synonym>
+  </templates>
+  <templates uuid="fe8a161b-c99e-4309-ad95-cbb85006d385">
+    <name>Раздел2_2019</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел2 (2019)</value>
+    </synonym>
+  </templates>
+  <templates uuid="6b71afd2-d3fb-472c-852d-8fde74066212">
+    <name>Раздел3_2019</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел3 (2019)</value>
+    </synonym>
+  </templates>
+  <templates uuid="fafad01f-6088-4b42-aba0-667720454d65">
+    <name>Лист1_2024</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лист 1 (2024)</value>
+    </synonym>
+  </templates>
+  <templates uuid="1b7c532a-c24a-4564-b662-0a2f12521f09">
+    <name>Лист2_2024</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лист 2 (2024)</value>
+    </synonym>
+  </templates>
+  <templates uuid="0a1e7199-18b4-4250-a711-b74dae01a74a">
+    <name>Страница1А_2024</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страница 1А (2024)</value>
+    </synonym>
+  </templates>
+  <templates uuid="713fe6f9-218d-49d3-9745-14c62493c3fb">
+    <name>Страница1Б_2024</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страница 1Б (2024)</value>
+    </synonym>
+  </templates>
+  <templates uuid="84025dfb-417b-4419-bda4-fc422372e7f9">
+    <name>Страница1В_2024</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страница 1В (2024)</value>
+    </synonym>
+  </templates>
+  <templates uuid="a0164aac-82b0-4dfc-bbe3-80d3140484c0">
+    <name>Страница1Г_2024</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страница 1Г (2024)</value>
+    </synonym>
+  </templates>
+  <templates uuid="8894de9a-1278-4c37-b195-edd3c4cc703e">
+    <name>Раздел2_2024</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 2 (2024)</value>
+    </synonym>
+  </templates>
+  <templates uuid="8cdec0c2-d030-4f8b-9c01-fdfb88af8107">
+    <name>Раздел3_2024</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 3 (2024)</value>
+    </synonym>
+  </templates>
+  <templates uuid="59fbfb22-38eb-413e-bf07-4a092efc51cd">
+    <name>Раздел4_2024</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 4 (2024)</value>
+    </synonym>
+  </templates>
+</mdclass:Document>

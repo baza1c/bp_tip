@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bcf40ead-5b1b-404a-8913-5dc5dd7d57e1">
+  <producedTypes>
+    <selectionType typeId="0ec08a19-bcf0-4400-9a4e-dc06940258a3" valueTypeId="eb39a76f-e8e7-4e40-a763-5f11bd8f363d"/>
+    <listType typeId="bc96f668-00bd-4c89-8b3c-6e0c938ed0fb" valueTypeId="f8d2d222-bb5b-4106-85b9-35a95c0b56e8"/>
+    <managerType typeId="01a5c591-49c8-4c1e-8f87-6dfe127ec782" valueTypeId="d533ec8c-5403-4a31-a95e-c16d4bed3256"/>
+    <recordSetType typeId="6b0d0063-1c5b-41ef-922e-721f27802e33" valueTypeId="3a17b3f6-da71-4bc7-ae77-d9e4b9c44200"/>
+    <recordKeyType typeId="f663531f-5809-47bf-8b0d-e05764eb4369" valueTypeId="c0e971ba-2eac-4bee-aad1-46c9a5702f82"/>
+    <recordType typeId="280a7af3-0b66-4ab6-b6a0-24b543f9c0d6" valueTypeId="a1e54449-a8dc-4fe1-b360-cba23049d393"/>
+    <recordManagerType typeId="8bc7be17-d384-49c2-8460-a8606c9b31df" valueTypeId="f97a5e0f-e474-41ae-a892-d9659f586eb3"/>
+  </producedTypes>
+  <name>РасчетРеализацииОтложенныхКурсовыхРазниц</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет реализации отложенных курсовых разниц</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <writeMode>RecorderSubordinate</writeMode>
+  <resources uuid="517612f2-9c40-4dc9-9d25-7cd3058149ba">
+    <name>ОстатокДолга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Остаток долга (в валюте)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a60da878-865d-4a34-a85c-1bc65fe26e92">
+    <name>ОтложенныйДоход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отложенный доход</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="616fe0fa-1a02-4155-9775-6d7d1acac55c">
+    <name>ОтложенныйРасход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отложенный расход</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4d568ea1-b35f-406a-96f8-aa87ed77c2f2">
+    <name>ПогашениеДолга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Погашение долга (в валюте)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="01297bc9-f262-4d2c-a8c8-99869c422198">
+    <name>РеализованныйДоход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реализованный доход</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="efcab46e-b69c-4cca-bc52-a77bd55775c0">
+    <name>РеализованныйРасход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реализованный расход</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="90fc4bf2-ad31-4cb0-9c93-224b676a9608">
+    <name>ПериодРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период расчета</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d8373076-4809-4d0c-b41a-6c5ea0556970">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="dca2db16-9430-4513-b5a3-81b80d1307a7">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.РасчетРеализацииОтложенныхКурсовыхРазниц.Dimension.Организация</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="df6960df-896d-4adc-8978-d104db335eac">
+    <name>Счет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет переоценки</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Хозрасчетный</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.Валютный</name>
+      <value xsi:type="core:BooleanValue">
+        <value>true</value>
+      </value>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.Забалансовый</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="491bf9c5-ac81-49c5-8596-c901089535ba">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="430350eb-e0f2-4638-abc1-d3f016c81be2">
+    <name>Субконто1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто1</value>
+    </synonym>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.РасчетРеализацииОтложенныхКурсовыхРазниц.Dimension.Организация</field>
+    </choiceParameterLinks>
+    <linkByType>
+      <linkItem>1</linkItem>
+      <field>InformationRegister.РасчетРеализацииОтложенныхКурсовыхРазниц.Dimension.Счет</field>
+    </linkByType>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e76570e9-d18f-4ce8-89e0-ae5768d02f18">
+    <name>Субконто2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто2</value>
+    </synonym>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Организация</name>
+      <field>InformationRegister.РасчетРеализацииОтложенныхКурсовыхРазниц.Dimension.Организация</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.РасчетРеализацииОтложенныхКурсовыхРазниц.Dimension.Субконто1</field>
+    </choiceParameterLinks>
+    <linkByType>
+      <linkItem>2</linkItem>
+      <field>InformationRegister.РасчетРеализацииОтложенныхКурсовыхРазниц.Dimension.Счет</field>
+    </linkByType>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c9012ec4-4bab-4347-8851-b4c2bc56ba13">
+    <name>Субконто3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто3</value>
+    </synonym>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Организация</name>
+      <field>InformationRegister.РасчетРеализацииОтложенныхКурсовыхРазниц.Dimension.Организация</field>
+    </choiceParameterLinks>
+    <linkByType>
+      <linkItem>3</linkItem>
+      <field>InformationRegister.РасчетРеализацииОтложенныхКурсовыхРазниц.Dimension.Счет</field>
+    </linkByType>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b3216c38-d1d0-40d7-bef1-ba1884621029">
+  <name>СовместноеИспользованиеПередЗаписьюСлужебныхСведенийОбменаДанными</name>
+  <synonym>
+    <key>ru</key>
+    <value>Совместное использование перед записью служебных сведений обмена данными</value>
+  </synonym>
+  <source>
+    <types>InformationRegisterRecordSet.ПубличныеИдентификаторыСинхронизируемыхОбъектов</types>
+    <types>InformationRegisterRecordSet.РезультатыОбменаДанными</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.СовместноеИспользование.ПередЗаписьюСлужебныхСведенийОбменаДанными</handler>
+</mdclass:EventSubscription>

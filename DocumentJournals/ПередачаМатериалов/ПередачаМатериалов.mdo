@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ff074b3c-d96c-4026-84c9-b423f866e355">
+  <producedTypes>
+    <selectionType typeId="c3f9c130-23bb-4931-ad8b-5e7d0e749dae" valueTypeId="74a14791-5c15-45e7-a968-3ebe6f4e562a"/>
+    <listType typeId="3c51c2c8-7ca1-4f42-9360-329a1b636917" valueTypeId="8bbeaee1-5042-4b07-8e1b-affaac78627c"/>
+    <managerType typeId="2bac5bc9-5438-4537-9aec-f14e52948a97" valueTypeId="f6d8ec52-19ff-4085-a7a2-f7434b1156f5"/>
+  </producedTypes>
+  <name>ПередачаМатериалов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Передача материалов</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ПередачаМатериалов.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.СписаниеТоваров</registeredDocuments>
+  <registeredDocuments>Document.ТребованиеНакладная</registeredDocuments>
+  <registeredDocuments>Document.ПеремещениеТоваров</registeredDocuments>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="aa8673fd-704e-4b05-b41a-ae26b46d8c56">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <references>Document.СписаниеТоваров.Attribute.Организация</references>
+    <references>Document.ТребованиеНакладная.Attribute.Организация</references>
+    <references>Document.ПеремещениеТоваров.Attribute.Организация</references>
+  </columns>
+  <columns uuid="4521d26e-98cd-443a-b1e2-1527d832af95">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.СписаниеТоваров.Attribute.Комментарий</references>
+    <references>Document.ТребованиеНакладная.Attribute.Комментарий</references>
+    <references>Document.ПеремещениеТоваров.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="7bd87867-ab2a-4ec5-9bb1-250b108338b2">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <references>Document.СписаниеТоваров.Attribute.Ответственный</references>
+    <references>Document.ТребованиеНакладная.Attribute.Ответственный</references>
+    <references>Document.ПеремещениеТоваров.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="ae2bd0d6-3dac-427c-826b-18249afc2a49">
+    <name>РучнаяКорректировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ручная корректировка</value>
+    </synonym>
+    <references>Document.СписаниеТоваров.Attribute.РучнаяКорректировка</references>
+    <references>Document.ТребованиеНакладная.Attribute.РучнаяКорректировка</references>
+    <references>Document.ПеремещениеТоваров.Attribute.РучнаяКорректировка</references>
+  </columns>
+  <columns uuid="a694d386-2309-4054-94ae-9887bd41186b">
+    <name>ПодразделениеОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <references>Document.СписаниеТоваров.Attribute.ПодразделениеОрганизации</references>
+    <references>Document.ТребованиеНакладная.Attribute.ПодразделениеОрганизации</references>
+    <references>Document.ПеремещениеТоваров.Attribute.ПодразделениеОтправитель</references>
+  </columns>
+  <columns uuid="ce05b9ce-fa5f-4823-9965-060ab4c63108">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <indexing>Index</indexing>
+    <references>Document.СписаниеТоваров.Attribute.Сотрудник</references>
+    <references>Document.ТребованиеНакладная.Attribute.Сотрудник</references>
+    <references>Document.ПеремещениеТоваров.Attribute.СотрудникОтправитель</references>
+  </columns>
+  <columns uuid="ab856fed-c565-4274-b87e-b3a2d482fd38">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции</value>
+    </synonym>
+    <indexing>Index</indexing>
+    <references>Document.СписаниеТоваров.Attribute.ВидОперации</references>
+    <references>Document.ТребованиеНакладная.Attribute.ВидОперации</references>
+    <references>Document.ПеремещениеТоваров.Attribute.ВидОперации</references>
+  </columns>
+  <forms uuid="04d91744-9f9a-41b9-9fa5-669343a4cd27">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="8dc3a5d5-9d26-4f2d-a6f8-a6bb9734af35">
+    <name>ПередачаСотрудникам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передача сотрудникам</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DocumentJournal>

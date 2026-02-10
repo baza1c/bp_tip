@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c950c4ca-6572-47cd-b704-a7447df0b83b">
+  <producedTypes>
+    <selectionType typeId="f0e7757e-27d1-4838-bcf8-9c8d393f7ecd" valueTypeId="f18c6647-b191-4110-942d-018a825f8be6"/>
+    <listType typeId="11b9438e-bb95-414f-853f-4ef889a7b17d" valueTypeId="d03acef6-58e5-4a22-bd7d-0df4bd8795d8"/>
+    <managerType typeId="ef074016-2cd0-4064-b60c-6347185a6e79" valueTypeId="62402f1f-df43-42c4-97f7-fbfbf09f7265"/>
+    <recordSetType typeId="aad1a669-6414-47d9-a1ce-b0305e7578c7" valueTypeId="07e3b54b-3597-4162-bb6e-3f83066e82a6"/>
+    <recordKeyType typeId="9397fb92-a16e-4c04-89f1-a80442c276f2" valueTypeId="feeceb7b-75b8-4467-9a6c-fd6aa9d5733e"/>
+    <recordType typeId="81177c4b-6c09-4e73-8ea4-e4b89ff2605a" valueTypeId="eb023124-bc07-4e04-a5cd-3ca680c82743"/>
+    <recordManagerType typeId="34371c2b-fde2-4963-a0c2-1e9ada45f707" valueTypeId="5b7e7f6e-6997-4370-ac3b-b979937545b3"/>
+  </producedTypes>
+  <name>РасходыНаОнлайнКассыУменьшающиеНалогПСН</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расходы на онлайн кассы, уменьшающие налог по патентам</value>
+  </synonym>
+  <comment>Используется с 2024 года</comment>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="212bda94-81e2-4ae3-bcbf-87fbe3d1c1c1">
+    <name>СуммаПлатежа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма платежа</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>8</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c19c42ea-7596-4c2a-829a-290e0c5e78d0">
+    <name>Оплачено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оплачено</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>8</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="22e58225-818d-4039-8c28-d3b71e2843ff">
+    <name>НалоговыйВычет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налоговый вычет</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>8</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="0ad1a43b-e3d7-43df-b777-1db380c4673d">
+    <name>РучнаяКорректировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ручная корректировка</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="de684a4f-1e64-44e0-9bbf-a9817e99759a">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.ЮридическоеФизическоеЛицо</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ЮридическоеФизическоеЛицо.EnumValue.ФизическоеЛицо</value>
+      </value>
+    </choiceParameters>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cdd48dc1-ae95-4832-b05a-28841fbe418a">
+    <name>РегистрацияВНалоговомОргане</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрация в налоговом органе</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РегистрацииВНалоговомОргане</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.РасходыНаОнлайнКассыУменьшающиеНалогПСН.Dimension.Организация</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="919179b6-b1d2-40e3-aa22-7ab078a4e5a0">
+    <name>ОперацияСПатентом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операция с патентом</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ОперацияСПатентом</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9a084fc1-5b4f-4616-b8ad-389bcc7c8b24">
+    <name>ВидПлатежа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид платежа</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыПлатежейПоПатенту</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <forms uuid="bf7b4c88-7a34-4b56-b59f-dc4619024b8a">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

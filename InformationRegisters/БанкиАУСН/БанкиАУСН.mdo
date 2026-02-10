@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5e93b981-8fda-4e41-a999-b8571814a8e0">
+  <producedTypes>
+    <selectionType typeId="e38fd4ac-7d41-4c88-9f94-35f515c65560" valueTypeId="cb8861ed-f0e0-4340-8ccc-618e0c3596c8"/>
+    <listType typeId="bc229512-fa37-422a-90df-c511739351bf" valueTypeId="15462830-11f7-4652-b7ae-37bd56301034"/>
+    <managerType typeId="82378254-4d60-42ae-8f7e-940533685616" valueTypeId="bd5a2dc0-885e-4a9d-9ec0-c55871cf649a"/>
+    <recordSetType typeId="22fa348f-f15a-41a3-b17d-817c7fb9e563" valueTypeId="cf9b472a-c393-4894-8f3d-f01f43c9f28a"/>
+    <recordKeyType typeId="a485c97d-f8aa-46c8-8056-3db063f35556" valueTypeId="19c2fc1b-f3f5-42a2-8f81-e425481737f6"/>
+    <recordType typeId="80459702-9f01-47d0-866d-bdd09b812ccd" valueTypeId="e36c964a-16a0-4f3a-85ca-1151d816e215"/>
+    <recordManagerType typeId="c249944a-098a-4199-a507-b29bc6e5197d" valueTypeId="49921c68-aa86-4510-8277-ebf97f13a215"/>
+  </producedTypes>
+  <name>БанкиАУСН</name>
+  <synonym>
+    <key>ru</key>
+    <value>Банки сервиса АУСН</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.БанкиАУСН.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Банк сервиса АУСН</value>
+  </recordPresentation>
+  <resources uuid="56fcecbb-593e-4629-ad54-3d58dbd35e14">
+    <name>Идентификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8b4c1a29-a013-40c6-aa3f-1c7b08deb20a">
+    <name>СсылкаЛичныйКабинет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка личный кабинет</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="5b2512ed-0fef-4a32-9952-b1cbf89fd45f">
+    <name>ДатаИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата изменения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="de775c3c-9d1a-421a-8cda-43ac170b10c9">
+    <name>Банк</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банк</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлассификаторБанков</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="d249297e-1d2f-451f-9d1f-4237c3635fd2">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

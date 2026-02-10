@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0ec1be58-097e-4068-931d-17f2340fa016">
+  <producedTypes>
+    <selectionType typeId="5adb1667-5a0b-459e-a14e-aa6e46ddb7f9" valueTypeId="de9e4955-8c11-4dd3-9c5c-eb1a4a770b27"/>
+    <listType typeId="7c5a4a40-088c-42ab-991b-2e599f7eb407" valueTypeId="ea61f834-bcad-4c26-a3c3-84fa70efd559"/>
+    <managerType typeId="1b4d56c7-53b2-4dd5-8a1f-7da3544bb664" valueTypeId="544dba80-8a9f-4cef-8213-fb87b0c0b34d"/>
+    <recordSetType typeId="e977c72a-ef0b-448d-a6b6-5f80089a983f" valueTypeId="7d9035e3-b2bc-41c7-995d-0d36c1df224d"/>
+    <recordKeyType typeId="8d13b670-ee0d-4353-85d2-af3a62b9cd9a" valueTypeId="389385ff-a120-4b66-8e65-0628fcedd786"/>
+    <recordType typeId="4158f6ba-ba2d-4138-b42a-56dbacd9e363" valueTypeId="facd1c99-c415-4b95-ad8e-2099337c548d"/>
+    <recordManagerType typeId="a7fdf757-ea3e-4e28-add3-8dd3a442b4cc" valueTypeId="5740322d-189b-4d19-9f13-bf8fba74d86d"/>
+  </producedTypes>
+  <name>ИПСтандартныеВычетыНаДетей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стандартные вычеты на детей (ИП)</value>
+  </synonym>
+  <comment>Данные для расчета НДФЛ и авансовых платежей по НДФЛ для ИП</comment>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="689a5151-188c-4a91-9829-3320aa4c6520">
+    <name>ВсегоДетей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Всего детей</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="48e4e43d-7796-4248-9deb-1e5f1f75244c">
+    <name>Несовершеннолетних</name>
+    <synonym>
+      <key>ru</key>
+      <value>Несовершеннолетних</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0422762c-88de-4f21-bc63-df5471e0b7aa">
+    <name>РодныеДетиИнвалиды</name>
+    <synonym>
+      <key>ru</key>
+      <value>Родные дети-инвалиды</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="eb06f884-2dba-4e61-8309-0c4031005343">
+    <name>ПриемныеДетиИнвалиды</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приемные дети-инвалиды</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="b7acd295-14ab-4859-8d9a-71fff70967b5">
+    <name>ПрименяетсяДвойнойВычет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Применяется двойной вычет</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="4b48d826-7d2f-4472-bcfe-2499d834fdd8">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

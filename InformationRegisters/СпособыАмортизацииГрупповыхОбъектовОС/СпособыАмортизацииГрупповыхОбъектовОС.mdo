@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="33eb653c-7d32-47b2-93ad-6b131c8cc2ae">
+  <producedTypes>
+    <selectionType typeId="dec65698-0fb7-4841-981f-56fef593ab50" valueTypeId="be0c9fad-6764-4c75-bead-1b90e59e9934"/>
+    <listType typeId="1705e13f-4b69-4066-9ae2-d266be111546" valueTypeId="df17d130-0c27-42a2-ae44-ee32b9bc2930"/>
+    <managerType typeId="c1676184-7661-4d63-aaad-7d179ede7b82" valueTypeId="bb3608f0-8940-404e-8d6d-84ff437cab38"/>
+    <recordSetType typeId="df1891ba-048f-4638-adb9-80c8a0ae3548" valueTypeId="329ec4c1-5eea-47c0-b61c-0787d6f330c4"/>
+    <recordKeyType typeId="dfa12987-2e8d-49c0-b96d-aca6a04b3af8" valueTypeId="76705193-f208-427d-8604-5bbac123b7c6"/>
+    <recordType typeId="78921150-b3e7-4d23-8b09-1eb2c5411825" valueTypeId="97476aa8-5172-493f-b10c-bbf9475aeb5e"/>
+    <recordManagerType typeId="df54259d-4fee-4e6f-90b4-f4b9573cce89" valueTypeId="4e8c865c-6668-4ba4-af61-a23a133b211f"/>
+  </producedTypes>
+  <name>СпособыАмортизацииГрупповыхОбъектовОС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способы амортизации групповых объектов ОС</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <resources uuid="e0812f64-7280-44dd-8220-517d723ce1e0">
+    <name>СпособОтраженияРасходовПоАмортизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ отражения расходов по амортизации</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпособыОтраженияРасходовПоАмортизации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f270da0d-430c-4fdc-aa22-43490c52d42a">
+    <name>ОсновноеСредство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основное средство</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОсновныеСредства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ЕдиницаУчета</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ЕдиницыУчетаОС.EnumValue.ГрупповойОбъект</value>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="de04146e-7831-4757-bc2b-a69d85e9f361">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="44eb6712-1f76-4075-920f-e0934e9ea4a2">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.СпособыАмортизацииГрупповыхОбъектовОС.Dimension.Организация</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

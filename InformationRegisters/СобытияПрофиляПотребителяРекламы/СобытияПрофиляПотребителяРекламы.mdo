@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d4517a54-11a1-40e4-9ae3-b4f31b270ff8">
+  <producedTypes>
+    <selectionType typeId="bcc38014-308e-46b4-9bdc-c3fe82fde067" valueTypeId="131d5501-24d8-4293-a21b-b2216f93b2a9"/>
+    <listType typeId="d41581ea-5ac1-430c-ab95-4583768ae9e0" valueTypeId="1ae11f75-8070-4976-9f9d-beef3defd2f4"/>
+    <managerType typeId="9dd7cdaa-4310-4689-9c27-54552c068048" valueTypeId="e89e0704-60be-4c57-b6bb-42413259c0ae"/>
+    <recordSetType typeId="3839824d-25e3-4100-b294-561ad4e77c49" valueTypeId="1a16f8ae-5274-4711-8413-74b0931c93d7"/>
+    <recordKeyType typeId="6d52674e-8127-44af-8817-ed8ce75b1da1" valueTypeId="1e664c12-495c-494b-9976-1f1cd7da516c"/>
+    <recordType typeId="a45dd185-01a8-492d-b289-6d19770f8527" valueTypeId="b2e90bb9-e863-4d66-978e-3bd056af534b"/>
+    <recordManagerType typeId="d6ef74ae-f183-4281-9431-e4c2da47ea66" valueTypeId="07af3529-4fd0-4169-bc24-a4767cac5904"/>
+  </producedTypes>
+  <name>СобытияПрофиляПотребителяРекламы</name>
+  <synonym>
+    <key>ru</key>
+    <value>События профиля потребителя рекламы</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СобытияПрофиляПотребителяРекламы.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СобытияПрофиляПотребителяРекламы.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Событие рекламного носителя</value>
+  </recordPresentation>
+  <resources uuid="636b554a-2890-478d-bad1-a02137ee6e1d">
+    <name>ДатаЗакрытияРекламы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата закрытия рекламы</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="028eba28-bcdd-4e0c-8796-87e967c9794b">
+    <name>ПрофильПотребителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Профиль потребителя</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПрофильПотребителяРекламы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="f3fb9433-1d64-4a85-9def-0be58584dd4f">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8dbaa55a-b323-440c-88a0-df436e5ecb5c">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

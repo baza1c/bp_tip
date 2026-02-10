@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="46078480-2084-4c3f-9081-e68920fd5558">
+  <producedTypes>
+    <objectType typeId="a9ce2a7f-8bef-4dda-af4c-b64b1b6538be" valueTypeId="16726a15-458b-4540-b290-454b01e05220"/>
+    <managerType typeId="20e29c56-372a-4e91-b41c-ec6d87c96e52" valueTypeId="1053380e-6207-44a4-91c5-5180ee030f07"/>
+  </producedTypes>
+  <name>ИсправлениеРеквизитаБезЗакрывающихДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Исправление реквизита &quot;Без закрывающих документов&quot; для УСН с НДС</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ИсправлениеРеквизитаБезЗакрывающихДокументов.Form.Форма</defaultForm>
+  <attributes uuid="4544564f-3620-4b21-8cab-3768b3f0027f">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="8a3ac306-d226-4a80-86b6-6447073bbf29">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="64232b03-333a-4826-a001-dc1ee9410050">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

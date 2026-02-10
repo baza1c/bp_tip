@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cab82e46-bb84-41ee-a411-6688f2e56ad5">
+  <producedTypes>
+    <selectionType typeId="c8714483-132a-4dd8-8bfd-bc7899abb6e8" valueTypeId="e954f85a-9c1b-4b89-98e3-4faec8ec8fd1"/>
+    <listType typeId="8c1d7b29-0892-4f2a-8367-f94dde558fcf" valueTypeId="534e4e95-9008-437f-b57c-2bfae6e05ce1"/>
+    <managerType typeId="758e32e3-3f3a-4fb4-8e59-d45e8ac40379" valueTypeId="35e1ce84-4192-4921-8445-31342212b878"/>
+    <recordSetType typeId="61be3029-24ba-4e53-9e2c-d01640ed2d28" valueTypeId="1e73a5c9-3286-4800-a44b-0aa49792d0be"/>
+    <recordKeyType typeId="4ffecf24-6c91-405d-9997-cf253c725ec8" valueTypeId="a13d03d5-b02f-451c-9e5b-8825ff920b51"/>
+    <recordType typeId="1d83d06d-1927-4409-b71b-433847f16aad" valueTypeId="d389ec71-9dbb-4361-a267-1f02c521997b"/>
+    <recordManagerType typeId="642cc2f1-776c-4347-8be6-d3e9996ef70b" valueTypeId="c1c15b05-a532-4366-a6fe-e6ba90439cf1"/>
+  </producedTypes>
+  <name>НастройкиВариантаРасчетаКорректировокВВалюте</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки варианта расчета корректировок в валюте</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Year</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="42dbf6c0-dee7-4b16-b02b-83bfa06ad3f6">
+    <name>РассчитыватьКорректировкуНаУвеличениеПоКурсуНаДатуОтгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рассчитывать корректировку на увеличение по курсу на дату отгрузки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f421d651-532d-45a7-8ffe-c46a4380f71c">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

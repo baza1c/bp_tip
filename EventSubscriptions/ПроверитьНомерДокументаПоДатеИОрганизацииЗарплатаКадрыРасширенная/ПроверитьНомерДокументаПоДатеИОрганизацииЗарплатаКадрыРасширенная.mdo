@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ff4560c2-7442-43a1-8f02-e409b9441cb2">
+  <name>ПроверитьНомерДокументаПоДатеИОрганизацииЗарплатаКадрыРасширенная</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверить номер документа по дате и организации</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ЛистокСообщенияДляВоенкомата</types>
+    <types>DocumentObject.БронированиеГражданПребывающихВЗапасе</types>
+    <types>DocumentObject.СверкаСВоеннымКомиссариатом</types>
+    <types>DocumentObject.СообщениеОНеСостоящихНаВоинскомУчетеГражданах</types>
+    <types>DocumentObject.ИзмененияСведенийСотрудниковДляВоенкомата</types>
+    <types>DocumentObject.ПервоначальнаяПостановкаНаВоинскийУчет</types>
+    <types>DocumentObject.ПриказОБронированииРаботников</types>
+    <types>DocumentObject.ХодатайствоОБронированииГражданПребывающихВЗапасе</types>
+    <types>DocumentObject.СведенияОПриемеПереводеИУвольненииДляВоенкомата</types>
+    <types>DocumentObject.ИзвещениеОПриемеИлиУвольненииДляВоенкомата</types>
+    <types>DocumentObject.ПриказОПрекращенииБронирования</types>
+    <types>DocumentObject.СведенияОПодлежащихВоинскомуУчетуГражданах</types>
+    <types>DocumentObject.ОтменаБронированияГражданПребывающихВЗапасе</types>
+    <types>DocumentObject.СверкаСДокументамиВоинскогоУчета</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ПрефиксацияОбъектовСобытия.ПроверитьНомерДокументаПоДатеИОрганизации</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8ef6e425-a26b-4488-aeb0-6f52899d7bd7">
+  <producedTypes>
+    <selectionType typeId="538a9a48-5b32-420b-b376-c98f7d92aba2" valueTypeId="59a1f589-b7a4-4fb2-8d5f-366bdec7cb25"/>
+    <listType typeId="2ecdcfe0-0967-4ddf-9a0c-a10214b45cbb" valueTypeId="4e8a8fee-74ab-4570-8e23-ec9fa60e4853"/>
+    <managerType typeId="52908a53-d525-4af4-a882-12d01b893eaa" valueTypeId="c22cfd1a-fcdb-479c-be77-3dd7d01730ee"/>
+    <recordSetType typeId="bc1fecbf-2bea-4b13-b263-84ad20155d19" valueTypeId="1d669e7d-c31e-4d01-9d4a-5d81d11b40c8"/>
+    <recordKeyType typeId="9b5c5989-4219-4f1d-8caa-2042301f0589" valueTypeId="f60130fc-6b04-45fc-b34b-f0fc00926492"/>
+    <recordType typeId="088c3531-8588-4793-a6ed-915b01818e5d" valueTypeId="0e7a6675-90c5-4f06-ad66-25eca53fee6b"/>
+    <recordManagerType typeId="42f64565-d0d6-4ef7-b9eb-ed91e16bed99" valueTypeId="1c2a952f-8e4f-45de-8176-6d479959402b"/>
+  </producedTypes>
+  <name>СоответствиеНастроекИнтеграцииСБПb2b</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствие настроек интеграции СБП b2b</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="87e2c54d-97ea-46e9-bcb4-cf7c958709d9">
+    <name>ТорговаяТочка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Торговая точка</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НастройкиПодключенияКСистемеБыстрыхПлатежей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="607ca2f7-741e-4bd1-9a41-6a73c74a611e">
+    <name>Банк</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банк</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Банки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e12b5843-480e-4969-9487-3bff1fb0254b">
+    <name>ВидПоступленияОплатыВБанковскойВыписке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции в документе Поступление на расчетный счет</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидПоступленияОплатыСБПb2b</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="060cad62-d1eb-4f65-bc28-85a68c404f5b">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>DefinedType.Организация</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.ПометкаУдаления</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d327c603-ba44-47f2-ab33-671666e95203">
+    <name>ВидОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид оплаты</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыОплатОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.ТипОплаты</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ТипыОплат.EnumValue.СБП</value>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

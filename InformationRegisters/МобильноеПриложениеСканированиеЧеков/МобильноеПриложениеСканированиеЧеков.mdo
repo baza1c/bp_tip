@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f805ef10-49cd-4ed5-b735-0b153e9bef95">
+  <producedTypes>
+    <selectionType typeId="838a57ad-d57e-4394-b506-8acc37ae4bc2" valueTypeId="aab5305f-1ce8-4f50-8f80-22192088a0ce"/>
+    <listType typeId="0cc41c9d-d901-46de-a2da-8de9d25e49e8" valueTypeId="cc535e69-ef55-4db8-b927-1ffdcf053648"/>
+    <managerType typeId="c5f2c96c-2deb-4f45-a995-582fa5969841" valueTypeId="6a3efe6f-bf4a-4ffa-a9a9-e8fce1c9264d"/>
+    <recordSetType typeId="1ec8470c-6102-402f-a578-5eedd8925add" valueTypeId="cdfe5590-f01c-4600-9aae-bfdd2b1de480"/>
+    <recordKeyType typeId="4a7cd5d8-130f-4359-a4e2-e5bf07451b88" valueTypeId="be9add7d-ea21-4a57-95cc-7b1ec75c6b4e"/>
+    <recordType typeId="e5309f0f-71f2-4848-ae3a-ffc998fe5cbf" valueTypeId="45cac385-c85f-4953-89e5-9635c82a0cc3"/>
+    <recordManagerType typeId="c4561fc9-c99e-4feb-a759-c9a42aa8ef79" valueTypeId="317f6ea1-d67c-4e55-bd76-8bc7fc378e66"/>
+  </producedTypes>
+  <name>МобильноеПриложениеСканированиеЧеков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Мобильное приложение сканирование чеков</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="962fc2b7-0fd7-4d29-94ef-b5587c051cd3">
+    <name>Активировано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активировано</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <attributes uuid="0f85cd99-18e1-4d3d-abf0-82e933cdc23b">
+    <name>КодДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код доступа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <attributes uuid="aec1971c-f333-4acc-8107-86a3bb5d7754">
+    <name>ПредставлениеКодаДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление кода доступа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <dimensions uuid="c3a8fc24-e10a-4cef-8277-86a3e84bea98">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПользовательШиныМобильныхПриложений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="b4e62fcf-16ca-4b60-b2b5-0e0a5ebf5d0f">
+    <name>КодДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код доступа к 1С:Сканер чеков</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c353aece-b033-4863-83a8-e257aec56cf5">
+    <name>Пользователи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коды доступа к 1С:Сканер чеков</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="c0828418-ad38-4807-bc6a-21b20a1a5e01">
+    <name>КодыДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коды доступа к 1С:Сканер чеков</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:InformationRegister>

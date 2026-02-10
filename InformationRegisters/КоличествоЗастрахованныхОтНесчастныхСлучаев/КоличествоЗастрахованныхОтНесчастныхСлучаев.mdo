@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a4553198-ff2a-40e5-9b11-80433b1645fb">
+  <producedTypes>
+    <selectionType typeId="02226436-34f2-407a-bd1f-55dbe98f3e18" valueTypeId="71dc5f4f-c5dd-4c86-b7d0-8607622acaa3"/>
+    <listType typeId="c7c13780-e6fc-4cdc-bff4-9dab6aae5e4a" valueTypeId="1244a043-19b2-42b1-9294-6416313de4b2"/>
+    <managerType typeId="c4c7e6ca-12cd-474c-8200-85a5e78774e8" valueTypeId="750eb4ea-4c42-4594-a068-e4371eb1b0dc"/>
+    <recordSetType typeId="5086f8b2-a04c-4a11-b275-88d041b15a8b" valueTypeId="9d833859-2066-44b9-aaff-a6bbb71b7cf3"/>
+    <recordKeyType typeId="960e5c1c-9e24-4dca-8091-14fb57393fe9" valueTypeId="f4aa786b-3e42-46f7-bc54-393ef52f9c45"/>
+    <recordType typeId="90e81525-6d4f-4913-a2fd-20ef94a087aa" valueTypeId="654030ac-7ef0-46cf-85fc-2e905eb70915"/>
+    <recordManagerType typeId="9007f2ad-f7f8-400b-a10d-da7f1412d8c3" valueTypeId="a5c36576-1106-4c2a-bbb9-a1beb5594d8e"/>
+  </producedTypes>
+  <name>КоличествоЗастрахованныхОтНесчастныхСлучаев</name>
+  <synonym>
+    <key>ru</key>
+    <value>Количество работников, застрахованных от несчастных случаев</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Количество работников, застрахованных от несчастных случаев</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Количество работников, застрахованных от несчастных случаевКоличество работников, застрахованных от несчастных случаев</value>
+  </listPresentation>
+  <resources uuid="377f3f77-e3a1-4604-8fc6-f559c2b70a61">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="bbf67549-c778-431b-8dd3-931f1a196a83">
+    <name>РасходыНаСтрахование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расходы на страхование</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РасходыБудущихПериодов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cd6f48b4-cfa9-40fd-ba3e-6b51f14153c6">
+    <name>ДатаНачалаДействия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала действия</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="d4f5bd8b-01b4-4bac-a6ea-78eefccc7b4d">
+    <name>РедактированиеИсторииКоличестваЗастрахованных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактирование истории количества застрахованных</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

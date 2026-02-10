@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3c13873b-56b4-4eaf-bc81-0875e54fea67">
+  <producedTypes>
+    <objectType typeId="172ac0a1-379f-418e-9ca2-9668cfa59cdd" valueTypeId="14947437-bf82-4b52-a804-ea6933886f12"/>
+    <managerType typeId="134da554-7bad-4fa7-aac7-96abc8a18785" valueTypeId="16b1006a-2bb1-4864-8619-37199df81d6b"/>
+  </producedTypes>
+  <name>РасходыУСН</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расходы УСН</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.РасходыУСН.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.РасходыУСН.Template.СхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <attributes uuid="6147c793-95ca-4a92-b6ed-4b511aed6495">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>с</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="56edb7a2-f744-4145-9218-80b26cab4610">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>по</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="47850260-566f-4e46-8d54-62813e079627">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="a91091b7-9974-4428-a303-472e4780bd3e">
+    <name>ФормироватьОтчетПриИзмененииНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формировать отчет при изменении настроек</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="939b6440-c109-43d7-ad2f-132d8a4ee63d">
+    <name>РежимРасшифровки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим расшифровки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a068621f-b859-4c7b-b97d-cfd72f22b8ef">
+    <name>ВключатьОбособленныеПодразделения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Включая обособленные подразделения</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="ac29eb6f-409f-4c09-81ce-1b4aa0d886b4">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f7765afb-7c38-47b4-8739-78fec0ac3f78">
+    <name>ФормаРасходыПоДокументу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма расходы по документу</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c5b32881-fe04-4c69-9d57-0c2ae00e4c65">
+    <name>ФормаРасшифровкаПоДокументам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма расшифровка по документам</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="6141b0dd-933b-4b86-a4d2-452616e011cb">
+    <name>СхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="9ab7db10-b404-48b6-9ca1-0649587449b4">
+    <name>РасшифровкаПоДокументу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка по документу</value>
+    </synonym>
+  </templates>
+  <commands uuid="f55cd814-c4b0-42bb-8a10-955161e251bf">
+    <name>РасходыУСН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расходы УСН</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

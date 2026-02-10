@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a82d6cf5-574a-47cb-859a-6c1cb36f1ebe">
+  <producedTypes>
+    <selectionType typeId="4e981446-cda4-4203-8c2d-cccccb8df497" valueTypeId="7db7a7a8-947b-4614-bd5f-180878227ce8"/>
+    <listType typeId="748af850-923d-4b25-8633-42374898259f" valueTypeId="a151e4f4-d408-49e2-83a4-6c0262f430ea"/>
+    <managerType typeId="ea55a938-7c49-4376-aa1c-bef8a3eb2e8b" valueTypeId="ea728bed-f6fb-4117-91f9-067262fa13cd"/>
+    <recordSetType typeId="43c33863-c88c-4772-9142-34ac1eb62cb8" valueTypeId="ee9dbd21-787f-4357-9047-42bd5cdfbf4f"/>
+    <recordKeyType typeId="2238885a-a5e7-486c-b624-70ca28a78045" valueTypeId="ab510677-5943-4ce0-9aa4-7fc5f1b49f8d"/>
+    <recordType typeId="8b98df55-9650-4f08-9544-38f8ed0ec934" valueTypeId="f4edae6a-eea0-4c2b-a6a7-2db8b54e4318"/>
+    <recordManagerType typeId="e94e0f47-12d4-4831-8531-d07d4244bc7c" valueTypeId="75c9b8c0-4a46-4d1e-9ecc-8c71b138f484"/>
+  </producedTypes>
+  <name>СтатусыКонтрагентовИСМП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы контрагентов ИСМП</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СтатусыКонтрагентовИСМП.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="d0192732-88ae-4a9e-819c-983745ae6af3">
+    <name>СтатусУчастника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус участника</value>
+    </synonym>
+    <comment>0 - не определено, 1 - участник, 2 - не участник</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c9515f52-a952-4aa6-86f5-05c6d4c3563b">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="fb276765-2955-4809-956a-569e8e496746">
+    <name>ВидПродукции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид продукции</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыПродукцииИС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="cf63966b-3b4c-486f-b916-b8bc4a2a2cf5">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

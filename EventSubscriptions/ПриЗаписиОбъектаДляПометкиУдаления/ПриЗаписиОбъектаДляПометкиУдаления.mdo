@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dc5a264a-6e88-413f-993d-5b65b3df3803">
+  <name>ПриЗаписиОбъектаДляПометкиУдаления</name>
+  <synonym>
+    <key>ru</key>
+    <value>При записи объекта для пометки удаления</value>
+  </synonym>
+  <source>
+    <types>CatalogObject</types>
+    <types>DocumentObject</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.ПомеченныеНаУдалениеСервер.ПриЗаписиОбъектаДляПометкиУдаления</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="57c55244-7e0c-488f-9177-4c3a9603eb25">
+  <producedTypes>
+    <selectionType typeId="c74da391-58b6-4aa9-960b-b2a8d4a8eab4" valueTypeId="a55eb1ef-0ab0-477b-894b-5ac246a1cf8e"/>
+    <listType typeId="181b46f6-c696-44bc-b4d6-d63f7d641908" valueTypeId="d448a50b-dfa5-4d17-b3cf-5f912f439eb5"/>
+    <managerType typeId="98662cc1-bf82-462f-abbf-ae1b365ef82f" valueTypeId="36838f15-fec8-4750-8a4c-d542cb35256e"/>
+    <recordSetType typeId="855191a2-c0c1-4144-883b-4892f9346e6c" valueTypeId="1aeea272-0ef6-41ec-9e6d-bc693c384836"/>
+    <recordKeyType typeId="f70c9de0-8471-40ba-95c8-5569c81bb193" valueTypeId="4841d0b6-72d1-4092-a7a2-5e3c3f5fe0df"/>
+    <recordType typeId="3ba085c3-422f-43d9-bf31-b98e6b93b8e5" valueTypeId="33ac628e-13ca-462b-a18c-649bb6c32406"/>
+    <recordManagerType typeId="1374ac6a-e566-4ea3-9836-0ecc4ce22fff" valueTypeId="0e58cf5d-318d-42ce-8c8c-cb07af64386e"/>
+  </producedTypes>
+  <name>ДокументыПереходаНЗПДетализацияПоПродукции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы перехода на учет НЗП с детализацией по продукции</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="470fee1c-b93f-4e04-abd4-384b6b9d606f">
+    <name>ДатаПерехода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата перехода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1382c8b9-9c39-4bec-95fb-d58c1f67f900">
+    <name>ДокументПерехода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ перехода</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ОперацияБух</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c68a1546-65cc-4774-a936-e47a7233e128">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1fb72b6c-7668-400d-8f7e-00a03a112c28">
+    <name>СчетУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет учета</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Хозрасчетный</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="70e6a9b4-9280-46e5-899c-74eab4a9239d">
+    <name>ФормаСпискаДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка документов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5e1a7b12-34fc-46c5-819c-bb6e89fb808e">
+    <name>ВыборПериодаАктуализации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период актуализации</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

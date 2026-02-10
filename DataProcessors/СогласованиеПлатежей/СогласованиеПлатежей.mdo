@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a84fc6a8-e314-4f9f-9dbf-67f483ba4bfc">
+  <producedTypes>
+    <objectType typeId="ba8f91c3-48c9-488e-983c-0c5838bc8618" valueTypeId="3b73291d-4e5f-412d-bcc3-704ce22f9cd1"/>
+    <managerType typeId="e50041ac-f261-4a57-a173-b6a45955d543" valueTypeId="7b755d3b-b9c6-47fd-b1ed-053270b27684"/>
+  </producedTypes>
+  <name>СогласованиеПлатежей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Согласование платежей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.СогласованиеПлатежей.Form.Форма</defaultForm>
+  <tabularSections uuid="8e188dda-7ba0-4a56-b617-da13d993a9df">
+    <producedTypes>
+      <objectType typeId="f37ac7da-06b0-41b9-885d-b72ee34690fd" valueTypeId="95bece78-5924-4f0a-b267-016752fd07f0"/>
+      <rowType typeId="ef490650-a197-404f-b456-acf75bdaf066" valueTypeId="34153d1d-3334-47e9-8127-9a8441306219"/>
+    </producedTypes>
+    <name>СписокПлатежей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список платежей</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="10dfcff7-b581-4186-8a28-e78d9a826b64">
+      <name>Аванс</name>
+      <synonym>
+        <key>ru</key>
+        <value>Аванс</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="b74bfa96-2e51-4077-8983-3a92f1af910a">
+      <name>БанковскийСчет</name>
+      <synonym>
+        <key>ru</key>
+        <value>Банковский счет</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.БанковскиеСчета</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="0d5a9a80-42c2-4ffb-ac3f-7e5d39e7d448">
+      <name>БанковскийСчетПредставление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Банковский счет</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue"/>
+    </attributes>
+    <attributes uuid="5bf803da-35d6-456e-936b-04acf6e6d399">
+      <name>ВалютаОснования</name>
+      <synonym>
+        <key>ru</key>
+        <value>Валюта</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Валюты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="99ec8578-c611-4291-9971-3a4f2ac81c49">
+      <name>ВидОперации</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид операции</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ВидыОперацийСписаниеДенежныхСредств</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="779ff4fd-069d-4411-b337-334793c34f5e">
+      <name>ДатаПлатежа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата платежа</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="b6471264-fb0a-4311-90ca-f0ae120f7fd3">
+      <name>Изменено</name>
+      <synonym>
+        <key>ru</key>
+        <value>Изменено</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="4bac4022-b456-42ef-ae7a-0c9b5d8e14cf">
+      <name>Комментарий</name>
+      <synonym>
+        <key>ru</key>
+        <value>Комментарий</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue"/>
+    </attributes>
+    <attributes uuid="9c1ddd2c-0c50-4d40-8c41-42eda5f08b22">
+      <name>КОплате</name>
+      <synonym>
+        <key>ru</key>
+        <value>К оплате</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d68940dc-55ae-4fee-926d-52475927c84c">
+      <name>НазначениеПлатежа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Назначение платежа</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>210</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue"/>
+    </attributes>
+    <attributes uuid="a0490854-a6c4-46c6-9a8c-073bb62c61e6">
+      <name>НомерПлатежа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер платежа</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>11</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue"/>
+    </attributes>
+    <attributes uuid="edb52551-c383-414e-bd7e-c785894c2a62">
+      <name>Основание</name>
+      <synonym>
+        <key>ru</key>
+        <value>Основание</value>
+      </synonym>
+      <type>
+        <types>DocumentRef</types>
+        <types>CatalogRef</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="deae7ad2-645f-44af-8c4c-5bcddf5c3db5">
+      <name>ОснованиеПредставление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Основание</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue"/>
+    </attributes>
+    <attributes uuid="eb0bcddb-aa06-451e-a572-01b1bb2059c2">
+      <name>ПлатежноеПоручение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Платежное поручение</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.ПлатежноеПоручение</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="0b6a26b7-c07b-4972-8df7-06046ba25307">
+      <name>ПлатежноеПоручениеПредставление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Платежное поручение</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue"/>
+    </attributes>
+    <attributes uuid="fac2eacf-6409-4bd9-b09d-1e9cd609743b">
+      <name>Получатель</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получатель</value>
+      </synonym>
+      <type>
+        <types>CatalogRef</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="f9192f9a-4fbd-4633-9873-13269a767c8f">
+      <name>Согласовано</name>
+      <synonym>
+        <key>ru</key>
+        <value>Согласовано</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="3d00166a-c16d-4bf3-8eed-b423aa1ac760">
+      <name>Состояние</name>
+      <synonym>
+        <key>ru</key>
+        <value>Состояние</value>
+      </synonym>
+      <type>
+        <types>EnumRef.СостоянияБанковскихДокументов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="5361c84a-86a0-4e5b-a633-c3f8f125874a">
+      <name>СтатьяДвиженияДенежныхСредств</name>
+      <synonym>
+        <key>ru</key>
+        <value>Статья движения денежных средств</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.СтатьиДвиженияДенежныхСредств</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="c475d363-846d-4b6a-9b3a-b2875308187f">
+      <name>СуммаОснования</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма основания</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="560065f8-c3ff-4566-8b70-7225e4c3f276">
+      <name>СуммаУЕ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма УЕ</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="eec41b59-586a-4cd2-82cc-b0d828539b21">
+      <name>Дата</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="94c388ec-7eb5-47b1-85ec-5021b66a63b3">
+      <name>Номер</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="3d773024-de2a-4415-9c24-f0fc70d94997">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="09a49a49-aaec-49d0-b446-d522f74396c0">
+    <name>ПечатьРеестра</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать реестра</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0694fe84-ba5e-4e13-a9a1-8ddc11a7c1c8">
+    <name>ФормаСтрокиМобильныйКлиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма строки мобильный клиент</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6598c85f-d0fa-4714-91a9-12d421756170">
+    <name>ФормаВыбораСчетовИзСпискаЗначений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора счетов из списка значений</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="5d617a93-8a0c-4bbc-8a98-b00f2b09d483">
+    <name>ПФ_MXL_РеестрПлатежей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реестр платежей</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

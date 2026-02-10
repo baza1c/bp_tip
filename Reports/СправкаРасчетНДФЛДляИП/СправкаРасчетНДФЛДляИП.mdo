@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4ef0dd65-8502-4566-8339-c973058a99a7">
+  <producedTypes>
+    <objectType typeId="03c8b377-e823-4577-a9d7-b14be619ef85" valueTypeId="f2e26ab8-032f-47ff-8978-52e67ccb7e44"/>
+    <managerType typeId="7e2a666d-a7b9-4f0c-a8e5-1cd084d03759" valueTypeId="1f76b51e-82ee-40d9-bf31-03f77a562977"/>
+  </producedTypes>
+  <name>СправкаРасчетНДФЛДляИП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Справка-расчет НДФЛ для ИП</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.СправкаРасчетНДФЛДляИП.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.СправкаРасчетНДФЛДляИП.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <attributes uuid="4caa9a96-712c-4f12-bc86-e6d14c6501fe">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.ЮридическоеФизическоеЛицо</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ЮридическоеФизическоеЛицо.EnumValue.ФизическоеЛицо</value>
+      </value>
+    </choiceParameters>
+  </attributes>
+  <attributes uuid="d4cd5685-9303-4dd2-86b8-2989b6698230">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d2ed6f8f-6369-482c-832c-ebdbfdf80d75">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="a01ca486-36e4-4e53-b001-6f688a3965e8">
+    <name>РежимРасшифровки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим расшифровки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="f6e48447-2c78-49f9-b12a-e219006e118f">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="6f4e9869-0578-4b08-9173-62c5542897ed">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

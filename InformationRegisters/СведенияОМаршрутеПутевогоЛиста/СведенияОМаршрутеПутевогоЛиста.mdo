@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6338c54a-f61f-4c61-ad00-6b27c5e908ad">
+  <producedTypes>
+    <selectionType typeId="4d742c2b-ff17-478d-a644-1e259b34016f" valueTypeId="4b652747-7a1f-4b7d-bf7e-88cbe524f649"/>
+    <listType typeId="e5c65fb1-b12a-4996-ba45-652335d59cc6" valueTypeId="40b85d7f-fc09-4889-8a70-ca8aa5af97a5"/>
+    <managerType typeId="b5c7d862-8057-4c4a-87a9-3ea953c30164" valueTypeId="f9c258c8-d590-4b63-9981-e03fc3a232eb"/>
+    <recordSetType typeId="4bb0b678-6348-49e6-ba13-4e37cca46948" valueTypeId="595d3b93-1f16-4579-bf5e-f3a10fc6c41e"/>
+    <recordKeyType typeId="d784d743-2d23-4473-9027-d047ce08f397" valueTypeId="420ebb32-3992-4273-bc63-465819ce61a1"/>
+    <recordType typeId="f1e8065b-2b2d-4ea9-accb-75849cea75ab" valueTypeId="d98a3507-eab7-4589-a78e-953d05d27c17"/>
+    <recordManagerType typeId="e87baaf1-b18c-47a4-8d15-239ac0384bd8" valueTypeId="ece04ba8-ce8e-4ab4-98a8-5fcea717e0c4"/>
+  </producedTypes>
+  <name>СведенияОМаршрутеПутевогоЛиста</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сведения о маршруте путевого листа</value>
+  </synonym>
+  <comment>Хранение актуальных сведений по маршруту, введенных в путевом листе</comment>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Сведения о маршруте путевого листа</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Сведения о маршруте путевого листа</value>
+  </listPresentation>
+  <resources uuid="2e50d10d-4682-48ff-a511-fb78b650c346">
+    <name>ВидСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид сообщения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыСообщенияПеревозки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8588a6ab-f7fd-46ae-baae-f0ff08230a8a">
+    <name>Расстояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расстояние, км</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="cbef8bfe-557b-4f53-8b51-4a80973eb6ab">
+    <name>ДатаРейса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата рейса</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="59b1cc18-862f-4ba8-92cb-cd725fb6d7c1">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7f76cb0a-13c6-4d89-b6d6-23242f2d5c96">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+  </dimensions>
+  <dimensions uuid="27e42411-47be-415f-9e13-78efd7b514bc">
+    <name>ПунктОтправления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пункт отправления</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="57cbf3e0-de11-49b2-9437-aec61545a14d">
+    <name>ПунктНазначения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пункт назначения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="d58dacdc-c5f7-4563-a9bc-c61c8e306cf3">
+    <name>ФормаПодбораАдресовМаршрута</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подбор адресов маршрута</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

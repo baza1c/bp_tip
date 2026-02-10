@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e589d73b-2377-4229-9f25-786d33d03637">
+  <name>ЗапомнитьПризнакПроверкиРеквизитовОбработкаПроведения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запомнить признак проверки реквизитов обработка проведения</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ОтражениеЗарплатыВБухучете</types>
+    <types>DocumentObject.РезервыПоОплатеТруда</types>
+    <types>DocumentObject.Премия</types>
+    <types>DocumentObject.СписаниеДепонированнойЗарплаты</types>
+    <types>DocumentObject.БольничныйЛист</types>
+    <types>DocumentObject.НачислениеЗарплаты</types>
+    <types>DocumentObject.Отпуск</types>
+    <types>DocumentObject.ДепонированиеЗарплаты</types>
+  </source>
+  <event>Posting</event>
+  <handler>CommonModule.ПроведениеСервер.ЗапомнитьПризнакПроверкиРеквизитовОбработкаПроведения</handler>
+</mdclass:EventSubscription>

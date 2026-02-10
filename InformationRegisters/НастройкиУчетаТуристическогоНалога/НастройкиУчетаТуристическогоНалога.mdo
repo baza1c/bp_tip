@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="43824f3e-9c9e-433a-a5b1-27d2db95b3eb">
+  <producedTypes>
+    <selectionType typeId="afba6428-0a9e-40fe-8d28-6a8397cd6d55" valueTypeId="ca156dec-c7ae-486c-9184-6959dfb0eb67"/>
+    <listType typeId="f544b38a-2217-435d-b539-8abe5ca22647" valueTypeId="9246228b-1345-490c-9cfb-e4400e028830"/>
+    <managerType typeId="b7742e9b-ccbd-4daf-baba-dc1e3f8a7f8d" valueTypeId="a8c9c8dc-bf9a-480c-a6a3-9c5f111e5e51"/>
+    <recordSetType typeId="6ced0746-ed96-494b-8fbe-4dcf40195b7c" valueTypeId="4b42771e-3a4d-435e-8eab-7421f50ed862"/>
+    <recordKeyType typeId="7e536e77-0cae-47fc-a548-f7876bd84515" valueTypeId="29a5be72-8864-4102-8843-d2342b9987b2"/>
+    <recordType typeId="ec5eb6b1-153d-4cc2-b5c3-0f5542daf593" valueTypeId="4905383a-edf1-4c47-85d3-3128e508fc2a"/>
+    <recordManagerType typeId="bc46c4cb-298b-4595-abaf-dad2e8f3be3e" valueTypeId="55a02066-510e-4cc8-a2f0-d58c12e87ba5"/>
+  </producedTypes>
+  <name>НастройкиУчетаТуристическогоНалога</name>
+  <synonym>
+    <key>ru</key>
+    <value>Туристический налог</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.НастройкиУчетаТуристическогоНалога.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.НастройкиУчетаТуристическогоНалога.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Quarter</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>История изменения: туристический налог</value>
+  </extendedListPresentation>
+  <resources uuid="f970bfc0-0af5-4b00-8304-5824de09f6f7">
+    <name>ПлательщикТуристическогоНалога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плательщик туристического налога</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="7e9044da-3018-4581-85b2-70cf593946ee">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="4122b193-e4f7-4ee5-8c9d-e10eae6d29d1">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f37785d9-ccdf-4e64-831c-12159f76eccd">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

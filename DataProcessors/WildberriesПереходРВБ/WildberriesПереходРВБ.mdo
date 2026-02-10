@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="67f2c151-608b-4d56-b73f-03cc89e467f7">
+  <producedTypes>
+    <objectType typeId="85d9c6e6-1cde-4521-8d9d-40e9f6d4f9f0" valueTypeId="ad4706e6-0f2d-487a-ac80-c21760939f96"/>
+    <managerType typeId="b391abe0-dc44-4da0-b67e-055dd99c869f" valueTypeId="368ea5a8-7007-4c24-9a47-867afe692f2a"/>
+  </producedTypes>
+  <name>WildberriesПереходРВБ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Wildberries переход РВБ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.WildberriesПереходРВБ.Form.Форма</defaultForm>
+  <attributes uuid="925e6c7d-3b0a-40b0-858d-3d1c08e652fd">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9e0278db-136b-442a-96d8-5bdc2ab5b0a7">
+    <name>КонтрагентИсточник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент источник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="733695a4-0cc8-47d6-af64-8bac500141d7">
+    <name>КонтрагентПриемник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент приемник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b8f18aec-eac8-4117-8468-59c07c8331a8">
+    <name>ДоговорКонтрагентаИсточник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор контрагента источник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>DataProcessor.WildberriesПереходРВБ.Attribute.КонтрагентИсточник</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Отбор.Организация</name>
+      <field>DataProcessor.WildberriesПереходРВБ.Attribute.Организация</field>
+    </choiceParameterLinks>
+  </attributes>
+  <attributes uuid="d4bf064a-8e57-472c-8dbb-b783c5fa0bd7">
+    <name>ДоговорКонтрагентаПриемник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор контрагента приемник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>DataProcessor.WildberriesПереходРВБ.Attribute.КонтрагентПриемник</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Отбор.Организация</name>
+      <field>DataProcessor.WildberriesПереходРВБ.Attribute.Организация</field>
+    </choiceParameterLinks>
+  </attributes>
+  <attributes uuid="536a5438-df8f-4c89-a46d-2fb7cbd1a48b">
+    <name>ДатаПереходаПрав</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата перехода прав</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="3631a45e-3467-49fd-b295-91796b80d01c">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

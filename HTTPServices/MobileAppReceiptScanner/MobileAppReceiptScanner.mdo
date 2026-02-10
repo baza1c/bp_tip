@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="03af3cc9-388e-4926-b041-06d4c4ba9c5a">
+  <name>MobileAppReceiptScanner</name>
+  <synonym>
+    <key>ru</key>
+    <value>АПИ мобильного приложения для сканирования кассовых чеков подотченых лиц</value>
+  </synonym>
+  <rootURL>MobileAppReceiptScanner</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="abfbaef1-1ddb-4350-abc2-a78e2cac5c75">
+    <name>Ping</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверка поддержки программного интерфейса</value>
+    </synonym>
+    <template>/v1/Ping</template>
+    <methods uuid="9dd3f8bc-6cbb-4766-a8c8-97defcec131a">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>PingGET</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="045eb44f-6fdb-423a-b322-bc1687ca57e0">
+    <name>ConnectApp</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подключение мобильного приложения</value>
+    </synonym>
+    <template>/v1/ConnectApp/</template>
+    <methods uuid="dec11cd8-cc68-4eff-92b2-0257d53e3860">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>ConnectAppPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="4601709e-cbb1-4b04-b07b-61be0fe08b47">
+    <name>QRCodeCreate</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передача QR-кодов кассового чека для загрузки (в теле запроса)</value>
+    </synonym>
+    <template>/v1/QRCode/</template>
+    <methods uuid="c84e7162-b0a4-49fa-a41c-1003b9adaa8c">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>QRCodeCreatePOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="59636074-55d6-4bf2-b4bf-4944ff4689ee">
+    <name>TillSlip</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные кассового чека</value>
+    </synonym>
+    <template>/v1/TillSlip/{UUID}</template>
+    <methods uuid="fe7d4beb-ce4e-4b1b-88e4-d80daf64e1c5">
+      <name>DELETE</name>
+      <synonym>
+        <key>ru</key>
+        <value>DELETE</value>
+      </synonym>
+      <httpMethod>DELETE</httpMethod>
+      <handler>TillSlipDELETE</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

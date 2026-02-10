@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="07c4a6b2-311a-4f4b-b106-ee6e4a259819">
+  <producedTypes>
+    <selectionType typeId="2cecdddc-13c7-4bcd-9e75-ab9264f3790b" valueTypeId="596d8e38-0507-4f23-b68d-7f70229525a7"/>
+    <listType typeId="4bea0b67-f50d-4ec8-9864-99cbaa79a6a7" valueTypeId="f0713e10-3a8a-44a2-a4ad-c54f753333ec"/>
+    <managerType typeId="02f858cd-1056-4f5e-8798-7a0aeee1967a" valueTypeId="37f27e47-d4e3-47a1-85fd-ee2a3eb920ba"/>
+    <recordSetType typeId="704aaec7-4302-4db3-943a-2a770862accd" valueTypeId="5e1fa031-729c-4094-a1c2-df918a75c6e0"/>
+    <recordKeyType typeId="80a3601a-9038-4e01-bdca-da797b1fe265" valueTypeId="2339d661-e202-4815-af77-4eea69ef3b67"/>
+    <recordType typeId="26028e0c-0cfc-4cea-8b3f-ccf69569549a" valueTypeId="25951eeb-6dd4-429e-bf4f-a95e80032377"/>
+    <recordManagerType typeId="8b4d1590-5bec-4b97-b8ee-7afc219a46f5" valueTypeId="d2bac1de-c579-40ab-993a-536c40251f97"/>
+  </producedTypes>
+  <name>СрокиИспользованияНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сроки использования номенклатуры</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СрокиИспользованияНоменклатуры.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e72ea7bf-8b20-42b3-997b-a444ff8bf724">
+    <name>СрокИспользования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок использования</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="85b90925-6be1-497f-bbd2-7f089822e128">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="ce81545b-cf6f-41b7-ad03-4e673279f13d">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

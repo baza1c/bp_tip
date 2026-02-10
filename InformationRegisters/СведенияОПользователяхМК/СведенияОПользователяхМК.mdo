@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d83c615c-ac91-4146-9ebf-1cd6e1ba1591">
+  <producedTypes>
+    <selectionType typeId="55f8651b-9896-4d9a-855f-40230865a110" valueTypeId="baac617d-0d25-489d-859e-915a8801809c"/>
+    <listType typeId="960ed063-2e78-4e88-a51d-824d5661c011" valueTypeId="4bc9b397-6019-4e54-b0ad-40523956fd72"/>
+    <managerType typeId="fed142a9-3143-462f-acb6-dc349ba9eb92" valueTypeId="81cc9759-a4aa-43a7-8be4-e162bb045261"/>
+    <recordSetType typeId="deb70773-1043-4fd0-9593-3194665ad6ed" valueTypeId="dc6937fd-b27d-4a1d-ae80-bc8bcbc19921"/>
+    <recordKeyType typeId="7c23ae72-a5a9-4363-9b35-04a6e1408cd7" valueTypeId="6936a13d-4117-4933-bffe-63ef502fc467"/>
+    <recordType typeId="1161500e-cb85-426a-b417-a37fb444f19f" valueTypeId="64a3864d-8308-4b0d-8315-d16a5c2b868c"/>
+    <recordManagerType typeId="1a9ba1f8-2b2e-448a-837e-970d100e1d01" valueTypeId="263012ce-68a0-420a-aa17-393eaff7b1d2"/>
+  </producedTypes>
+  <name>СведенияОПользователяхМК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сведения о пользователях (мобильный клиент)</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="df106803-db9f-410d-8c42-a882a6a9b495">
+    <name>ДатаПоследнейАктивности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата последней активности</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата последней активности
+пользователя в приложении.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="212ecfc8-f09f-4bcd-95ec-97fb7254939b">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

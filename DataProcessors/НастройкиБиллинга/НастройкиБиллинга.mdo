@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9c720823-45b7-4ed8-befa-cbe7621967c1">
+  <producedTypes>
+    <objectType typeId="eaf9cca4-ccc8-4639-b47e-fc5261774e8e" valueTypeId="aabeb181-fc9f-4463-9aec-4b0f17f3752b"/>
+    <managerType typeId="42eb2111-7721-446f-8cf4-1389a64d7034" valueTypeId="24f9e4eb-b28c-405b-aedb-3b04563ffc7d"/>
+  </producedTypes>
+  <name>НастройкиБиллинга</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки биллинга</value>
+  </synonym>
+  <defaultForm>DataProcessor.НастройкиБиллинга.Form.Форма</defaultForm>
+  <forms uuid="2a8949f6-91b0-45f4-9ab9-74754c770976">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8abfc1cc-c56f-4512-9d53-c27ae6216882">
+    <name>НастройкиБиллинга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки биллинга</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b0811100-5fde-4834-bed8-815930ce3e0d">
+    <name>РедакторШаблонаПисьма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактор шаблона письма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="16c052e6-c2e1-4630-ba15-9cd078c18dfc">
+    <name>СозданиеПодписокНаОснованииСчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создание подписок на основании счета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="179ffa3c-451c-47a3-a383-71d87b7c4334">
+    <name>ШаблонПисьмаВыставленСчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон письма выставлен счет</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="8eaa9ab3-e538-4621-9ffb-c8cb86ef3519">
+    <name>ШаблонПисьмаПолученаОплата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон письма получена оплата</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="1b16766c-c389-48bc-a3cd-dbf61a3a6280">
+    <name>ШаблонПисьмаОформленаПодписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон письма оформлена подписка</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="4e7d613c-eed8-4016-abcc-c98c1ec111ab">
+    <name>ШаблонПисьмаОшибка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон письма ошибка</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <commands uuid="9f416614-be07-455a-b3a3-6fbca241ea52">
+    <name>НастройкиБиллинга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки биллинга</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="495c1d6b-41f4-4181-a99c-6ff8808ee89d">
+    <name>СоздатьПодпискуНаТарифПоСчету</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подписка на тариф</value>
+    </synonym>
+    <group>FormCommandBarCreateBasedOn</group>
+    <commandParameterType>
+      <types>DocumentRef.СчетНаОплатуПокупателю</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

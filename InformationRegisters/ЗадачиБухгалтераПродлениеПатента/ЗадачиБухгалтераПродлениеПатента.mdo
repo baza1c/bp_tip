@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f707636f-04df-4a4a-8bb6-eeb920b9cae3">
+  <producedTypes>
+    <selectionType typeId="dca1f01b-0c49-4d30-badb-bd97d0d81aef" valueTypeId="7c431927-6299-44b9-89a4-22abeb68dec7"/>
+    <listType typeId="3db8957c-77b3-4b9a-9493-b962f58f051b" valueTypeId="3b10f237-232a-4c49-9d48-6ae87a0f0b87"/>
+    <managerType typeId="3c38fb2b-fa53-45c3-854d-ade9111b0fc6" valueTypeId="2be845c1-ec15-4014-a7f8-de4fec4dda5b"/>
+    <recordSetType typeId="66a64b25-633f-4d1a-98e4-e7787b976bd8" valueTypeId="3a7f45a2-fbeb-4ea9-a465-9e4d8ab6fe58"/>
+    <recordKeyType typeId="ef45fc86-23b5-4c35-a43b-9f6ed559022c" valueTypeId="0cf86018-c6fb-49a6-99a6-e9db464a94bd"/>
+    <recordType typeId="a5fdcb2b-8e4d-4453-b657-3011b2c873d1" valueTypeId="77b5f775-97d3-4b9d-9f9d-5f4aafd7910f"/>
+    <recordManagerType typeId="5ef51ac0-48ec-4870-b140-af3b72262b19" valueTypeId="d81185c5-17b2-4d25-8166-c146e99b6abd"/>
+  </producedTypes>
+  <name>ЗадачиБухгалтераПродлениеПатента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заявления о продлении патентов</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Заявление о продлении патента</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Заявления о продлении патентов</value>
+  </listPresentation>
+  <resources uuid="b9158316-4e9f-4ce7-97d6-d8e71d40a467">
+    <name>Правило</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правило</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Патенты</types>
+      <types>CatalogRef.ПравилаПредставленияОтчетовУплатыНалогов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <attributes uuid="de56cd0a-66c7-4d28-8ffb-1dc63870fc80">
+    <name>ПериодСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период события</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="62eb6819-3ad1-4932-9156-2ce78b09f352">
+    <name>РегистрацияВНалоговомОргане</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налоговый орган</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РегистрацииВНалоговомОргане</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="04ed148c-1c7a-4d69-9db9-9937ea2a0ca9">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9b7151f3-7e0a-4d99-9ce7-06806164c9e2">
+    <name>Заявление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявление</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.УведомлениеОСпецрежимахНалогообложения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

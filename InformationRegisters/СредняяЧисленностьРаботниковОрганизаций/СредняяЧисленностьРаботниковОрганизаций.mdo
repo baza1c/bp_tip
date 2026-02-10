@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1ff60223-eaad-41c2-96b7-2c473e12597a">
+  <producedTypes>
+    <selectionType typeId="0d8276bf-2841-48b2-ba8c-9348cbe63959" valueTypeId="a9d95c16-9122-40e2-b909-7058f8712b47"/>
+    <listType typeId="7b528c49-26f4-4f95-9b45-eee23a54c3c6" valueTypeId="4fcf1c9c-012c-402c-b970-cb80cee2707b"/>
+    <managerType typeId="659b8a2f-7982-4ef6-ac31-511100e0ee8e" valueTypeId="fa353112-2806-46fb-960a-abdef10d1ab5"/>
+    <recordSetType typeId="01128c48-4023-4e66-807a-799695c1f5b5" valueTypeId="67fc01d4-54c6-48df-8790-6d210218798d"/>
+    <recordKeyType typeId="8370334a-e6cc-4f6a-a8eb-ddb905874a6e" valueTypeId="61e7ca15-ad26-4826-8fad-3acf348230a6"/>
+    <recordType typeId="f4f5dbf2-bfbc-4530-aa85-3b1c903a6924" valueTypeId="02bd937b-0e59-4c76-9cf1-04558af0cb85"/>
+    <recordManagerType typeId="cd31f9be-3988-4770-93de-99ca2b80d8d8" valueTypeId="9c3b5e1c-520c-4dba-b5c5-78765434ea16"/>
+  </producedTypes>
+  <name>СредняяЧисленностьРаботниковОрганизаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Средняя численность работников организаций</value>
+  </synonym>
+  <defaultRecordForm>InformationRegister.СредняяЧисленностьРаботниковОрганизаций.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Quarter</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Средняя численность работников организации</value>
+  </recordPresentation>
+  <resources uuid="80901128-ed49-4d72-8308-50a2ffb0e1fc">
+    <name>ЧисленностьРаботников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Численность работников</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="02e91988-93fa-4a42-9a8b-c02a7755e006">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="2b12e987-fd78-48e5-a654-fac5935d343a">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1e432be2-d731-4a5d-aec0-cc239b3231c4">
+  <producedTypes>
+    <selectionType typeId="7645afc9-2c90-44a0-bf11-9adfca598e16" valueTypeId="b14ee4ce-7560-4585-8d8a-e37b4ed50972"/>
+    <listType typeId="63477e18-dd8f-4572-a494-8de5deed79e5" valueTypeId="825bfa84-4762-4808-b606-f6f8c72568a6"/>
+    <managerType typeId="c1fb8a80-e432-43e5-b884-5433c932112e" valueTypeId="3f1435f7-3d63-4fde-9022-ced1d4db827a"/>
+    <recordSetType typeId="a91c4727-ba8d-40e1-ba58-3487867de478" valueTypeId="8260639b-aa72-45b9-ad3b-2ecff099ea49"/>
+    <recordKeyType typeId="680b630f-4573-41ee-b0c9-d14042a715e1" valueTypeId="d2056e55-f880-4a38-9e38-94aa8410d31c"/>
+    <recordType typeId="ae135d7e-1381-4ec1-a4ef-21de4855625a" valueTypeId="333694aa-e095-466b-9528-d53a17758362"/>
+    <recordManagerType typeId="35949380-5215-472e-a77e-b03192e4ac32" valueTypeId="f3902b1a-ccab-4d65-8b5c-f99baefeef11"/>
+  </producedTypes>
+  <name>НесопоставленныеОбъектыМаркетплейса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Несопоставленные объекты маркетплейса</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="ba9df5d4-8d76-408a-be17-0b4f2bae85cf">
+    <name>ДанныеОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные объекта</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="6841e4a2-3652-4e34-a4d4-2042ae34b544">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ВозвратТоваровОтПокупателя</types>
+      <types>DocumentRef.ОтчетКомиссионераОПродажах</types>
+      <types>DocumentRef.РеализацияТоваровУслуг</types>
+      <types>DocumentRef.РеализацияОтгруженныхТоваров</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

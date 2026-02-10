@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9018dbb9-2a60-4206-a853-398d3b59cc14">
+  <producedTypes>
+    <selectionType typeId="4abe93dc-725a-4df7-b498-f0cf59ffbc7c" valueTypeId="d13105c1-10c9-4fcb-9cb7-21e93acd0c5c"/>
+    <listType typeId="f1245ade-0de6-4d64-9b6a-8883b3128e73" valueTypeId="6d766d18-48bb-4d12-b1a7-b87e36c71ae0"/>
+    <managerType typeId="e4e7646c-b9a3-4d0a-b1f2-0710490c4243" valueTypeId="8934a552-2a82-4745-892a-0fae06d83b7e"/>
+    <recordSetType typeId="fb97e9d3-5939-4b2b-828c-c618dc307482" valueTypeId="2faa410e-e8bc-4bba-98fa-885d630e4a9f"/>
+    <recordKeyType typeId="19615d9b-058e-4778-b4bd-cf657c5db673" valueTypeId="d375d700-7df1-4e35-bf32-544e6d470f26"/>
+    <recordType typeId="ef87369d-0187-4933-ae00-04260a48f86f" valueTypeId="a8ebc5bf-c3df-473f-ad4b-b287d0175a5d"/>
+    <recordManagerType typeId="d3e65f77-2a02-4dce-a3dd-cfa751bc2cb3" valueTypeId="8d96a13b-06eb-470f-9986-840c76be1cf4"/>
+  </producedTypes>
+  <name>РегистрирующиеНалоговыеОрганы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регистрирующие налоговые органы</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.РегистрирующиеНалоговыеОрганы.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Регистрирующий налоговый орган</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Регистрирующие налоговые органы</value>
+  </listPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Налоговые органы, осуществляющие регистрацию юридических лиц и индивидуальных предпринимателей</value>
+  </explanation>
+  <resources uuid="64fc9609-95c8-4d0d-8faf-d9835c140d35">
+    <name>КодНалоговогоОргана</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код налогового органа (СОУН)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>4</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="6b1f1dc6-919a-4a43-9013-5a65bf0dfd86">
+    <name>Наименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <dimensions uuid="60f268c2-fdc8-4f68-8662-8e25758c8a8e">
+    <name>КодРегиона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код региона</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>2</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="3dc715a7-b287-41b0-94e2-27b59f7ac2af">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

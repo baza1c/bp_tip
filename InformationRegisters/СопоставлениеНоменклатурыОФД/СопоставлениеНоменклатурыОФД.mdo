@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d4f95e1e-84fb-4ee7-9013-131b0ff397f7">
+  <producedTypes>
+    <selectionType typeId="f29b9386-5863-46e9-a72e-3a541f366643" valueTypeId="60ca2639-0fcb-444c-970e-ea5e3925ed99"/>
+    <listType typeId="9f4a2272-9185-42bf-8a2f-b9c8a4ef4c60" valueTypeId="f6b691f7-6739-47a3-be93-006409bc5960"/>
+    <managerType typeId="0aaf8aab-702e-4510-9a86-9470dab77714" valueTypeId="d37e5c81-ba5b-4f63-a0c8-3b0c3776810a"/>
+    <recordSetType typeId="6a13471c-d31a-4b1d-a50d-e56fe34d4256" valueTypeId="1b6ef101-8789-4e26-bf2e-5e5661a04349"/>
+    <recordKeyType typeId="ebad599f-2b91-4bc4-ba7d-cb5eb9717106" valueTypeId="59a70fd4-d847-43ce-a981-c5640fca1b69"/>
+    <recordType typeId="0a42beda-0bb5-4159-ab99-f6a8f6d296bd" valueTypeId="5e35b5d5-4e0d-4e34-a2a3-a0646ea17d54"/>
+    <recordManagerType typeId="c60b1287-1f0c-4a8e-ba4c-5c1a86286ed7" valueTypeId="3e89810c-3b9f-4ceb-aad1-ee122b679256"/>
+  </producedTypes>
+  <name>СопоставлениеНоменклатурыОФД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сопоставление номенклатуры ОФД</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e7eda296-c77f-4e4b-8413-2e823247b681">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="641378e4-57dd-47ba-9581-b8b799c84c73">
+    <name>НоменклатураНаименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура наименование</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a7969271-b57e-4a9f-934b-65525073846d">
+    <name>Штрихкод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Штрихкод</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

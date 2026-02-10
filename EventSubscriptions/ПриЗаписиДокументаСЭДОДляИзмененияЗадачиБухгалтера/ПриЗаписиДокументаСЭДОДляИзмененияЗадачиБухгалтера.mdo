@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a2a827e7-9e7c-46af-8ec2-b430a6e9973c">
+  <name>ПриЗаписиДокументаСЭДОДляИзмененияЗадачиБухгалтера</name>
+  <synonym>
+    <key>ru</key>
+    <value>При записи документа СЭДО (Для изменения задачи бухгалтера)</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ИзвещениеФСС</types>
+    <types>DocumentObject.УведомлениеОСтатусеВыплатыПособия</types>
+    <types>DocumentObject.ОтказВВозмещенииВыплатРодителямДетейИнвалидов</types>
+    <types>DocumentObject.ВходящийЗапросФССДляРасчетаПособия</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.ВыполнениеЗадачБухгалтера.ПриЗаписиДокументаСЭДО</handler>
+</mdclass:EventSubscription>

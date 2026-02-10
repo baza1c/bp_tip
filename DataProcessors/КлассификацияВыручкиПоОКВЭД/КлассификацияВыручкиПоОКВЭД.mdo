@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="240c89ed-d182-4a2a-87a2-597cf99e3c34">
+  <producedTypes>
+    <objectType typeId="39430ce0-a09d-458f-81e0-e08b1e294bb5" valueTypeId="2d25d311-5e2e-48f0-8449-77b3c1b71785"/>
+    <managerType typeId="29295ee3-796c-4aef-b19e-54753d6447eb" valueTypeId="74f01a85-e17d-4228-bff9-9b58597af3a3"/>
+  </producedTypes>
+  <name>КлассификацияВыручкиПоОКВЭД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Классификация выручки по ОКВЭД</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.КлассификацияВыручкиПоОКВЭД.Form.Форма</defaultForm>
+  <attributes uuid="be61a1bc-5c27-462f-ae1e-4f546244c2ab">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="0288bc28-c326-4242-900c-df0abf5fedef">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="04cc6326-eb1c-46ed-a119-dcb2c5cc9d7c">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="f5a2067b-3a48-4ca9-b1a5-3dab94a32bd3">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="369be59b-11df-495d-af7f-23f38260bb17">
+    <name>ПоляГруппировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поля группировки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="ddbd36e7-1026-48c5-9571-dc05ad9f0829">
+    <name>ИерархияНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Иерархия номенклатуры</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:DataProcessor>

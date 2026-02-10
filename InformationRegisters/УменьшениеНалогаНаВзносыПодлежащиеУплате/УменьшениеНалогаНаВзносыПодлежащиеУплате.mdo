@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7dabd10e-172f-482f-81c2-75a8537a2f9c">
+  <producedTypes>
+    <selectionType typeId="49054f2f-6764-4f8a-a4d2-f02f25bf2cf8" valueTypeId="d0922665-c4f6-4ae8-831b-b9b57bab1d47"/>
+    <listType typeId="07020e78-2638-4165-88ef-a64d0fca6bc0" valueTypeId="ed506ae6-4cec-4c1e-8c8c-ad95cd51b153"/>
+    <managerType typeId="27c2cbc0-44f3-46b4-83b2-f894dcc497f6" valueTypeId="12302d24-9200-486e-a10c-d94967d08f9e"/>
+    <recordSetType typeId="efff7ac6-1307-47b6-901b-51d476952573" valueTypeId="89bc5394-bd6f-46dc-bd8e-f53ad161f821"/>
+    <recordKeyType typeId="7ced9243-1f98-4c1a-8600-f08a5ea4cba9" valueTypeId="ac72a22f-226c-4a1b-8cc6-33ee55f746b9"/>
+    <recordType typeId="931ae9c7-491f-4ec3-af68-815455d1d23d" valueTypeId="94a049d2-2b3d-4f1b-86da-0bb0e10c9306"/>
+    <recordManagerType typeId="e319072e-8125-42dd-a0b1-b298e7ce4006" valueTypeId="0abdfd02-7904-4bef-8d43-18a029accd7a"/>
+  </producedTypes>
+  <name>УменьшениеНалогаНаВзносыПодлежащиеУплате</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уменьшение налога на взносы подлежащие уплате</value>
+  </synonym>
+  <defaultRecordForm>InformationRegister.УменьшениеНалогаНаВзносыПодлежащиеУплате.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Quarter</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Сумма фиксированных взносов, на которые уменьшен налог</value>
+  </recordPresentation>
+  <resources uuid="bd82aa62-f5cf-4318-979d-a3fc11230413">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="6d1109c7-3e9c-4016-8a89-c347f8e3d6ad">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b69c0cb3-17e6-4e74-9a15-efc9e2995cc7">
+    <name>ДеятельностьНаПатенте</name>
+    <synonym>
+      <key>ru</key>
+      <value>Деятельность на патенте</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="8ad2581f-bc0c-46f2-9110-ff518872fea2">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

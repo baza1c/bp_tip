@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="59b3e7e3-7fad-4b57-ba12-891ca091519e">
+  <name>ExternalAPI</name>
+  <synonym>
+    <key>ru</key>
+    <value>External API</value>
+  </synonym>
+  <rootURL>api</rootURL>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="d12323f0-14f4-45f1-b915-b3237c01a182">
+    <name>ПоказателиМонитораРуководителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели монитора руководителя</value>
+    </synonym>
+    <template>/v1/kpi/</template>
+    <methods uuid="b03dd00d-7316-4fc7-b3b2-db363802ec29">
+      <name>Получить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получить</value>
+      </synonym>
+      <handler>ПоказателиМонитораРуководителяПолучить</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="bdd3a421-d0f4-469e-a81f-44f782b2c953">
+    <name>ПоказателиМонитораРуководителяДатаОбновления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели монитора руководителя дата обновления</value>
+    </synonym>
+    <template>/v1/kpi/last_update/</template>
+    <methods uuid="b5ae3725-74a7-424d-a071-a6b8e2278856">
+      <name>Получить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получить</value>
+      </synonym>
+      <handler>ПоказателиМонитораРуководителяДатаОбновленияПолучить</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="27d5a81f-0fbe-42f9-b614-2fb0fb0b0e5b">
+    <name>ПоказателиМонитораРуководителяОбновить</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели монитора руководителя обновить</value>
+    </synonym>
+    <template>/v1/kpi/update/</template>
+    <methods uuid="4acedef6-a9fc-4f11-b081-299fcadae261">
+      <name>Запустить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Запустить</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>ПоказателиМонитораРуководителяОбновитьЗапустить</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="bb10bffa-a142-407c-9228-8d478089d5e7">
+    <name>АктуальныеЗадачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Актуальные задачи</value>
+    </synonym>
+    <template>/v1/tasks/taxes/</template>
+    <methods uuid="d35a476f-6bd8-4a5d-9d52-aadf9f98416b">
+      <name>Получить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получить</value>
+      </synonym>
+      <handler>АктуальныеЗадачиПолучить</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="ceee26d9-b831-465b-a2d3-702c0762cc7f">
+    <name>АктуальныеЗадачиДатаОбновления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Актуальные задачи дата обновления</value>
+    </synonym>
+    <template>/v1/tasks/taxes/last_update/</template>
+    <methods uuid="e2e0a846-4b0a-442a-a3b7-6306a52cb943">
+      <name>Получить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получить</value>
+      </synonym>
+      <handler>АктуальныеЗадачиДатаОбновленияПолучить</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="00cf488e-dc6d-42f2-b076-39804e0468da">
+    <name>АктуальныеЗадачиСтатус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Актуальные задачи статус</value>
+    </synonym>
+    <template>/v1/tasks/status/</template>
+    <methods uuid="ffe6dd0c-e563-44c4-9a44-b54ac120ee52">
+      <name>Установить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Установить</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>АктуальныеЗадачиСтатусУстановить</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="e75415c0-38dd-47a8-919d-a17e14e13fac">
+    <name>БанковскиеСчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банковские счета</value>
+    </synonym>
+    <template>/v1/bank_accounts/</template>
+    <methods uuid="e35c2251-aabd-4695-8567-2227c477ed37">
+      <name>Получить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получить</value>
+      </synonym>
+      <handler>БанковскиеСчетаПолучить</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="06ad818f-798e-478f-9a93-b0032b89ff17">
+    <name>СообщенияРегламентированнойОтчетности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщения 1С-Отчетности</value>
+    </synonym>
+    <template>/v1/tax_reports/</template>
+    <methods uuid="7d8630bb-2e86-4f59-a021-1d8fb5222863">
+      <name>Получить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получить</value>
+      </synonym>
+      <handler>СообщенияРегламентированнойОтчетностиПолучить</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="d340ea58-f2dd-45f2-aa75-f207e78a86b1">
+    <name>ПодключенияПриложенийОблака</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подключения приложений облака</value>
+    </synonym>
+    <template>/v1/intracloud_connections</template>
+    <methods uuid="bc88b9d0-efbc-41ba-9dfc-3b64eb817e01">
+      <name>СоздатьПодключение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Создать подключение</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>ПодключенияПриложенийОблакаСоздатьПодключение</handler>
+    </methods>
+    <methods uuid="9458e16b-f5b5-46ce-9797-be5136d028eb">
+      <name>ПроверитьПодключение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Проверить подключение</value>
+      </synonym>
+      <handler>ПодключенияПриложенийОблакаПроверитьПодключение</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="aefdcf7f-40da-4954-be67-4c87869a9ba1">
+    <name>ОтчетныеКампанииЗапросы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчетные кампании. Запросы</value>
+    </synonym>
+    <template>/v1/reporting_cycles/requests/{RequestId}</template>
+    <methods uuid="604791f3-7fa3-42ef-a460-f6de6f567aaf">
+      <name>Запросить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Запросить</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>СообщенияОблачныхПриложенийЗапросить</handler>
+    </methods>
+    <methods uuid="7e63520f-a537-4fa4-9cbc-8bccb6aec213">
+      <name>Получить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получить</value>
+      </synonym>
+      <handler>СообщенияОблачныхПриложенийПолучить</handler>
+    </methods>
+    <methods uuid="d72d7a53-0225-4594-8edb-96576aaedbb1">
+      <name>ПодтвердитьПолучение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подтвердить получение</value>
+      </synonym>
+      <httpMethod>DELETE</httpMethod>
+      <handler>СообщенияОблачныхПриложенийПодтвердитьПолучение</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="44ef50e5-e0cb-47a0-b8f3-29a8e4278b9e">
+    <name>ТарифСтраховыхВзносовИП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тариф страховых взносов ИП</value>
+    </synonym>
+    <template>/v1/insurance_tariff/</template>
+    <methods uuid="c12ac1e6-d766-430f-9833-dd43c105f361">
+      <name>Получить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получить</value>
+      </synonym>
+      <handler>ТарифСтраховыхВзносовИППолучить</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="f69d01ac-efb6-48f5-8d31-97f055eee50d">
+    <name>СтавкиУСН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставки УСН</value>
+    </synonym>
+    <template>/v1/usn_rate/</template>
+    <methods uuid="42118b11-08dc-4870-add5-53731a4ac756">
+      <name>Получить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получить</value>
+      </synonym>
+      <handler>СтавкиУСНПолучить</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

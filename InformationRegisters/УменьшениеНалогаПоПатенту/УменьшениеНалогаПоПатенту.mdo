@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="23d6ca36-0e50-4a15-85c6-535b78a213eb">
+  <producedTypes>
+    <selectionType typeId="35f397b2-f1b7-469b-bce5-f994fca48668" valueTypeId="e362eb71-2f3b-40fa-ba42-af826b21354d"/>
+    <listType typeId="44c8e15c-07fa-4e78-a658-08d3fe3f291b" valueTypeId="e8c0d83f-ef38-4ebd-8bdc-2d9e2c0dd265"/>
+    <managerType typeId="ebd56e5a-a323-412d-a0e5-fd0d45b6b8eb" valueTypeId="a8784439-2e62-44ed-b00e-d17ef932d75f"/>
+    <recordSetType typeId="4e1f0f7c-ef82-4c08-9735-3753b2551235" valueTypeId="a6c7591d-90a3-4b74-9bdb-d1885f04b4f9"/>
+    <recordKeyType typeId="7ecac732-e5b3-4345-9e69-d49e451f38ff" valueTypeId="3ca2981f-c178-4b9b-9e85-63477af56a3d"/>
+    <recordType typeId="8bb66256-ea41-4d70-92e7-15aa40d19ac7" valueTypeId="735d276b-81b5-4ec7-819a-e8382749a2a5"/>
+    <recordManagerType typeId="34f9753c-2c0b-4c6f-8e5f-4351f01fc381" valueTypeId="d3749d7c-1c50-4b66-ad85-a11088cf9cc3"/>
+  </producedTypes>
+  <name>УменьшениеНалогаПоПатенту</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уменьшение налога по патенту</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="46fc94bc-a26e-4e8a-b28e-9524342c4fb9">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="31a6e4b8-dfaf-42e8-afc7-59dc5f6d1e0e">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ad11ca5a-273a-4393-a1bc-f86c8f572b9d">
+    <name>ДокументПатент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Патент</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ОперацияСПатентом</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2e656c28-0260-4bfc-a545-ebfe1b17c7fd">
+    <name>Уведомление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уведомление</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.УведомлениеОСпецрежимахНалогообложения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="360e6aa7-3ea0-41e2-bec2-f1f15a03a246">
+  <producedTypes>
+    <selectionType typeId="a3d3d056-6b94-448f-a40e-f856c6747f90" valueTypeId="ab06e02a-03a9-4a90-b082-d0c7c5472eb8"/>
+    <listType typeId="da880d5e-db29-4a5e-9265-ba478e064edd" valueTypeId="233a6bcc-7b9f-4564-9058-6407413d616b"/>
+    <managerType typeId="d6d677f0-ba2f-42ba-b76a-d6f392e4fefb" valueTypeId="30a9ab9e-df2a-4a4d-bb71-759739caed27"/>
+    <recordSetType typeId="c27b313f-4f51-43af-b32f-d85ef1a2af98" valueTypeId="ef33ab08-5543-4ce3-86b4-b83bf13600bf"/>
+    <recordKeyType typeId="595e003c-5f2e-4540-8f7d-c69bfd74ab6b" valueTypeId="498b1a9b-19f1-4aba-bbd3-ff30689f142e"/>
+    <recordType typeId="b5c678d5-2897-4fed-9650-dadf6a7ecce1" valueTypeId="537f3f67-daa4-4b01-87ca-466a72caaeaf"/>
+    <recordManagerType typeId="6e66ea36-15f1-4865-8325-8acfb76ebe9a" valueTypeId="dc99278a-0c31-4b1b-bb47-cc5bb8803eda"/>
+  </producedTypes>
+  <name>ПерваяОтчетнаяКампания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Первая отчетная кампания</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="50c58bb4-0f1b-444a-9b3c-2b1defc60090">
+    <name>ПериодКампании</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период кампании</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="eb0f06f5-0629-45ce-9a47-0160120db04f">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

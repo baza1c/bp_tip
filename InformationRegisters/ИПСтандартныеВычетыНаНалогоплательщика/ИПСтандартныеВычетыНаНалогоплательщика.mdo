@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="38e12a95-b5b3-43bb-94c1-aab914dd261e">
+  <producedTypes>
+    <selectionType typeId="43579577-7634-4b87-8342-7688a26fca17" valueTypeId="0cedc406-0da7-410f-a93d-57258218426f"/>
+    <listType typeId="a5c3caaf-3d75-4a52-a54b-e220777a8ae8" valueTypeId="cecb8f97-c5f7-4869-99c4-2d26b5c2ab4d"/>
+    <managerType typeId="bac87e4a-cbd2-4e62-8778-a92681715b18" valueTypeId="56509f56-d91d-4cc7-93e7-efa9f7ef3648"/>
+    <recordSetType typeId="c9dfc9a0-5b7e-4353-80a4-78d21c3cb8f6" valueTypeId="0b4e418c-86a3-4bd1-ac49-cc1e81f140a2"/>
+    <recordKeyType typeId="566dbc68-aa49-4c78-86da-4e7673623021" valueTypeId="88a0ebf3-61b6-43eb-949f-8058b8d95b73"/>
+    <recordType typeId="6dae3709-90df-4856-993c-19ba212a0c08" valueTypeId="506d7041-88b6-4c99-9c3d-01dfde5104f2"/>
+    <recordManagerType typeId="da967cee-5ccd-45fa-999f-2a1de470978d" valueTypeId="3eeb5789-5abe-499e-b4d8-1187b6d98b88"/>
+  </producedTypes>
+  <name>ИПСтандартныеВычетыНаНалогоплательщика</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стандартные вычеты на налогоплательщика (ИП)</value>
+  </synonym>
+  <comment>Данные для расчета НДФЛ и авансовых платежей по НДФЛ для ИП</comment>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="ba918ba6-3c5f-46bc-9029-12a65f0b819a">
+    <name>ВидВычета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид вычета</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтандартныеВычетыНаНалогоплательщика</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="609568a7-4fdb-48c9-aa14-00510ee05ab3">
+    <name>СданыНормыГТО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сданы нормы ГТО</value>
+    </synonym>
+    <comment>Вычет в соответствие с пп.2.1 п. 1 ст. 218 НК РФ</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="a7c61893-b32a-4ee0-aa6e-3f495884543a">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5e31befe-007b-4d2e-9785-340e8fe32922">
+  <producedTypes>
+    <objectType typeId="572f6082-7520-4c2c-a0f9-67deccfb4565" valueTypeId="410c0536-fba8-4bfb-8143-7bd4de7064fd"/>
+    <managerType typeId="b7736232-f502-4259-9509-ffdd5e7ef028" valueTypeId="77369b3a-ea01-49fd-84e3-1d2ac8f8b70b"/>
+  </producedTypes>
+  <name>РасшифровкаПоказателейБалансаПоАренде</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расшифровка показателей баланса по аренде (лизингу)</value>
+  </synonym>
+  <defaultForm>Report.РасшифровкаПоказателейБалансаПоАренде.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.РасшифровкаПоказателейБалансаПоАренде.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <attributes uuid="d2a5e433-a3d9-45e6-b619-8a676be2e105">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ab6230f9-1fd1-46ef-9106-a40c2f5d2255">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8d975f0f-c20b-4edc-9235-80815ded0113">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d08fb377-1ae7-4aad-8e4f-932da4a7c198">
+    <name>ВключатьОбособленныеПодразделения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Включая обособленные подразделения</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="fcbb019f-2dc9-4dfa-92ff-10747c3fea67">
+    <name>РежимРасшифровки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим расшифровки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ce2d88b1-1207-4ff1-840c-eb678896db89">
+    <name>ВидПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид периода</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="75c63a89-eed0-4c7c-a067-9c799980d171">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справка-расчет</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="2d00186b-df99-460a-b963-4c5a9bc2905e">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

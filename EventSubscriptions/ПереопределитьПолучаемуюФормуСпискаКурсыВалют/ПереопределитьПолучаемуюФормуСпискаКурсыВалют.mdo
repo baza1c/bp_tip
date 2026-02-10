@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eb406d49-1759-442c-9232-da8d63e7a313">
+  <name>ПереопределитьПолучаемуюФормуСпискаКурсыВалют</name>
+  <synonym>
+    <key>ru</key>
+    <value>Переопределить получаемую форму списка курсы валют</value>
+  </synonym>
+  <source>
+    <types>InformationRegisterManager.КурсыВалют</types>
+  </source>
+  <event>FormGetProcessing</event>
+  <handler>CommonModule.РаботаСКурсамиВалютБПКлиентСервер.ПолучитьФормуСпискаКурсыВалют</handler>
+</mdclass:EventSubscription>

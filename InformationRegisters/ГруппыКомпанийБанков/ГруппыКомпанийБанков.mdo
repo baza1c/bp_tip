@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ea30be77-9f1e-4cf3-b37c-c70444656cf4">
+  <producedTypes>
+    <selectionType typeId="659920ad-8b8a-472d-bbe3-7fd1226dce2d" valueTypeId="9ea761b3-378f-444c-ba13-1e8328ac5081"/>
+    <listType typeId="ab93b51c-d2b1-404e-8a63-9e6a7b7cb706" valueTypeId="d77ab3fd-56be-44f7-859f-7cff0d020b03"/>
+    <managerType typeId="1834b741-5366-4c33-b27e-7f81268367f2" valueTypeId="67193130-48b3-49fb-99e3-10e499003a47"/>
+    <recordSetType typeId="5de8f6f2-0c7f-4843-90a2-1d0020108212" valueTypeId="57bc8338-15fd-4470-b27d-8b5b91d8bab7"/>
+    <recordKeyType typeId="620cf217-6ac8-45c9-a563-fdf5ec05ea3a" valueTypeId="accdf7aa-79c4-4923-a47c-afa46d3df1b1"/>
+    <recordType typeId="1304bc47-204c-4fb7-9f81-0aeff834554e" valueTypeId="e9f7800b-99f0-4b87-af4d-31e80da2e635"/>
+    <recordManagerType typeId="359c890a-7fa8-46e7-991a-5665e37ef944" valueTypeId="7b837485-6aab-4f48-91f1-8ced28026483"/>
+  </producedTypes>
+  <name>ГруппыКомпанийБанков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Группы компаний банков (сервисы банков)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="ef633cbb-821f-4fd1-9b6d-c87d584ce1ca">
+    <name>Банк</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банк</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.БанкиУниверсальногоОбмена</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d419cee8-5c6c-4e2a-bde9-29b6ec7f733a">
+    <name>ИНН</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИНН</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

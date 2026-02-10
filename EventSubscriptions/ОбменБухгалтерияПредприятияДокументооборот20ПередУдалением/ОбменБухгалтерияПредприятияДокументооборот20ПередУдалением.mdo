@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="841e5efb-7d94-4a8b-a7a7-2dde9ad6c0d5">
+  <name>ОбменБухгалтерияПредприятияДокументооборот20ПередУдалением</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен &quot;Документооборот 2.0&quot; -  &quot;Бухгалтерия предприятия 3.0&quot;. Перед удалением.</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.Организации</types>
+    <types>DocumentObject.ПлатежноеПоручение</types>
+    <types>CatalogObject.СтраныМира</types>
+    <types>CatalogObject.Банки</types>
+    <types>CatalogObject.КонтактныеЛица</types>
+    <types>CatalogObject.БанковскиеСчета</types>
+    <types>CatalogObject.Номенклатура</types>
+    <types>CatalogObject.Контрагенты</types>
+    <types>CatalogObject.СтатьиДвиженияДенежныхСредств</types>
+    <types>CatalogObject.КлассификаторЕдиницИзмерения</types>
+    <types>CatalogObject.Валюты</types>
+  </source>
+  <event>BeforeDelete</event>
+  <handler>CommonModule.ОбменДаннымиСобытияДокументооборот.ОбменБухгалтерияПредприятияДокументооборот20ПередУдалением</handler>
+</mdclass:EventSubscription>

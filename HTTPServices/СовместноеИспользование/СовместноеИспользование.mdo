@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0692d112-8445-4724-99b9-2eec4ce26de8">
+  <name>СовместноеИспользование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Совместное использование</value>
+  </synonym>
+  <rootURL>cooperation</rootURL>
+  <reuseSessions>Use</reuseSessions>
+  <sessionMaxAge>60</sessionMaxAge>
+  <urlTemplates uuid="e4c45fda-95ec-4775-981f-5dd464d025f9">
+    <name>ВерсияИнтерфейса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия интерфейса</value>
+    </synonym>
+    <template>/version</template>
+    <methods uuid="5490e087-ecde-4123-8381-83f6d3bdf861">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>ВерсияИнтерфейсаGET</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="d5776118-49c7-473e-a252-0aa65df51a71">
+    <name>СпискиИзмененийСинхронизируемыхОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки изменений синхронизируемых объектов</value>
+    </synonym>
+    <template>/v1/change-records-snapshots</template>
+    <methods uuid="784693da-bff9-47aa-b71d-5aeab18961d5">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>СпискиИзмененийСинхронизируемыхОбъектовPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="faf80d78-f858-46ce-b2eb-6d7201803dd0">
+    <name>СписокИзмененийСинхронизируемыхОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список изменений синхронизируемых объектов</value>
+    </synonym>
+    <template>/v1/change-records-snapshots/{snapshot-id}</template>
+    <methods uuid="42d23029-13d9-4583-a433-0e6bd61fe1d7">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>СписокИзмененийСинхронизируемыхОбъектовGET</handler>
+    </methods>
+    <methods uuid="641247a9-7167-47cd-a7b2-a96f5075b875">
+      <name>DELETE</name>
+      <synonym>
+        <key>ru</key>
+        <value>DELETE</value>
+      </synonym>
+      <httpMethod>DELETE</httpMethod>
+      <handler>СписокИзмененийСинхронизируемыхОбъектовDELETE</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="42251adc-d736-4942-92cc-2b54da83da2d">
+    <name>НастройкиПриложения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки приложения</value>
+    </synonym>
+    <template>/v1/app-config</template>
+    <methods uuid="31e23ca5-06f6-4f7b-8628-1ffc9b8a516e">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>НастройкиПриложенияGET</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="8b7529b9-0edf-495d-856f-dbb39a35c3b9">
+    <name>НастройкиСовместногоИспользования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки совместного использования</value>
+    </synonym>
+    <template>/v1/application-links/{app-id}</template>
+    <methods uuid="4df8558f-9ff6-4ef8-a3ca-ea51037dfb1f">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>НастройкиСовместногоИспользованияGET</handler>
+    </methods>
+    <methods uuid="c2e70d9b-c9ff-43ec-afb0-7f1719e6724c">
+      <name>PUT</name>
+      <synonym>
+        <key>ru</key>
+        <value>PUT</value>
+      </synonym>
+      <httpMethod>PUT</httpMethod>
+      <handler>НастройкиСовместногоИспользованияPUT</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="bf6bf684-57fb-4f23-a92b-8bd0a5823940">
+    <name>УчетнаяПолитика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учетная политика</value>
+    </synonym>
+    <template>/v1/accounting-policy</template>
+    <methods uuid="ca3e3a1d-b950-41cf-be07-7e26a1e52ff0">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>УчетнаяПолитикаGET</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="8e197231-36b1-4711-8f32-ea470fb31894">
+    <name>ДанныеПубличныхИдентификаторов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные публичных идентификаторов</value>
+    </synonym>
+    <template>/v1/external-data</template>
+    <methods uuid="2200b93a-a0a8-4d2b-9278-57ff295cf37a">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>ДанныеПубличныхИдентификаторовPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="945edd21-2ac1-48b4-a127-6c522baf738d">
+    <name>СозданиеОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создание организации</value>
+    </synonym>
+    <template>/v1/setup-organization</template>
+    <methods uuid="3fd83bd6-9baa-402a-b6d6-efd2861dd2a8">
+      <name>PUT</name>
+      <synonym>
+        <key>ru</key>
+        <value>PUT</value>
+      </synonym>
+      <httpMethod>PUT</httpMethod>
+      <handler>СозданиеОрганизацииPUT</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

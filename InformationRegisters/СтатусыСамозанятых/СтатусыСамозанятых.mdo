@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a6682e92-e503-451b-b20b-33d8ef855356">
+  <producedTypes>
+    <selectionType typeId="ac9cc4c7-0e06-44d3-ae17-6d8b42bf3470" valueTypeId="d5c14629-b257-494e-9cb3-f528a3bfcde8"/>
+    <listType typeId="6a7e77a6-6887-4ec5-b54f-5a85db68a715" valueTypeId="c77382d2-bd24-4f73-8de6-060209e1785b"/>
+    <managerType typeId="00578a88-9013-4142-91a7-d4e69cd5fb01" valueTypeId="10e23475-2eb5-4d3e-a75e-4ae2511e6929"/>
+    <recordSetType typeId="d07857b0-9127-4d8a-9954-b140a260cc7f" valueTypeId="2884f0f5-88e8-424c-ae43-24e3819ece9a"/>
+    <recordKeyType typeId="ad5e0534-fd78-4fe2-abd8-5c2905d8ac88" valueTypeId="4362f72c-83d5-49fc-aabc-613c9986c3a6"/>
+    <recordType typeId="0333fef5-f5f4-4390-b081-fce9ab0ad84a" valueTypeId="bae8ad43-8e8b-43fa-b72b-f32e0fdc3839"/>
+    <recordManagerType typeId="d8338302-2870-46ea-b774-ef5cb8a1b928" valueTypeId="42c3fd66-0bd9-4a94-805e-6eb36b31762f"/>
+  </producedTypes>
+  <name>СтатусыСамозанятых</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы самозанятых</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СтатусыСамозанятых.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СтатусыСамозанятых.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment>В часовом поясе &quot;Europe/Moscow&quot;</comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Статус самозанятого</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Статусы самозанятых</value>
+  </listPresentation>
+  <resources uuid="281ef47b-f62b-472c-a7df-bca2590e66e4">
+    <name>ПлательщикНПД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плательщик НПД</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="dd9a91fb-4a4c-4e3a-98fe-b3e18dd1fdf3">
+    <name>ДатаРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата регистрации</value>
+    </synonym>
+    <comment>В часовом поясе &quot;Europe/Moscow&quot;</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8be779af-7855-4b3b-a50a-48b6b3aed55d">
+    <name>ДатаПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата проверки</value>
+    </synonym>
+    <comment>В часовом поясе &quot;Europe/Moscow&quot;</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f2c2b858-e757-4ddc-b96a-a86d021ae2ac">
+    <name>ЭтоОкончательноеЗначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это окончательное значение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="bc24f7e8-38bd-43d1-8ee6-7031c1b7ce99">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>DefinedType.Контрагент</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="b711bd7a-9e94-4467-bc7a-ec0f7b7e6f3b">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="449c84ef-2a9c-4ec5-a66d-7bf2f92c854a">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

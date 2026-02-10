@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e6fd19c0-d8d0-43e1-90d1-8f88df314b82">
+  <name>АвансовыйПлатежИностранцаПоНДФЛУдалениеПроведения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Авансовый платеж иностранца по НДФЛ удаление проведения</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.АвансовыйПлатежИностранцаПоНДФЛ</types>
+  </source>
+  <event>UndoPosting</event>
+  <handler>CommonModule.УчетЗарплаты.АвансовыйПлатежИностранцаПоНДФЛУдалениеПроведения</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e06dc2e2-fd82-4909-b046-1d3b42b126f5">
+  <producedTypes>
+    <selectionType typeId="37b75c1f-4160-4dc2-ae85-ee2d8e0c6522" valueTypeId="a2cc0188-c40a-42ba-992c-056d024193bb"/>
+    <listType typeId="0bfdf985-484a-48c5-82fa-9232d60fa01c" valueTypeId="41a016b3-9b47-44fb-9ab7-22b497ecd244"/>
+    <managerType typeId="f735af22-cb4d-42c3-9202-f6a3ec38aa4f" valueTypeId="46ff3ad9-e520-4cad-83a5-9f1f7fd0226a"/>
+    <recordSetType typeId="dcc79aeb-27e9-4a3b-b84c-11f9cdfcf1aa" valueTypeId="48c1e144-7132-455c-9f21-69ca26bfdc26"/>
+    <recordKeyType typeId="ee71438a-c32a-44c4-85cf-70220b6b159e" valueTypeId="49603a5b-10e0-4e92-a898-1bd29066e9ac"/>
+    <recordType typeId="834f6d9e-fee4-4e5d-9204-f164c242c1d0" valueTypeId="d3117f10-af6d-4bd5-b42d-9dd60b986d21"/>
+    <recordManagerType typeId="31cd4794-ebbb-4099-952d-ccfbccfc560c" valueTypeId="da1413f1-0115-433c-bb12-f8c2d2322b16"/>
+  </producedTypes>
+  <name>ПроизводственныеТранзакцииБПВЕТИС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Производственные транзакции БП ВЕТИС</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="7fe3e44e-9c0b-4a8c-84b4-86b084612a6e">
+    <name>ЗавершениеПроизводственнойТранзакции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Завершение производственной транзакции</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="cf634493-de50-48b5-9fea-bb11a33a1a01">
+    <name>ИдентификаторПроизводственнойТранзакции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор производственной транзакции</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ИдентификаторПроизводственнойТранзакцииВЕТИС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

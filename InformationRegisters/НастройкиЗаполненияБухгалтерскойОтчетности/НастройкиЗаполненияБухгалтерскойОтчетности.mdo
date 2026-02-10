@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f44ef7e9-a2fe-449f-9415-88263ac1190b">
+  <producedTypes>
+    <selectionType typeId="6d5d49f4-3de4-46b6-93a3-0f91cc98e740" valueTypeId="a2c637fd-6b43-43a9-98f4-c9082d222f5c"/>
+    <listType typeId="1ee9b7ca-0313-4f11-b0a0-62c4d24157a5" valueTypeId="3f2b24e5-693d-49a7-bb90-8ea0ffbee67e"/>
+    <managerType typeId="aaaf2381-65ed-4639-a706-20dbf612e26a" valueTypeId="d1975070-5f2d-4f4c-9538-ce984725d6ca"/>
+    <recordSetType typeId="ee90cd66-49e7-4ac7-ab94-ce9538b7440d" valueTypeId="98d4d590-c009-4f28-b30c-b5275b240176"/>
+    <recordKeyType typeId="bfa9f46f-312c-4d86-bcdf-e120bb058399" valueTypeId="f506c4a5-6f22-4f17-a9f1-a8c4a27c82ad"/>
+    <recordType typeId="59becac8-b1cf-4344-95cf-c7a3521530d4" valueTypeId="6eb19889-e681-467d-94a6-7fd2275d590b"/>
+    <recordManagerType typeId="53ce3150-5249-4cdf-861e-b482be418b96" valueTypeId="2fe4041b-9b2b-4143-bbcc-e5fc3601657b"/>
+  </producedTypes>
+  <name>НастройкиЗаполненияБухгалтерскойОтчетности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки заполнения бухгалтерской отчетности</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Настройка заполнения бухгалтерской отчетности</value>
+  </recordPresentation>
+  <resources uuid="404d0c47-e3dd-4c14-bba5-2776b32f6fd6">
+    <name>Настройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <extendedEdit>true</extendedEdit>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="42bd7d8b-c338-4aa4-aa1a-f661e75eeb53">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

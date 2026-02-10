@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ef012181-c160-4c00-b00c-3fed6f6578db">
+  <producedTypes>
+    <objectType typeId="1c3b663c-7aa9-47d6-bcf9-ab943148f29c" valueTypeId="58b0d39d-a48f-434e-8951-2bbd796e0555"/>
+    <managerType typeId="29ad18c8-452c-4711-871d-1df4f74b8622" valueTypeId="cae98ab2-e94a-4620-9979-92790f822732"/>
+  </producedTypes>
+  <name>ПомощникПереходаНаЕНС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Помощник перехода на ЕНС</value>
+  </synonym>
+  <defaultForm>DataProcessor.ПомощникПереходаНаЕНС.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="fb4d08c8-9e2d-4527-a93b-9a9b939842f2">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="10d9bd64-e6eb-4f90-b614-eb34cf358e34">
+    <name>ДатаПерехода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата перехода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="d7379476-85ff-499c-9963-cb145589a3c5">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="3ff100be-fa3c-4053-9cb7-1744ab9674a3">
+    <name>ПомощникПереходаНаЕНС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Помощник перехода на ЕНС</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

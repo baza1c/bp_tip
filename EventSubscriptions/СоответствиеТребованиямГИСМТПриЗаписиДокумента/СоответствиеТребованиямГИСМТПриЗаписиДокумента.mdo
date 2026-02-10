@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e8b85b82-cceb-447b-8e6d-4bc8c45f6d49">
+  <name>СоответствиеТребованиямГИСМТПриЗаписиДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствие требованиям ГИСМТПри записи документа</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.РеализацияТоваровУслуг</types>
+    <types>DocumentObject.ПоступлениеТоваровУслуг</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.СоответствиеТребованиямГИСМТ.СоответствиеТребованиямГИСМТПриЗаписиДокумента</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eee53f36-f3d3-4517-8f1a-4b64e820e58b">
+  <producedTypes>
+    <objectType typeId="49fadb66-11be-444d-a692-3263bc95ef89" valueTypeId="19724599-eaa5-4384-b6ff-7d6473cd0bc9"/>
+    <managerType typeId="c89b351b-5eae-4ce3-a52b-46b4c1dd8546" valueTypeId="ae62e225-8eef-42fa-bc36-84f99de5279c"/>
+  </producedTypes>
+  <name>КонтрагентыКонтролируемыхСделок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контрагенты контролируемых сделок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.КонтрагентыКонтролируемыхСделок.Form.ФормаОтчетаКонтрагенты</defaultForm>
+  <mainDataCompositionSchema>Report.КонтрагентыКонтролируемыхСделок.Template.СхемаКомпоновкиДанныхКонтрагенты</mainDataCompositionSchema>
+  <attributes uuid="44dfff13-7fd9-4770-be41-55de0cdb0a2a">
+    <name>Уведомление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уведомление</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.УведомлениеОКонтролируемыхСделках</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="30dc1383-f9db-4a3a-a671-1d3cd709977b">
+    <name>ОтчетныйГод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчетный год</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2f9bfebf-dfc8-42a1-ae80-c108afe056a8">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="b062e6b6-2963-4478-8b57-30d43909ea5a">
+    <name>РазмещениеДополнительныхПолей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Размещение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:StringValue">
+      <value>0</value>
+    </minValue>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1a730615-7b99-4f78-add4-37f281c66310">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="f8940f3f-3a11-477f-b4a3-26f4531dba72">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="668913f3-eede-474e-9969-f2a88a25c70b">
+    <name>РежимРасшифровки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим расшифровки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b91b9c4c-df75-4dce-9c7a-2d103da9405a">
+    <name>ВключатьОбособленныеПодразделения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Включая обособленные подразделения</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="0cbdb971-fc0c-4c9f-90ad-fe07a37f9c55">
+    <producedTypes>
+      <objectType typeId="a58f5daa-7a5b-4684-921b-3481cf26db9e" valueTypeId="05ef6bf6-ea58-4c4c-9dde-681ba0b5870c"/>
+      <rowType typeId="9b17401d-8204-4907-9a1e-c11af4e7d1ec" valueTypeId="b4445eca-a499-40e1-aab4-7a3d78bc3714"/>
+    </producedTypes>
+    <name>ДополнительныеПоля</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные поля</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="4b9d3dcf-c024-4112-916b-ea7fda35b9c0">
+      <name>Использование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Использование</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d70d70eb-4513-4070-8da0-21d24fcc029a">
+      <name>Поле</name>
+      <synonym>
+        <key>ru</key>
+        <value>Поле</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue"/>
+    </attributes>
+    <attributes uuid="6e9a5567-e96e-403a-a5e6-da49db761db9">
+      <name>Представление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Поле</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="20f07647-7b81-4fbf-ae9d-0ee1be21d104">
+    <name>ФормаОтчетаКонтрагенты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сведения о контрагентах</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="4a526798-d035-4cc7-909e-2383883e333b">
+    <name>СхемаКомпоновкиДанныхКонтрагенты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема компоновки данных контрагенты</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

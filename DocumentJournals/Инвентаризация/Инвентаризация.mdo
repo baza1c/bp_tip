@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a674a384-40b1-45aa-8a0a-d0b9c2d465bf">
+  <producedTypes>
+    <selectionType typeId="9db3025c-cd6c-40cd-bbbb-a3375ec53287" valueTypeId="69ab8fa3-2005-4a1a-8228-ab0863717e78"/>
+    <listType typeId="cbff46af-587e-4207-b4e0-51d16777b53b" valueTypeId="3232d6f1-8c77-4115-869f-cdb752fe58d3"/>
+    <managerType typeId="f3d86226-7bdc-4978-806f-e097687d9de8" valueTypeId="9365abd5-4da9-4807-a789-4c8d38d85989"/>
+  </producedTypes>
+  <name>Инвентаризация</name>
+  <synonym>
+    <key>ru</key>
+    <value>Инвентаризация</value>
+  </synonym>
+  <defaultForm>DocumentJournal.Инвентаризация.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ИнвентаризацияОС</registeredDocuments>
+  <registeredDocuments>Document.ИнвентаризацияКассы</registeredDocuments>
+  <registeredDocuments>Document.ИнвентаризацияНЗП</registeredDocuments>
+  <registeredDocuments>Document.ИнвентаризацияОбъектовУчета</registeredDocuments>
+  <registeredDocuments>Document.ИнвентаризацияТоваровНаСкладе</registeredDocuments>
+  <registeredDocuments>Document.ИнвентаризацияРасчетовСКонтрагентами</registeredDocuments>
+  <registeredDocuments>Document.ИнвентаризацияНМА</registeredDocuments>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="47a1d6e9-dbd2-4faf-bcd0-b47bb48d3fee">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <references>Document.ИнвентаризацияКассы.Attribute.Организация</references>
+    <references>Document.ИнвентаризацияНЗП.Attribute.Организация</references>
+    <references>Document.ИнвентаризацияОС.Attribute.Организация</references>
+    <references>Document.ИнвентаризацияРасчетовСКонтрагентами.Attribute.Организация</references>
+    <references>Document.ИнвентаризацияТоваровНаСкладе.Attribute.Организация</references>
+    <references>Document.ИнвентаризацияОбъектовУчета.Attribute.Организация</references>
+    <references>Document.ИнвентаризацияНМА.Attribute.Организация</references>
+  </columns>
+  <columns uuid="0bf7fdc3-516e-44cf-aa46-e9db96991364">
+    <name>ПричинаПроведенияИнвентаризации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Причина проведения инвентаризации</value>
+    </synonym>
+    <references>Document.ИнвентаризацияКассы.Attribute.ПричинаПроведенияИнвентаризации</references>
+    <references>Document.ИнвентаризацияНЗП.Attribute.ПричинаПроведенияИнвентаризации</references>
+    <references>Document.ИнвентаризацияОС.Attribute.ПричинаПроведенияИнвентаризации</references>
+    <references>Document.ИнвентаризацияТоваровНаСкладе.Attribute.ПричинаПроведенияИнвентаризации</references>
+    <references>Document.ИнвентаризацияОбъектовУчета.Attribute.ПричинаПроведенияИнвентаризации</references>
+    <references>Document.ИнвентаризацияРасчетовСКонтрагентами.Attribute.ПричинаПроведенияИнвентаризации</references>
+    <references>Document.ИнвентаризацияНМА.Attribute.ПричинаПроведенияИнвентаризации</references>
+  </columns>
+  <columns uuid="a903f0b6-7b91-4623-bc61-a356a377c4ec">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <references>Document.ИнвентаризацияКассы.Attribute.Ответственный</references>
+    <references>Document.ИнвентаризацияНЗП.Attribute.Ответственный</references>
+    <references>Document.ИнвентаризацияОС.Attribute.Ответственный</references>
+    <references>Document.ИнвентаризацияРасчетовСКонтрагентами.Attribute.Ответственный</references>
+    <references>Document.ИнвентаризацияТоваровНаСкладе.Attribute.Ответственный</references>
+    <references>Document.ИнвентаризацияОбъектовУчета.Attribute.Ответственный</references>
+    <references>Document.ИнвентаризацияНМА.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="5e97584b-f01f-4ae9-bc5c-b19c11129c67">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.ИнвентаризацияКассы.Attribute.Комментарий</references>
+    <references>Document.ИнвентаризацияНЗП.Attribute.Комментарий</references>
+    <references>Document.ИнвентаризацияОС.Attribute.Комментарий</references>
+    <references>Document.ИнвентаризацияРасчетовСКонтрагентами.Attribute.Комментарий</references>
+    <references>Document.ИнвентаризацияТоваровНаСкладе.Attribute.Комментарий</references>
+    <references>Document.ИнвентаризацияОбъектовУчета.Attribute.Комментарий</references>
+    <references>Document.ИнвентаризацияНМА.Attribute.Комментарий</references>
+  </columns>
+  <forms uuid="cc247e62-1a17-445a-abff-63ba58011879">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

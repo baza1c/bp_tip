@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8e56a4ab-b5e4-4ae1-8af0-1682f0c8a9ff">
+  <producedTypes>
+    <selectionType typeId="c5877d08-09ca-4409-9e03-f627501cfbef" valueTypeId="d6a47a6e-6123-4637-ba39-bff69850ddfe"/>
+    <listType typeId="842567f9-3559-4ab0-a24d-2f219fd013d7" valueTypeId="d81eb9ae-7862-4584-9786-96afad4d97ef"/>
+    <managerType typeId="3dbcf33b-67b6-41fb-a8a3-a8e97068cc4e" valueTypeId="b34d8e88-530c-4b18-9bae-766f2e4eb77a"/>
+    <recordSetType typeId="28214580-27ea-4ab4-a012-f95a122204ce" valueTypeId="ec6c4f27-83ab-4b44-a752-b8d0515d04fa"/>
+    <recordKeyType typeId="8be0b6bc-4636-4f0f-828f-3a2ddf59c169" valueTypeId="bbd0b838-b27d-412a-b81e-c00981e68a10"/>
+    <recordType typeId="cd2d48e7-b9de-4f96-ae22-fc147f4e87b9" valueTypeId="b742f2d1-6c5f-443c-b102-3cdffa263607"/>
+    <recordManagerType typeId="e710bed8-35b0-4d86-9525-64617a79706a" valueTypeId="7998967a-4f02-474d-a0b0-e8a30cd567b2"/>
+  </producedTypes>
+  <name>РасчетСтоимостиКомпонентовАмортизации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет стоимости компонентов амортизации</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="d4431127-6bf5-4265-afb0-dfd4cb0b885c">
+    <name>Стоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ДенежнаяСуммаНеотрицательная</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9a79f653-a888-47cb-9491-d44a9a1c4bc8">
+    <name>Обесценение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обесценение</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ДенежнаяСуммаНеотрицательная</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="40437497-8ad1-480e-990f-6aa95720af3e">
+    <name>КомпонентАмортизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Компонент амортизации</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КомпонентыАмортизацииОС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="fa7b1175-7da3-43db-9830-7ae6015d3522">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

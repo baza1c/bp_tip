@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e4bd3e9c-f2fa-41c0-bcb6-d823479e4d43">
+  <producedTypes>
+    <objectType typeId="78a652ec-1b89-4af7-81ab-815129c3aa9e" valueTypeId="8e5e73eb-9cb4-449b-bf1a-b66cf4982212"/>
+    <managerType typeId="dd643692-5570-4de7-8c4a-5117b8794a39" valueTypeId="2a53a77e-d84b-43fb-8114-2c35d9e343fb"/>
+  </producedTypes>
+  <name>ВводОстатковПриИзмененииОбъектаУСН</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ввод остатков при изменении объекта УСН</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ВводОстатковПриИзмененииОбъектаУСН.Form.Форма</defaultForm>
+  <attributes uuid="ba883c61-e937-44c2-9629-3f144ec1d077">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="eb1ca3dc-ba12-444a-aa4c-554d9121051f">
+    <name>ДатаПерехода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата перехода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="b042d252-0ba0-472a-b674-5a125278abdf">
+    <producedTypes>
+      <objectType typeId="9542488b-8933-4d52-893e-29b8f573d208" valueTypeId="3c76eac7-4d64-4e7a-b703-3509ddc384d3"/>
+      <rowType typeId="80c078ef-e17d-4b70-a502-57eedf2ac7d6" valueTypeId="beba6ac5-32f4-457d-8d14-027da529c32a"/>
+    </producedTypes>
+    <name>ПериодыПерехода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периоды перехода</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="41b8fa70-fc4a-45b2-a652-c4fd3bc69cdd">
+      <name>ПериодПерехода</name>
+      <synonym>
+        <key>ru</key>
+        <value>Период перехода</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="eb077147-943a-4364-a4a2-b5a056eca38e">
+      <name>ОбъектНалогообложения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Объект налогообложения</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ОбъектыНалогообложенияПоУСН</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="741ee42b-fc68-4f84-9283-5cf24056d5f4">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6d8edb32-a6b3-4e36-ac9d-3e139563a7a4">
+    <name>ФормаПериоды</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма периоды</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e20374f5-90eb-4508-8bc8-c7917874f4f9">
+    <name>ФормаРасшифровкаСуммы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма расшифровка суммы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="de087486-3660-49df-b1b9-5fca1fb7d121">
+    <name>ФормаВведенныеДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма введенные документы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="d4e57812-f9c0-4637-8df9-d11931371012">
+    <name>РасшифровкаСумм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка сумм</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:DataProcessor>

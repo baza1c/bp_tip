@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9a81d8ee-3261-4d0c-8669-25e7357df43e">
+  <producedTypes>
+    <objectType typeId="55bd4bc7-86e0-44a8-8ed3-9b254397553a" valueTypeId="155e3cc7-b339-4150-8e5d-694e6b9d1b61"/>
+    <managerType typeId="953a011f-a436-4486-a1e6-040897deebd9" valueTypeId="7f8784df-c1db-4743-a454-31c6ec79b42d"/>
+  </producedTypes>
+  <name>ПомощникПереходаНаФСБУ14</name>
+  <synonym>
+    <key>ru</key>
+    <value>Переход на ФСБУ 14/2022 &quot;Нематериальные активы&quot;</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПомощникПереходаНаФСБУ14.Form.Форма</defaultForm>
+  <attributes uuid="c33339a9-cb02-47df-b56d-f21a28ed5808">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d2a4625e-55d0-4a6b-bad5-ed2791bfb1f4">
+    <name>Период</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="fa6b874b-a9bc-40c6-b0ec-ffc3765174a6">
+    <producedTypes>
+      <objectType typeId="53d6c240-5ec0-477c-a10f-6687cc72e523" valueTypeId="b1fda75e-7d7d-4b73-bd2a-c0c40d9a366b"/>
+      <rowType typeId="6b0cf6be-89bc-43e1-99b6-89ad498569e5" valueTypeId="c7c9d994-f04e-422e-b474-fc79036b7b3b"/>
+    </producedTypes>
+    <name>СписокНМА</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список НМА</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="d22d7ad5-2a94-4f88-8fbd-39b1c125f79a">
+      <name>ДействиеПриПереходе</name>
+      <synonym>
+        <key>ru</key>
+        <value>Действие при переходе</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ДействияПриПереходеНаФСБУ14</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:ReferenceValue">
+        <value>Enum.ДействияПриПереходеНаФСБУ14.EnumValue.КПереклассификации</value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="9250c9bd-a3fe-41eb-9914-9f66656e1ab8">
+      <name>СчетУчета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Счет учета</value>
+      </synonym>
+      <type>
+        <types>ChartOfAccountsRef.Хозрасчетный</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="1a65683d-db2c-4689-a7cc-d80dca93d4af">
+      <name>НематериальныйАктив</name>
+      <synonym>
+        <key>ru</key>
+        <value>Нематериальный актив</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.НематериальныеАктивы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="1c514b02-575e-4f48-a3b8-8c2af4e805ef">
+      <name>ДатаПринятияКУчету</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата принятия к учету</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="15e53c46-81fb-49f2-a491-1011a6921ee9">
+      <name>ВидНМА</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид НМА</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ВидыНематериальныхАктивов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="67855a86-9654-4d4f-8081-759d4cafad1f">
+      <name>СчетСписания</name>
+      <synonym>
+        <key>ru</key>
+        <value>Счет списания</value>
+      </synonym>
+      <type>
+        <types>ChartOfAccountsRef.Хозрасчетный</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="27e545c4-117d-4dc1-9b84-bebbafd6c126">
+      <name>ПодразделениеСписания</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подразделение списания</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ПодразделенияОрганизаций</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ef0b624c-1d38-4ab1-bcbb-119b69aee4ba">
+      <name>СубконтоСписания1</name>
+      <synonym>
+        <key>ru</key>
+        <value>Субконто 1</value>
+      </synonym>
+      <type>
+        <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="344e1bdb-5925-4e12-8479-b75c3fb9df90">
+      <name>СубконтоСписания2</name>
+      <synonym>
+        <key>ru</key>
+        <value>Субконто 2</value>
+      </synonym>
+      <type>
+        <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="21e159c2-edd2-449b-a87a-4eda6655ba19">
+      <name>СубконтоСписания3</name>
+      <synonym>
+        <key>ru</key>
+        <value>Субконто 3</value>
+      </synonym>
+      <type>
+        <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="32aefe73-166f-4dd7-a117-850048bd43ba">
+      <name>НеопределенныйСрокПолезногоИспользования</name>
+      <synonym>
+        <key>ru</key>
+        <value>Неопределенный срок полезного использования</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="8d1bcd22-fbe2-45f5-9efc-973bccd15b29">
+      <name>НеопределенныйСрокПолезногоИспользованияДоПерехода</name>
+      <synonym>
+        <key>ru</key>
+        <value>Неопределенный срок полезного использования до перехода</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="19577e1a-ed00-4232-95d1-0aecfd52df3f">
+      <name>СпособНачисленияАмортизации</name>
+      <synonym>
+        <key>ru</key>
+        <value>Способ начисления амортизации</value>
+      </synonym>
+      <type>
+        <types>EnumRef.СпособыНачисленияАмортизацииНМА</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="8ffaee9d-21c2-413d-976e-7d8ca792d8a6">
+      <name>СпособНачисленияАмортизацииДоПерехода</name>
+      <synonym>
+        <key>ru</key>
+        <value>Способ начисления амортизации (до перехода)</value>
+      </synonym>
+      <type>
+        <types>EnumRef.СпособыНачисленияАмортизацииНМА</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="0dc0fbc7-01c2-497f-b21b-f72b05b4fc5a">
+      <name>СрокПолезногоИспользования</name>
+      <synonym>
+        <key>ru</key>
+        <value>Остаток срока полезного использования</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a065b036-1e45-47c8-9098-8ba51db35224">
+      <name>СрокПолезногоИспользованияДоПерехода</name>
+      <synonym>
+        <key>ru</key>
+        <value>Остаток срока полезного использования (до перехода)</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="2d6448e4-c828-40b7-8069-87403429d814">
+      <name>ОбъемПродукцииРабот</name>
+      <synonym>
+        <key>ru</key>
+        <value>Остаток объема продукции (работ) в натуральных ед.</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="e0cf0033-36a7-4953-94c1-6d5aa62d7522">
+      <name>ОбъемПродукцииРаботДоПерехода</name>
+      <synonym>
+        <key>ru</key>
+        <value>Остаток объема продукции (работ) в натуральных ед. (до перехода)</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="11e3de6f-5f39-4b51-a263-67ff79150d62">
+      <name>Коэффициент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Коэффициент</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="8e7c48bc-f36d-49a7-bb1a-a332fe806580">
+      <name>КоэффициентДоПерехода</name>
+      <synonym>
+        <key>ru</key>
+        <value>Коэффициент (до перехода)</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="c92e6a56-334d-449a-a44c-f092ee97f61b">
+      <name>ЛиквидационнаяСтоимость</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ликвидационная стоимость</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ДенежнаяСуммаНеотрицательная</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="bed0d852-2e72-4ede-9660-855e23424943">
+      <name>СпособОтраженияРасходов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Способ отражения расходов</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.СпособыОтраженияРасходовПоАмортизации</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="fedff40d-209a-412a-9bab-c134019b436a">
+      <name>ПервоначальнаяСтоимость</name>
+      <synonym>
+        <key>ru</key>
+        <value>Первоначальная стоимость</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ДенежнаяСуммаНеотрицательная</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="2b4febc3-96a4-4af4-89a7-280fc420b614">
+      <name>ПервоначальнаяСтоимостьДоПерехода</name>
+      <synonym>
+        <key>ru</key>
+        <value>Первоначальная стоимость до перехода</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ДенежнаяСуммаНеотрицательная</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a8352bae-e27a-4f80-80f5-350ad7f2e92d">
+      <name>Амортизация</name>
+      <synonym>
+        <key>ru</key>
+        <value>Амортизация</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ДенежнаяСуммаНеотрицательная</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d718e68d-d209-4652-aaae-6381b368c7ed">
+      <name>АмортизацияДоПерехода</name>
+      <synonym>
+        <key>ru</key>
+        <value>Амортизация до перехода</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ДенежнаяСуммаНеотрицательная</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="20bb800a-92c2-44e7-805d-7c082beb3a63">
+      <name>Обесценение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Обесценение</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ДенежнаяСуммаНеотрицательная</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="98544ed4-f415-4c06-8517-2cc0b0f13834">
+      <name>ОбесценениеДоступноеДляВосстановления</name>
+      <synonym>
+        <key>ru</key>
+        <value>Обесценение, доступное для восстановления</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ДенежнаяСуммаНеотрицательная</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="9e709ab0-dffb-4f20-b173-d79e6848cac5">
+      <name>СуществующееНМА</name>
+      <synonym>
+        <key>ru</key>
+        <value>Существующее НМА</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d6bdd8ee-7338-4e78-abd9-c8dcd1e90f0d">
+      <name>ИзменениеНераспределеннойПрибыли</name>
+      <synonym>
+        <key>ru</key>
+        <value>Изменение нераспределенной прибыли</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ДенежнаяСуммаЛюбогоЗнака</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="0fca067d-c6a7-4e2a-9e4f-acf8acae5c76">
+      <name>СчетАмортизации</name>
+      <synonym>
+        <key>ru</key>
+        <value>Счет амортизации</value>
+      </synonym>
+      <type>
+        <types>ChartOfAccountsRef.Хозрасчетный</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="1e6b56d3-44fd-443e-a4cd-4b22c4a30989">
+      <name>КоличествоВыработки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество выработки</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="4097d5b2-0099-4916-aaf7-19d045b20c35">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="650fd2ee-ae6d-46be-a88d-c7b7bcaa8390">
+    <name>ПараметрыАмортизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры амортизации</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="b9ffdee5-2cdb-4d56-8791-335c45874d0b">
+    <name>ПФ_MXL_Реестр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реестр</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

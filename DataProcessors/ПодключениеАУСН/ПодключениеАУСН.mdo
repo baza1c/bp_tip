@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d87a7871-f425-43cd-99d6-6144b6cab0eb">
+  <producedTypes>
+    <objectType typeId="0ab19028-744b-4832-b7d4-237816f72fb0" valueTypeId="49340a42-6e12-45af-a369-38d551986c62"/>
+    <managerType typeId="f43b4730-6087-4a2f-b241-828ed964de65" valueTypeId="0b85a3ae-1392-4b2b-9388-f9f99098d727"/>
+  </producedTypes>
+  <name>ПодключениеАУСН</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подключение к сервису АУСН</value>
+  </synonym>
+  <defaultForm>DataProcessor.ПодключениеАУСН.Form.Форма</defaultForm>
+  <attributes uuid="1047c227-5a0c-447f-b203-fcd4887c226f">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="f1df9fff-d2ba-487b-a13b-ec1728c54e63">
+    <name>Банк</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банк</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлассификаторБанков</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="cd008e9d-e207-4763-9b93-a3b112012da0">
+    <name>КодЗаявки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код заявки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="93a23eae-be11-4c98-adbd-d9a94c41fdca">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="be981292-848f-477c-ac00-e457f72e924f">
+    <name>ФормаПодключение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма подключение</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="28c2c74e-a2d1-49be-bdaf-cbf6e975d68e">
+    <name>ФормаПодключениеБанка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма подключение банка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2622ecaf-a721-4b5d-ae4d-f02345338893">
+    <name>ФормаПодключениеФНС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма подключение ФНС</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8bc6bcef-b37f-4eb8-9a60-58098d817b34">
+    <name>СоставДанныхОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Какой информацией обмениваются программы?</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="5daa0915-63a7-495c-ae8d-7d7bf04bd19d">
+    <name>ПодключениеАУСН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обмен с сервисом АУСН</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="294d9ca2-20db-4f6c-aa8f-8ab1ebcb2fd5">
+    <name>ЖурналОбменаССервисомАУСН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Журнал обмена с сервисом АУСН</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

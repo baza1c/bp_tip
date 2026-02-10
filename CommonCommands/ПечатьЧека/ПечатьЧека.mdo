@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bda1c1cc-0251-43d3-98cf-593c3276f4a2">
+  <name>ПечатьЧека</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чек</value>
+  </synonym>
+  <group>CommandGroup.Печать</group>
+  <commandParameterType>
+    <types>DocumentRef.СписаниеСРасчетногоСчета</types>
+    <types>DocumentRef.ПередачаОС</types>
+    <types>DocumentRef.ПоступлениеНаРасчетныйСчет</types>
+    <types>DocumentRef.КорректировкаРеализации</types>
+    <types>DocumentRef.РасходныйКассовыйОрдер</types>
+    <types>DocumentRef.КорректировкаДолга</types>
+    <types>DocumentRef.ВозвратТоваровОтПокупателя</types>
+    <types>DocumentRef.ОплатаПлатежнойКартой</types>
+    <types>DocumentRef.ПриходныйКассовыйОрдер</types>
+    <types>DocumentRef.РеализацияТоваровУслуг</types>
+  </commandParameterType>
+  <representation>PictureAndText</representation>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодключаемоеОборудованиеККТ16</picture>
+  </picture>
+</mdclass:CommonCommand>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b9b1f96a-0c12-4c60-8f71-fcf6037f613f">
+  <producedTypes>
+    <selectionType typeId="2f0364c2-002d-4d05-85d9-f5ec33481dc5" valueTypeId="228f6854-41c5-4dce-83e2-cc783edda042"/>
+    <listType typeId="d6ca4a5e-0454-4785-a282-a471c62218b2" valueTypeId="2222b76e-3393-4907-a1df-589d45fdbf70"/>
+    <managerType typeId="31c83a22-8652-4601-b120-f202e963328a" valueTypeId="5415a18e-1c3b-44de-b2fa-92d083c34a87"/>
+  </producedTypes>
+  <name>ПредоставлениеСведенийОТрудовойДеятельности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заявления о предоставлении сведений о трудовой деятельности</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ПредоставлениеСведенийОТрудовойДеятельности.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ЗаявленияОПредоставленииСведенийОТрудовойДеятельности</registeredDocuments>
+  <registeredDocuments>Document.ОтзывЗаявленийОПредоставленииСведенийОТрудовойДеятельности</registeredDocuments>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <format>
+      <key>ru</key>
+      <value>ДЛФ=D</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДЛФ=D</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="dbac16ec-5fc8-4af0-9c20-b6d3e4d3cd51">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <references>Document.ЗаявленияОПредоставленииСведенийОТрудовойДеятельности.Attribute.Организация</references>
+    <references>Document.ОтзывЗаявленийОПредоставленииСведенийОТрудовойДеятельности.Attribute.Организация</references>
+  </columns>
+  <columns uuid="0a512cc0-c188-4aff-80df-fd57f5511c11">
+    <name>Сотрудники</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудники</value>
+    </synonym>
+    <references>Document.ЗаявленияОПредоставленииСведенийОТрудовойДеятельности.Attribute.КраткийСоставДокумента</references>
+    <references>Document.ОтзывЗаявленийОПредоставленииСведенийОТрудовойДеятельности.Attribute.КраткийСоставДокумента</references>
+  </columns>
+  <columns uuid="a934fe61-a193-495d-86ca-69bb9f77be17">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <references>Document.ЗаявленияОПредоставленииСведенийОТрудовойДеятельности.Attribute.Ответственный</references>
+    <references>Document.ОтзывЗаявленийОПредоставленииСведенийОТрудовойДеятельности.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="dfbcc39a-487c-47c6-b793-f61917638654">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.ЗаявленияОПредоставленииСведенийОТрудовойДеятельности.Attribute.Комментарий</references>
+    <references>Document.ОтзывЗаявленийОПредоставленииСведенийОТрудовойДеятельности.Attribute.Комментарий</references>
+  </columns>
+  <forms uuid="dabf6994-dcc2-43ec-86df-1f8d71252471">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

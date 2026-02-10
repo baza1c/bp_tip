@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="212d7f4b-25d2-4cf9-bdce-94455595af1e">
+  <producedTypes>
+    <selectionType typeId="499e115a-318d-42b4-8d5d-9b3cb4cf155d" valueTypeId="11ccc621-97c0-497c-8b7d-20820210772f"/>
+    <listType typeId="b9502786-ff86-4eca-b494-e22d5e8d7388" valueTypeId="761a999f-5629-4486-9ecd-091c2d0ca340"/>
+    <managerType typeId="67b031ca-690b-486f-b270-0e80e9a52d79" valueTypeId="c6f67c17-3946-4304-9269-dce6d7d687d7"/>
+    <recordSetType typeId="0e412085-7c22-4b4f-ac2e-f3bb995b2f07" valueTypeId="4d7d4eed-f687-4c33-bb29-5e25f5d1deea"/>
+    <recordKeyType typeId="62fda6dc-5c3e-4fef-9292-0a08f63dae21" valueTypeId="e9c0bcd4-e3fc-46ef-83da-aa232a6ddc44"/>
+    <recordType typeId="8617efa2-2d98-4cd0-a729-6eb3f0ff6c44" valueTypeId="f4a96c99-5269-4226-8db1-597bcc4e7ecb"/>
+    <recordManagerType typeId="ac85ecec-c397-4610-ab6a-730f3f447d7f" valueTypeId="f3a9af2c-dd22-4eb6-8acc-727a161c8d4a"/>
+  </producedTypes>
+  <name>СостояниеЗаявокНаОткрытиеСчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заявки 1С:Открытие счета</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СостояниеЗаявокНаОткрытиеСчета.Form.ИнформацияПоЗаявкеНаОткрытиеСчета</defaultRecordForm>
+  <defaultListForm>InformationRegister.СостояниеЗаявокНаОткрытиеСчета.Form.СостояниеЗаявокНаОткрытиеСчета</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Заявка на открытие счета</value>
+  </recordPresentation>
+  <resources uuid="45da6817-82db-47e0-ad3b-4e49cca4fda5">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СостоянияЗаявокНаОткрытиеСчета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2acf753d-48c3-438b-9f96-0de83364e2b1">
+    <name>ДатаИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата изменения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2586b483-9856-49d9-9247-0b4d1fb7eea4">
+    <name>ПодробностиРешения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подробности решения</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="758ad3c3-a0ab-4128-ad20-20366f7cc5a9">
+    <name>ЕстьОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Есть ошибки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="60f61fe9-9892-4526-b400-fd03f31dc35d">
+    <name>ОписаниеОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание ошибки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="7d29c0a9-4618-424d-9e3b-51b85b20de4e">
+    <name>ОписаниеОшибкиПодробное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание ошибки подробное</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="ffd13e73-04f1-4db7-8b22-016d59d4965d">
+    <name>СрокАктуальности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок актуальности</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f9554123-636d-425c-904c-9d6d248deaed">
+    <name>Транзакция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транзакция</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТранзакцииОбменаСБанками</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="bc3a40d4-435c-4398-8105-74b6b6d2c9aa">
+    <name>Новое</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новое</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="1c1501fb-af3a-48d1-93fc-3d327ff0c05e">
+    <name>РегистрационныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрационный номер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="65e91e62-0074-448c-9ac6-cc65df7d83e7">
+    <name>ПометкаУдаления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пометка удаления</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b474e217-2915-4f97-80e0-c01408cd8de2">
+    <name>ЕстьФайлы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Есть файлы</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="b59fa274-f0de-4d93-97e3-b6e2ac7ff61b">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3d2953ee-bbbe-4eed-b840-818c7c2ef4d5">
+    <name>ЗаявкаНаОткрытиеСчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка на открытие счета</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаявкаНаОткрытиеСчета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ed4f7fe1-04b7-475f-aa5c-081e7feb53e2">
+    <name>Банк</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банк</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.БанкиУниверсальногоОбмена</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="a298f534-d1f6-4916-b544-e7c68f843afc">
+    <name>СостояниеЗаявокНаОткрытиеСчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние заявок на открытие счета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f8eaab10-5960-44d4-b9e7-369d0f78df97">
+    <name>ИнформацияПоЗаявкеНаОткрытиеСчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информация по заявке на открытие счета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="715287bb-521b-4956-87f6-266244d3862d">
+    <name>ФормаВыбораРасчетногоСчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора расчетного счета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9814a7fc-20b9-4e5e-9ed4-1c1b9dd3c70c">
+    <name>ПоказСообщенийОткрытиеСчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показ сообщений открытие счета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="e4ba13db-eb2d-4be6-8348-dc7bb9dd9169">
+    <name>Заявки1СОткрытиеСчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>1С:Открытие счета</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:InformationRegister>

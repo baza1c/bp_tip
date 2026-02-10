@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3781470a-8f69-4204-9f79-215bf1dc0381">
+  <producedTypes>
+    <selectionType typeId="3cb34ee5-a23b-4bea-8077-0aaf262a187c" valueTypeId="a11c5d04-d145-4031-9821-7bbeade5aa40"/>
+    <listType typeId="e4c64e43-a4eb-4ce0-9ea4-ff8f369205ef" valueTypeId="53943d3a-c6ac-449b-bbcc-2757312a072e"/>
+    <managerType typeId="1dfdf26f-ae2e-46df-afad-76707d65bf2c" valueTypeId="28e48c0a-c75a-4b8d-a12d-525875dc79e3"/>
+    <recordSetType typeId="dd6f238a-e5f3-4549-a885-672c139cfc7b" valueTypeId="2d2be1b2-372a-4db2-941e-f7ef417b2631"/>
+    <recordKeyType typeId="c22aaf19-8a9b-44f5-a81f-d2a8ac5a9511" valueTypeId="8210e4f8-1700-47f9-be78-7c5f3672717e"/>
+    <recordType typeId="4387870c-2ca3-4526-89e7-489091ed4994" valueTypeId="4d0d5ed4-5a83-44e8-ae3e-9eb564933c7e"/>
+    <recordManagerType typeId="9eb2028b-76f4-4c09-a324-5ded2378ca6a" valueTypeId="092ca01a-7312-4c24-9205-6203838d1d6c"/>
+  </producedTypes>
+  <name>РолиСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Роли сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="c83eebd2-c6a3-4cc9-970c-41628ada3096">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3b384888-a4c7-44ac-b8d6-5053f46eccbf">
+    <name>РольСотрудника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Роль сотрудника</value>
+    </synonym>
+    <type>
+      <types>EnumRef.РолиСотрудников</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

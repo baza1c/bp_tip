@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="075340af-cedc-4726-a618-95368c400631">
+  <producedTypes>
+    <selectionType typeId="5ab3a749-a4cd-4a82-8131-acfaf7930e28" valueTypeId="b590113a-815d-49ba-bfa5-a88a715e357d"/>
+    <listType typeId="29747555-437a-4d15-a333-2e99b54c281d" valueTypeId="11757683-7520-499e-8d4e-637d78893ed9"/>
+    <managerType typeId="39b334b5-fcf6-4ff0-9e93-53e7cb0e2aec" valueTypeId="f33ad515-ca1c-4b04-8e06-f01f020be2df"/>
+    <recordSetType typeId="6db44892-95d8-4b39-977b-6f8e166e2cd1" valueTypeId="f3792b7f-3cf6-4887-8fe7-832047e2d428"/>
+    <recordKeyType typeId="704ff724-8b38-45d0-a3a7-f8fcf8bc48b3" valueTypeId="9b5eabb1-59ee-4dcb-8ec7-ad0d44b62876"/>
+    <recordType typeId="408c5f04-feaa-42b6-863a-d5cf65793913" valueTypeId="09cc5acd-203e-4cb4-8a7c-5a3c85c3f730"/>
+    <recordManagerType typeId="b133845c-b5d6-4daa-94b1-4d1865282e23" valueTypeId="033c5a8f-3f78-441a-9b2f-9d23861bfa70"/>
+  </producedTypes>
+  <name>ДокументыОперацийПереходаНаЕНС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы операций перехода на ЕНС</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Документ операции перехода на ЕНС</value>
+  </recordPresentation>
+  <resources uuid="0e228f32-640b-42b8-b4ec-556f244105de">
+    <name>ДатаПерехода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата перехода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="713206c6-82b4-449a-9dc1-206a712687ca">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="de307095-c369-4fe9-9474-020c0e211881">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <types>EnumRef.ВидыОперацийПоЕдиномуНалоговомуСчету</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5d33922c-e153-40dc-8b09-e0acdfad0a12">
+    <name>ДокументОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ операции</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.УведомлениеОбИсчисленныхСуммахНалогов</types>
+      <types>DocumentRef.ОперацияБух</types>
+      <types>DocumentRef.ОперацияПоЕдиномуНалоговомуСчету</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

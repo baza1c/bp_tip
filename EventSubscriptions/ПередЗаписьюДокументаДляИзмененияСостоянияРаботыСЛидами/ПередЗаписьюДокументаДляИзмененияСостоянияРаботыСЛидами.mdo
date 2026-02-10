@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="32540709-13dc-4c2a-8c57-6d32a6655a3a">
+  <name>ПередЗаписьюДокументаДляИзмененияСостоянияРаботыСЛидами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перед записью документа для изменения состояния работы с лидами</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ПрочееВзаимодействие</types>
+    <types>DocumentObject.КоммерческоеПредложение</types>
+    <types>DocumentObject.Встреча</types>
+    <types>DocumentObject.ТелефонныйЗвонок</types>
+    <types>DocumentObject.ЭлектронноеПисьмоИсходящее</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.РаботаСЛидами.ПередЗаписьюДокументаУсловиеИзмененияСостояния</handler>
+</mdclass:EventSubscription>

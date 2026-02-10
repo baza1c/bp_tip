@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0af22b29-384c-4e53-9296-6790b9af8236">
+  <name>ПроверитьДЗИПередЗаписьюДокументаЗарплатаКадрыРасширенная</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверить дату запрета перед записью документа</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ДоговорРаботыУслуги</types>
+    <types>DocumentObject.БронированиеГражданПребывающихВЗапасе</types>
+    <types>DocumentObject.СверкаСВоеннымКомиссариатом</types>
+    <types>DocumentObject.СообщениеОНеСостоящихНаВоинскомУчетеГражданах</types>
+    <types>DocumentObject.ИзмененияСведенийСотрудниковДляВоенкомата</types>
+    <types>DocumentObject.ПервоначальнаяПостановкаНаВоинскийУчет</types>
+    <types>DocumentObject.ХодатайствоОБронированииГражданПребывающихВЗапасе</types>
+    <types>DocumentObject.СведенияОПриемеПереводеИУвольненииДляВоенкомата</types>
+    <types>DocumentObject.ИзвещениеОПриемеИлиУвольненииДляВоенкомата</types>
+    <types>DocumentObject.СведенияОПодлежащихВоинскомуУчетуГражданах</types>
+    <types>DocumentObject.ОтменаБронированияГражданПребывающихВЗапасе</types>
+    <types>DocumentObject.СверкаСДокументамиВоинскогоУчета</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ДатыЗапретаИзменения.ПроверитьДатуЗапретаИзмененияПередЗаписьюДокумента</handler>
+</mdclass:EventSubscription>

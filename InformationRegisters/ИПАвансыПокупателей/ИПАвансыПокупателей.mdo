@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="42f9b557-99c6-46ba-8684-4e1a883f40af">
+  <producedTypes>
+    <selectionType typeId="4f04ebb6-9923-4d05-8a82-9d59e6ecb332" valueTypeId="0ecb45a6-972f-4f09-81f3-08e03c31b8b5"/>
+    <listType typeId="1c26dedb-b51a-4dc7-b311-29d7c71c9873" valueTypeId="46eee58a-835a-48ff-9016-f68c4f5ff662"/>
+    <managerType typeId="81afefbe-22ad-4608-988a-89a2a1e78add" valueTypeId="9f221cfd-b0e0-4a73-b9d6-43d417171972"/>
+    <recordSetType typeId="e1d5cf20-6980-4ec2-87e1-538dab022330" valueTypeId="da7e0172-8476-45ef-bf89-f261f5adc1fa"/>
+    <recordKeyType typeId="38b85867-df85-49bd-bddd-3a4a9179ca73" valueTypeId="29cc0c7a-01d6-4660-b20e-b79c38fbe2e2"/>
+    <recordType typeId="4a73fddc-73e7-4db0-abc8-ca5280b94ce6" valueTypeId="5c6e83a7-f55a-4b0b-880f-303aac616966"/>
+    <recordManagerType typeId="8c231a5f-9086-47de-80d8-b70e3d75afbd" valueTypeId="4dc49812-1652-4b83-8314-2f5ac40da2d5"/>
+  </producedTypes>
+  <name>ИПАвансыПокупателей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Авансы покупателей (ИП)</value>
+  </synonym>
+  <comment>Данные для расчета регламентной операции &quot;Включение авансов в прочие доходы для ИП&quot;</comment>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Quarter</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Аванс покупателя (ИП)</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Авансы покупателей (ИП)</value>
+  </listPresentation>
+  <resources uuid="0bc84ed3-990b-4e05-a11b-5297bfa3da09">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="97a4292c-2c66-4181-ac70-9d9a3d322e30">
+    <name>ДействуетДо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действует до</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="081aa5be-8471-4932-814b-c18a85f4d846">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="0ed0d9b8-591c-4fa0-b599-0cda520984cd">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="aee496f8-847b-426f-a731-ae8e456efdf8">
+    <name>ДокументОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ оплаты</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ПоступлениеНаРасчетныйСчет</types>
+      <types>DocumentRef.КорректировкаРеализации</types>
+      <types>DocumentRef.КорректировкаДолга</types>
+      <types>DocumentRef.ВозвратТоваровОтПокупателя</types>
+      <types>DocumentRef.ОтчетОРозничныхПродажах</types>
+      <types>DocumentRef.ПриходныйКассовыйОрдер</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="56bdcdc6-9e2d-4e0a-8d27-e68f9e83abae">
+    <name>ВидДеятельности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид деятельности</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыДеятельностиПредпринимателей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6c3feda2-0fdc-4cce-9817-b7c54ece42d3">
+    <name>СтатьяДоходов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья доходов</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПрочиеДоходыИРасходы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

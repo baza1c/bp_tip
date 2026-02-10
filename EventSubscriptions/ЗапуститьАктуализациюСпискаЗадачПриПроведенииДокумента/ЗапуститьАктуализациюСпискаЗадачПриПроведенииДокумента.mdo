@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fc239875-7090-42e9-9235-5602cb39fd90">
+  <name>ЗапуститьАктуализациюСпискаЗадачПриПроведенииДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запустить актуализацию списка задач при проведении документа</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ОтражениеЗарплатыВУчете</types>
+    <types>DocumentObject.ДоговорРаботыУслуги</types>
+    <types>DocumentObject.ОтражениеЗарплатыВБухучете</types>
+    <types>DocumentObject.СписаниеСРасчетногоСчета</types>
+    <types>DocumentObject.ОперацияНалоговогоУчетаПоНДФЛ</types>
+    <types>DocumentObject.КадровыйПеревод</types>
+    <types>DocumentObject.РасходныйКассовыйОрдер</types>
+    <types>DocumentObject.СведенияОбУдержанномНДФЛ</types>
+    <types>DocumentObject.СведенияОТрудовойДеятельностиРаботниковСЗВ_ТД</types>
+    <types>DocumentObject.ПриемНаРаботу</types>
+    <types>DocumentObject.ДепонированиеЗарплаты</types>
+    <types>DocumentObject.Увольнение</types>
+  </source>
+  <event>Posting</event>
+  <handler>CommonModule.УчетЗарплаты.ЗапуститьАктуализациюСпискаЗадачПриПроведенииДокументаОбработкаПроведения</handler>
+</mdclass:EventSubscription>

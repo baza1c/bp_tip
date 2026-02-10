@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f449e342-1d45-4e61-94b8-a282fbc0d9b0">
+  <producedTypes>
+    <selectionType typeId="54be44fd-8e2e-411c-b05d-f6e039b9a315" valueTypeId="d1311954-c5f8-4177-8f60-d8ade67bf757"/>
+    <listType typeId="4ff22fa6-75d5-4ca9-a099-f3d2258ae6bd" valueTypeId="8f7110e9-7db4-4d4a-bfd0-fa7f8275583c"/>
+    <managerType typeId="608e922e-6a77-4f2e-b65d-c166d94ef673" valueTypeId="6665e39f-71c2-428f-a6aa-98ecbefad8db"/>
+    <recordSetType typeId="e359720f-f94d-4505-acf8-f686110d8195" valueTypeId="7b252001-28d2-4380-9e30-c745bfa2962d"/>
+    <recordKeyType typeId="6aa80b5d-35ef-4255-a9d8-2f751d58dff6" valueTypeId="5dbd9b51-cd7a-4f7f-afe1-f562cbb9e5c4"/>
+    <recordType typeId="84c6b5b7-ae74-4a14-8471-f5fb8da3dee5" valueTypeId="f81df007-286e-4f7c-942a-20c6c9fdd7dc"/>
+    <recordManagerType typeId="be7fc3ea-4593-4b6a-b70e-5de3c66d4009" valueTypeId="69598ebb-14eb-43b2-a04b-5cb1beae1d12"/>
+  </producedTypes>
+  <name>СканированиеКассовыхЧековПодотчетныхЛиц</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сканирование кассовых чеков подотчетных лиц</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="d9f81cde-a59d-4134-82c9-72a889fb7a9e">
+    <name>КассовыйЧек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кассовый чек</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.КассовыйЧекПодотчетногоЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="01abf689-7a47-4f95-9449-96928620b285">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПользовательШиныМобильныхПриложений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

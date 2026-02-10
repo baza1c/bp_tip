@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="68aa1aa4-b413-4f10-9e55-33c0691400b6">
+  <producedTypes>
+    <objectType typeId="36c0a6f2-0d59-4af6-ac3e-dba2a0bf9f6e" valueTypeId="7b4c5f3d-db8d-4a64-8493-6b6faff52bc5"/>
+    <managerType typeId="a9041484-0f71-481c-87bc-7c9643f9f094" valueTypeId="4724c9f4-149c-435f-89bc-426e7e521d27"/>
+  </producedTypes>
+  <name>МониторСверкиСКонтрагентами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Монитор сверки с контрагентами</value>
+  </synonym>
+  <defaultForm>DataProcessor.МониторСверкиСКонтрагентами.Form.Форма</defaultForm>
+  <attributes uuid="5a8033b5-47e4-43cd-9f51-120c07cd75dc">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="f722e758-0b3f-44c3-a567-a689802c140b">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="8aaa350d-f990-40ec-8cce-3606508810f2">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="36f267b6-7503-4d3e-a719-166d7df2c918">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b705548b-b6b4-44ef-8882-3158a554ac1b">
+    <name>Расшифровка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c819e791-815f-4b2d-b53f-5d9b62a9c082">
+    <name>ПечатьСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="e0be5adf-98ec-41d0-bb25-d9a13ebd2014">
+    <name>СхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="bc7368c2-7456-4c50-a701-fdfe6f2ebf70">
+    <name>РасшифровкаАктыСверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка акты сверки</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="7c8a7d65-28dd-496b-b7fa-10ec612d7e8b">
+    <name>РасшифровкаНетОригиналов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка нет оригиналов</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="cca9fb03-a702-41c3-bc6b-8a5f82a45470">
+    <name>ШаблонПисьмаЗапросНаСверку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон письма запрос на сверку</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="1b2b3833-78f4-438c-9f3b-53b1fbef27c8">
+    <name>ШаблонПисьмаЗапросНаСверку_НетЭДО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон письма запрос на сверку без ЭДО</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="bb2a32ac-ee26-4e1c-9a0a-5191aa9dca6d">
+    <name>ПФ_MXL_СостояниеСверкиСКонтрагентами</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние сверки с контрагентами</value>
+    </synonym>
+  </templates>
+  <templates uuid="ddb3f108-38ec-4ece-9156-bd0a1f9bcb30">
+    <name>ШаблонПисьмаЗапросОригиналов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон письма запрос оригиналов</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <commands uuid="7185c2c3-5ee6-4a48-9fc9-c5991dabc815">
+    <name>МониторСверкиСКонтрагентами</name>
+    <synonym>
+      <key>ru</key>
+      <value>Монитор сверки с контрагентами</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

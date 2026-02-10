@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d92cd83e-7bf3-40b8-a600-d8bc793faadf">
+  <name>ЗапуститьАктуализациюСпискаЗадачПриУдаленииПроведенияКадровогоДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запустить актуализацию списка задач при удалении проведения кадрового документа</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ДоговорРаботыУслуги</types>
+    <types>DocumentObject.КадровыйПеревод</types>
+    <types>DocumentObject.СведенияОТрудовойДеятельностиРаботниковСЗВ_ТД</types>
+    <types>DocumentObject.ПриемНаРаботу</types>
+    <types>DocumentObject.Увольнение</types>
+  </source>
+  <event>Posting</event>
+  <handler>CommonModule.УчетЗарплаты.ЗапуститьАктуализациюСпискаЗадачПриУдаленииПроведенияКадровогоДокумента</handler>
+</mdclass:EventSubscription>

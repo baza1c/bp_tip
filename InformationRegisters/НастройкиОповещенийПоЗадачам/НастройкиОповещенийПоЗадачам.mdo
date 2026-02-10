@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="24e9deab-3d84-47b9-a60d-b4cbb62530d3">
+  <producedTypes>
+    <selectionType typeId="81050224-9382-4cc7-aca2-ad1e08d542d2" valueTypeId="b187cda7-2eb9-420e-9206-394bd4d11273"/>
+    <listType typeId="9e389920-5b19-4293-af16-74cd3562b734" valueTypeId="2150c53c-1fff-47d6-ba31-bf143941d0a4"/>
+    <managerType typeId="dffe931a-c744-4566-a010-c6ca12c85d52" valueTypeId="a7367a14-159c-422c-baa9-0b93a09ffb98"/>
+    <recordSetType typeId="8ce0c626-1cc8-4835-8abc-5766e207da71" valueTypeId="9aab63b9-29cb-4797-a917-b1e176a972e1"/>
+    <recordKeyType typeId="860c8c7e-dbf8-4316-9e61-2ebdf3687b56" valueTypeId="a02e52f3-654b-45aa-9e72-3227a71ccb8b"/>
+    <recordType typeId="9c25ebfe-b6b1-4d36-9573-3cca9a78b69e" valueTypeId="778bb682-3a64-4539-a7a1-cf184486b17b"/>
+    <recordManagerType typeId="8d7c23ba-99e0-439e-94c1-54c3bdc872ce" valueTypeId="e3237eb8-c6a4-4303-9945-d9ea0838560a"/>
+  </producedTypes>
+  <name>НастройкиОповещенийПоЗадачам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки оповещений по задачам</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Настройка оповещения по задаче</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Настройки оповещений по задачам</value>
+  </listPresentation>
+  <resources uuid="75030f06-529e-433c-a116-1e726675b7d6">
+    <name>ОповещатьПриИзмененииСтатуса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оповещать при изменении статуса</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="708bb2b6-4ea0-46d8-bafb-1af95acd318a">
+    <name>Задача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача</value>
+    </synonym>
+    <type>
+      <types>TaskRef.ЗадачаИсполнителя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

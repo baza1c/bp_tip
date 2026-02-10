@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="73981503-7238-4cee-ab91-a6256cb641aa">
+  <producedTypes>
+    <selectionType typeId="9f9346e9-ee8d-4aed-a46d-fdfa20519c34" valueTypeId="bfe2c162-b5c7-4367-b7fc-2d1d451e9cb7"/>
+    <listType typeId="19cd0d9c-bfba-4459-9d66-c7883d419128" valueTypeId="7efdf390-b903-46aa-bafa-73d50605f8a0"/>
+    <managerType typeId="78db5385-5ff9-4bed-9465-c22cdbb9b5f9" valueTypeId="4c8fc0dc-a23b-4bf9-b088-ce7ceee59757"/>
+    <recordSetType typeId="27070f0d-7b35-4d59-ac6e-fba55b400961" valueTypeId="066e9564-4662-499f-a631-6ea90130ba06"/>
+    <recordKeyType typeId="dc13340c-ad9f-4210-a0d9-da6f102da0ac" valueTypeId="3f81ac69-e128-481c-b42f-9de497d660ea"/>
+    <recordType typeId="fcab779d-6765-4d8e-9f92-02d28c3fe4db" valueTypeId="825589bf-0a20-4fed-9552-2946c9c0c075"/>
+    <recordManagerType typeId="b850b658-515a-428c-b1d4-a750182b4e56" valueTypeId="b33e78d9-ab97-42f6-9e35-2552d0359105"/>
+  </producedTypes>
+  <name>ОпросШиныМобильныхПриложений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Опрос шины мобильных приложений</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <resources uuid="8eeb99ad-ea3f-4420-863e-072ef26d54f9">
+    <name>ТребуетсяЗапрос</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требуется запрос</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="121fad22-083e-4b24-bc14-8319f9541b87">
+    <name>ДатаСледующегоЗапроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата следующего запроса (UTC)</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="83e27281-19ed-4b44-9d51-6fac30293d19">
+    <name>Версия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="a940b3f1-7a6e-4119-b201-bfa99915edfc">
+    <name>ИмяПриложения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя приложения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

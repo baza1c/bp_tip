@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b9e286ad-4fca-45f6-a7b9-5e38456b4bf5">
+  <producedTypes>
+    <objectType typeId="21236c6c-d526-4bbe-a411-c6e4d859ed57" valueTypeId="63afc6df-b672-4e46-a258-b06cc1065633"/>
+    <managerType typeId="50f3375b-3624-4b15-80d1-aee16a423f06" valueTypeId="c41d1ef0-61ef-40b4-88f0-3a72f9215349"/>
+  </producedTypes>
+  <name>ПрайсЛист</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прайс-лист</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ПрайсЛист.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ПрайсЛист.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ВспомогательнаяФормаНастроекОтчета</defaultSettingsForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="19d2bc39-9c86-4277-88da-b30c7d601e98">
+    <name>Период</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="163955f7-e71b-4e63-95a0-cca01ea4aa63">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6127d298-1243-41e9-92a6-58fc1985fbf3">
+    <name>ТипЦен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип цен</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТипыЦенНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7eafdbbd-7723-44c4-9a5a-35c0c0d65ce4">
+    <name>ПоказательКод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель код</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="754dd857-39a5-4664-81ae-8869fcf4c75f">
+    <name>ПоказательАртикул</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель артикул</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="391d6ebb-c828-4fbd-9a91-8edc927efa4a">
+    <name>ПоказательЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель единица измерения</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b5f6d896-6209-4148-9987-98a5091c2804">
+    <name>ВНаличии</name>
+    <synonym>
+      <key>ru</key>
+      <value>В наличии</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выводить товары только в наличии (услуги всегда в наличии). </value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="09325207-cfe3-404a-8362-03f7366e8127">
+    <name>ПоказательОстаток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель остаток</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d7b6f5cf-63d2-4494-b2ba-52b67d01f6fa">
+    <name>ПредставлениеОстатка1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление остатка при его отсутствии</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="39a1a1d7-5aa0-4ad8-a17e-c3ffc74654ba">
+    <name>ПредставлениеОстатка2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление остатка в диапазоне</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="14c7cf73-fdb1-440e-9615-b5886d504a4a">
+    <name>ПредставлениеОстатка3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление остатка при достаточном количестве</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="603659b7-86a9-4b6f-813c-9a530ef49578">
+    <name>ИспользоватьПредставлениеОстатка1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать представление остатка</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ae812961-9eae-40a0-a459-84ee326cf232">
+    <name>ИспользоватьПредставлениеОстатка2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать представление остатка</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4029da24-5921-40eb-b6bd-2306c54f2d06">
+    <name>ЗначениеОстаткаОт1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение остатка от</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6a2bd113-e8fc-4b28-a5b5-acd8057ab25d">
+    <name>ЗначениеОстаткаДо</name>
+    <synonym>
+      <key>ru</key>
+      <value>до</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="730dafc1-1d8e-4d04-8dcd-4c0e3ae2f056">
+    <name>ЗначениеОстаткаОт2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение остатка от</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2b3f5cd0-f653-4064-bd90-a2ece969e683">
+    <name>ИспользоватьПредставлениеОстатка3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать представление остатка</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="22de5e72-87f4-40d0-a04d-030a0f198d98">
+    <name>ФормироватьОтчетПриИзмененииНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формировать отчет при изменении настроек</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a7d96460-15b9-4ae2-9c0a-4b308e831ef2">
+    <name>ПоказыватьБыстрыеНастройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показывать быстрые настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="a44bd83f-6efa-4c50-b90d-c97cb05afdc8">
+    <producedTypes>
+      <objectType typeId="babe495f-0088-4d63-8e94-2f51843ace53" valueTypeId="c6bfb82a-e7a2-4ac5-b3cb-d582b39e7aa8"/>
+      <rowType typeId="626dc46f-b1fc-4ff8-a109-ed83fdf380cd" valueTypeId="baa7b9c9-9797-411b-970e-518dbf1923e4"/>
+    </producedTypes>
+    <name>ПредставлениеОстатков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление остатков</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="3f1e1342-381b-4219-ba63-c296c950caa6">
+      <name>Значение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d404ca79-d8cd-4b6a-ba01-fae5c2d0f958">
+      <name>Пояснение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пояснение</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue"/>
+    </attributes>
+    <attributes uuid="84e67064-1521-4ee8-9ada-f34b57a61eda">
+      <name>Представление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Представление</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>40</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue"/>
+    </attributes>
+    <attributes uuid="1f21a7af-48c1-4b9c-8153-7b886eda09b0">
+      <name>ФактическийОстаток</name>
+      <synonym>
+        <key>ru</key>
+        <value>Фактический остаток</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="62931573-044a-486f-a24e-9138ae161c96">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="6fe45b72-0677-4092-9b6a-5aaafb351e3a">
+    <name>ЗаголовокПрайсЛиста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заголовок прайс листа</value>
+    </synonym>
+  </templates>
+  <templates uuid="29f02fe7-fb9b-4492-8422-23db62f8a672">
+    <name>СхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="b6179679-9a7e-4022-932c-3459f2056cee">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="62f916ba-a89c-4479-aa9d-d7d242bbefec">
+    <name>ПрайсЛистКоманднаяПанель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прайс-лист</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="7a63e7c7-d76c-46e3-9ba1-bbd35ca9352d">
+    <name>ПрайсЛист</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прайс-лист</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

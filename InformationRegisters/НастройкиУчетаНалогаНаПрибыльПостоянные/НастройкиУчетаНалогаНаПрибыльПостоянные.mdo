@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="214483ce-5a31-406b-bfeb-8271406e3450">
+  <producedTypes>
+    <selectionType typeId="8b661369-10d4-4e70-acdc-bc5d4fae2e13" valueTypeId="57856308-c75a-4663-bf36-2de5c88ac9cb"/>
+    <listType typeId="f7c0ec4b-2d98-4494-a254-57930853096d" valueTypeId="9d0b0422-d944-4fcb-8927-725b13909afb"/>
+    <managerType typeId="647b39c7-144d-4eda-9b9b-9a5de925bfa2" valueTypeId="8b6dafb9-c8c9-4982-aff5-7cdd6d155496"/>
+    <recordSetType typeId="73c5a7ee-3039-4a06-9b34-fc95ae8e9afc" valueTypeId="2dbdd006-2016-4799-8504-f21a15a5e45e"/>
+    <recordKeyType typeId="f0a71a33-0a93-4585-a0bf-a3de92aaf511" valueTypeId="be7f2449-c344-4af5-a2f7-9b8803fe3a21"/>
+    <recordType typeId="21a5d333-7779-4aeb-bfe3-251c3811288c" valueTypeId="8700df00-4838-4c3a-8443-1a7a40c8b62d"/>
+    <recordManagerType typeId="4a2f5e53-f4e1-48a0-aa7a-6582ede73fbf" valueTypeId="cb7d393e-bacd-4009-9d33-ff80866410dd"/>
+  </producedTypes>
+  <name>НастройкиУчетаНалогаНаПрибыльПостоянные</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки учета налога на прибыль (без уточнения периода действия)</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="632ba08d-5be0-4657-a4f6-0f6342d0ebcf">
+    <name>УчитыватьОтложенныеКурсовыеРазницы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учитывать отложенные курсовые разницы</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+  </resources>
+  <resources uuid="c2d6ace5-9038-4ee4-aead-bab4c3de2df3">
+    <name>ОтложитьОтрицательныеКурсовыеРазницы2022</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отложить отрицательные курсовые разницы 2022 года</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="8c07981b-21cd-4fe1-91e4-83daa0857e9a">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

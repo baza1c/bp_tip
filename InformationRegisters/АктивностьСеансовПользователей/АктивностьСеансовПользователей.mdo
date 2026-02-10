@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f97e54f1-4f9b-489a-a7b2-4f7e09435baa">
+  <producedTypes>
+    <selectionType typeId="1424df9d-1636-464f-9d1f-f94bdbcf02c7" valueTypeId="a61061fb-2dd9-4c4f-8eb1-690dd0ffc424"/>
+    <listType typeId="3a5f36f5-84e2-4869-abea-8e3e4c93d62d" valueTypeId="77cc7bbd-f64f-4639-a819-995777d8be2f"/>
+    <managerType typeId="a35a19dd-1e54-4fb2-b09b-052916b1ee2c" valueTypeId="dd719466-2c7f-4e00-83b2-8762e3be04cf"/>
+    <recordSetType typeId="16635098-dc92-46bd-9a6f-069a244161be" valueTypeId="4c6e084f-e108-4f81-a183-23e66eb7d6e6"/>
+    <recordKeyType typeId="3689b2e7-6b1a-4d47-8c34-c3f9b7126a6e" valueTypeId="539ed983-59fc-4d8c-9f52-152057bb121a"/>
+    <recordType typeId="3772ce62-b81a-4940-901b-a991c22f75fd" valueTypeId="04bd993a-68bc-4b82-bb0b-2e681d11433f"/>
+    <recordManagerType typeId="ca15a0fb-a103-4654-8eeb-34ae8cb81445" valueTypeId="0cc8e23e-7079-4038-987a-278abdaa2995"/>
+  </producedTypes>
+  <name>АктивностьСеансовПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Активность сеансов пользователей</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Активность сеанса пользователя</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Активность сеансов пользователей</value>
+  </listPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Служебный регистр сведений. Записывается подпиской на событие &quot;ЗаписатьАктивностьСеансаПередЗаписьюДокумента&quot; перед записью документов, входящих в последовательность &quot;ДокументыОрганизаций&quot;. Изменения в регистре отслеживаются в обработке группового перепроведения.</value>
+  </explanation>
+  <resources uuid="64d638fa-6fc8-4f99-a41f-b601164d6bc1">
+    <name>ДатаПоследнейАктивности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата последней активности</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Местные дата и вермя, когда выполнялась запись документа.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="fe743d55-d8a2-44cc-8936-94e2ebbf5095">
+    <name>ДатаПоследнейАктивностиУниверсальная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата последней активности универсальная</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Универсальная дата записи документа.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="01939603-f8ad-4d43-8e92-20287faa33ff">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ОтчетПроизводстваЗаСмену</types>
+      <types>DocumentRef.СписаниеОС</types>
+      <types>DocumentRef.ОтражениеЗарплатыВБухучете</types>
+      <types>DocumentRef.СписаниеСРасчетногоСчета</types>
+      <types>DocumentRef.ОбесценениеВнеоборотныхАктивов</types>
+      <types>DocumentRef.ПередачаОС</types>
+      <types>DocumentRef.СписаниеТоваров</types>
+      <types>DocumentRef.АвансовыйОтчет</types>
+      <types>DocumentRef.УведомлениеОбИсчисленныхСуммахНалогов</types>
+      <types>DocumentRef.ГТДИмпорт</types>
+      <types>DocumentRef.КорректировкаПоступления</types>
+      <types>DocumentRef.ВыкупПредметовЛизинга</types>
+      <types>DocumentRef.ОтчетОператораСистемыПлатон</types>
+      <types>DocumentRef.УведомлениеОбУменьшенииНалогаПоПатенту</types>
+      <types>DocumentRef.СчетФактураВыданный</types>
+      <types>DocumentRef.ОприходованиеТоваров</types>
+      <types>DocumentRef.СписаниеМатериаловИзЭксплуатации</types>
+      <types>DocumentRef.ВыдачаДенежныхДокументов</types>
+      <types>DocumentRef.РегистрацияОплатыОсновныхСредствДляУСН</types>
+      <types>DocumentRef.ПередачаМатериаловВЭксплуатацию</types>
+      <types>DocumentRef.ВыплатыСамозанятым</types>
+      <types>DocumentRef.ПринятиеКУчетуОС</types>
+      <types>DocumentRef.ИзменениеСпециальногоКоэффициентаНМА</types>
+      <types>DocumentRef.ПоступлениеНаРасчетныйСчет</types>
+      <types>DocumentRef.КорректировкаРеализации</types>
+      <types>DocumentRef.НачислениеПеней</types>
+      <types>DocumentRef.НачислениеОценочныхОбязательствПоОтпускам</types>
+      <types>DocumentRef.НачислениеТуристическогоНалога</types>
+      <types>DocumentRef.РасходныйКассовыйОрдер</types>
+      <types>DocumentRef.СписаниеДепонированнойЗарплаты</types>
+      <types>DocumentRef.ОперацияБух</types>
+      <types>DocumentRef.УстановкаЦенНоменклатуры</types>
+      <types>DocumentRef.ПутевойЛист</types>
+      <types>DocumentRef.ПередачаЗадолженностиНаФакторинг</types>
+      <types>DocumentRef.ПоступлениеДенежныхДокументов</types>
+      <types>DocumentRef.АктОбОказанииПроизводственныхУслуг</types>
+      <types>DocumentRef.АвизоМПЗВходящее</types>
+      <types>DocumentRef.ПоступлениеНМА</types>
+      <types>DocumentRef.СведенияОбУплатеНалогов</types>
+      <types>DocumentRef.КорректировкаДолга</types>
+      <types>DocumentRef.ОтражениеЗарплатыВУчете</types>
+      <types>DocumentRef.ПоступлениеТоваровУслуг</types>
+      <types>DocumentRef.Премия</types>
+      <types>DocumentRef.ОказаниеУслуг</types>
+      <types>DocumentRef.ПередачаОСВАренду</types>
+      <types>DocumentRef.МодернизацияОС</types>
+      <types>DocumentRef.ПереоценкаТоваровВРознице</types>
+      <types>DocumentRef.ПрекращениеАренды</types>
+      <types>DocumentRef.ВозвратТоваровОтПокупателя</types>
+      <types>DocumentRef.АвизоОСИсходящее</types>
+      <types>DocumentRef.АвизоМПЗИсходящее</types>
+      <types>DocumentRef.ПередачаТоваров</types>
+      <types>DocumentRef.ВыработкаМатериалов</types>
+      <types>DocumentRef.Отпуск</types>
+      <types>DocumentRef.ИзменениеСпособовОтраженияРасходовПоАмортизацииНМА</types>
+      <types>DocumentRef.ОплатаПлатежнойКартой</types>
+      <types>DocumentRef.ТребованиеНакладная</types>
+      <types>DocumentRef.БольничныйЛист</types>
+      <types>DocumentRef.ОтчетКомиссионераОПродажах</types>
+      <types>DocumentRef.ОтчетКомитентуОПродажах</types>
+      <types>DocumentRef.ПодготовкаКПередачеОС</types>
+      <types>DocumentRef.СчетФактураПолученный</types>
+      <types>DocumentRef.ВводНачальныхОстатков</types>
+      <types>DocumentRef.ИзменениеОтраженияРасходовПоАренднымПлатежамОС</types>
+      <types>DocumentRef.ОперацияСИнвестиционнымВычетом</types>
+      <types>DocumentRef.ВыработкаОС</types>
+      <types>DocumentRef.АвизоПрочееВходящее</types>
+      <types>DocumentRef.ПередачаОборудованияВМонтаж</types>
+      <types>DocumentRef.ПередачаНМА</types>
+      <types>DocumentRef.ОтчетОРозничныхПродажах</types>
+      <types>DocumentRef.ВозвратОСОтАрендатора</types>
+      <types>DocumentRef.ПоступлениеВАренду</types>
+      <types>DocumentRef.ПриходныйКассовыйОрдер</types>
+      <types>DocumentRef.РасходыПредпринимателя</types>
+      <types>DocumentRef.ПоступлениеИзПереработки</types>
+      <types>DocumentRef.НачислениеЗарплаты</types>
+      <types>DocumentRef.Увольнение</types>
+      <types>DocumentRef.ВыработкаНМА</types>
+      <types>DocumentRef.ЗаписьКнигиУчетаДоходовИРасходовИП</types>
+      <types>DocumentRef.ЗаявлениеОВвозеТоваров</types>
+      <types>DocumentRef.АвизоРасчетыВходящее</types>
+      <types>DocumentRef.РегистрацияОплатыОсновныхСредствДляИП</types>
+      <types>DocumentRef.ИзменениеСостоянияОС</types>
+      <types>DocumentRef.ЗаявлениеОЗачетеВСчетПредстоящейОбязанности</types>
+      <types>DocumentRef.ИзменениеГрафиковАмортизацииОС</types>
+      <types>DocumentRef.ОперацияСПатентом</types>
+      <types>DocumentRef.РеализацияУслугПоПереработке</types>
+      <types>DocumentRef.КомплектацияНоменклатуры</types>
+      <types>DocumentRef.РеализацияТоваровУслуг</types>
+      <types>DocumentRef.ВозвратТоваровПоставщику</types>
+      <types>DocumentRef.ИнвентаризацияНЗП</types>
+      <types>DocumentRef.ОтражениеНачисленияНДС</types>
+      <types>DocumentRef.ОтражениеНДСКВычету</types>
+      <types>DocumentRef.РасходыНаОнлайнКассыУменьшающиеНалоги</types>
+      <types>DocumentRef.УсловияОплатыПоступления</types>
+      <types>DocumentRef.РеализацияОтгруженныхТоваров</types>
+      <types>DocumentRef.ЗаписьКУДиР</types>
+      <types>DocumentRef.ОперацияПоЕдиномуНалоговомуСчету</types>
+      <types>DocumentRef.АвизоОСВходящее</types>
+      <types>DocumentRef.ИзменениеСпециальногоКоэффициентаОС</types>
+      <types>DocumentRef.ПереводОСВМалоценноеОборудование</types>
+      <types>DocumentRef.ВозвратМатериаловИзЭксплуатации</types>
+      <types>DocumentRef.ИзменениеСпособовОтраженияРасходовПоАмортизацииОС</types>
+      <types>DocumentRef.ПеремещениеОС</types>
+      <types>DocumentRef.АвизоПрочееИсходящее</types>
+      <types>DocumentRef.АвизоРасчетыИсходящее</types>
+      <types>DocumentRef.ИзменениеПараметровНачисленияАмортизацииОС</types>
+      <types>DocumentRef.ПоступлениеДопРасходов</types>
+      <types>DocumentRef.ПринятиеКУчетуНМА</types>
+      <types>DocumentRef.СписаниеНМА</types>
+      <types>DocumentRef.ПеремещениеТоваров</types>
+      <types>DocumentRef.ИзменениеУсловийАренды</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документ, запись которого выполнялась в момент последней активности.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4aba7b1a-0594-4bbe-83de-6c5847f60d56">
+    <name>ИдентификаторЗаданияДляОстановки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор задания для остановки</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Уникальный идентификатор работающего фонового задания, в котором выполняется групповое перепроведение, или закрытие месяца. Этот инденификатор проверяется самим фоновым заданием, внутри себя. Если идентификаторы совпадают, задание плавно завершает работу.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="7831106d-64ff-4487-ba5b-968cfeef8380">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a15e2288-1b6f-4b6c-b386-efc46867cdd7">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

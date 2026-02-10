@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5a6c4fd5-e6ae-4c2b-b1ce-d60f12bafe85">
+  <producedTypes>
+    <selectionType typeId="23d7ebf2-0796-4a6b-b606-402f0b727b00" valueTypeId="5fd8c0d9-19aa-447b-835b-d395386c466b"/>
+    <listType typeId="5cebba7e-923a-4bef-9a77-08cebbea933b" valueTypeId="366d3010-8b8c-4416-9c1a-87ca665ad31c"/>
+    <managerType typeId="596ffce1-cb41-4fd8-9479-0b177955fd2e" valueTypeId="c24aad58-58c2-4e3c-bca0-2c7c14388d86"/>
+    <recordSetType typeId="efd52c16-fe67-47a7-920d-73f8b7a1541f" valueTypeId="afa777f8-8087-4a93-8420-67544f0c5081"/>
+    <recordKeyType typeId="e2cea288-9252-4c57-8dfe-49b47c740c6d" valueTypeId="5270600c-220e-44bb-8a99-b3f19db1df7e"/>
+    <recordType typeId="5308f5ea-fef7-4bfa-a77a-bf8cf188b260" valueTypeId="c111c913-29fc-428b-bddc-67ed41dea223"/>
+    <recordManagerType typeId="316e0e62-f363-4cf1-bdad-b9322c4db574" valueTypeId="9809a3e6-0490-4fad-806c-bc0e5daaee94"/>
+  </producedTypes>
+  <name>СтавкиАкциза</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ставки акциза</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e91dda52-580f-4fa7-ac3f-2697d8cdf631">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3890bcf1-07e4-4a30-b227-b1790025b1ea">
+    <name>ОкруглятьДоЦелого</name>
+    <synonym>
+      <key>ru</key>
+      <value>Округлять до целого</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="ac8577c2-7c0c-4ab8-8bda-4af1f83d1fec">
+    <name>КодВидаПодакцизногоТовара</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код вида подакцизного товара</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КодыВидовПодакцизныхТоваров</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cdcfa9ce-9bda-42ff-bcb2-c99a4c43356e">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлассификаторЕдиницИзмерения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <templates uuid="86c04880-852b-48e2-8d38-e5e66724bd9b">
+    <name>СтавкиАкциза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставки акциза</value>
+    </synonym>
+  </templates>
+</mdclass:InformationRegister>

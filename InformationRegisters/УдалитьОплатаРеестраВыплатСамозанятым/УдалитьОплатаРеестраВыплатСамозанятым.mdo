@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="551b915b-1255-4091-a097-b6aca2cbab7e">
+  <producedTypes>
+    <selectionType typeId="2784da40-e555-40ff-8ad9-d17cf32f1448" valueTypeId="0c45b432-7aa4-4528-9f96-241944120014"/>
+    <listType typeId="50f906f8-a4a8-48f6-879d-8e87f89dc0c4" valueTypeId="f2bdea2c-d145-4c06-9e4b-1beda0002f70"/>
+    <managerType typeId="b713f282-c3cb-4192-8a9c-5ad99fef90b5" valueTypeId="28be963b-05cd-49aa-8f65-f2d4df581261"/>
+    <recordSetType typeId="ff18a0d8-a440-404e-93be-333ce92e3fd7" valueTypeId="9e05617b-b00d-4cd7-9696-4d2db819efbf"/>
+    <recordKeyType typeId="30ebf5c4-1b8f-4054-9c5f-4ef5e598aea8" valueTypeId="72480a4b-40c2-4e64-9b03-7693170cc4e0"/>
+    <recordType typeId="a2eea0e9-06a4-42ce-8fed-0360b4e0798e" valueTypeId="2d353bf4-1c6e-4abf-b3fb-4cc1ab97e853"/>
+    <recordManagerType typeId="daaaa96b-65a9-40a8-a74c-4aa2590957da" valueTypeId="aaee35a6-5df7-4a1e-ac8f-f8193d21b17a"/>
+  </producedTypes>
+  <name>УдалитьОплатаРеестраВыплатСамозанятым</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удалить оплата реестра выплат самозанятым</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="caf45578-b269-4292-a351-5f3d1f4267ef">
+    <name>ВыплатыСамозанятым</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выплаты самозанятым</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ВыплатыСамозанятым</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c5a181a2-b5d6-4ad3-bcef-f57272971ffa">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

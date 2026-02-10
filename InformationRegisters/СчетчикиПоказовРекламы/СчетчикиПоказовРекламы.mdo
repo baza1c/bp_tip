@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c5f1146e-38cb-4770-8d01-f735d6460ba6">
+  <producedTypes>
+    <selectionType typeId="5ce15550-de81-4d41-8f7c-fcfdfd46ed4e" valueTypeId="f57cf987-0d20-4d32-9970-a20ef736b845"/>
+    <listType typeId="7c06c1de-a40f-4e20-9087-bfa22dae5bbb" valueTypeId="02ca4a1c-79a2-4d65-8116-0221709a8a2d"/>
+    <managerType typeId="063a46ae-50fe-4d4b-9896-2389f3795ca3" valueTypeId="727225db-ffd4-44a7-880a-420ad42b565c"/>
+    <recordSetType typeId="6201e69e-a0cd-4ecc-ab96-861a4e9bc05a" valueTypeId="6d137ab8-2fec-42d0-a7f4-38310ceb71ee"/>
+    <recordKeyType typeId="722fd57f-87c3-41e6-bb4c-b04be42e57a1" valueTypeId="5b59e781-5edc-4796-8cf9-92682e0a4055"/>
+    <recordType typeId="d89c19fb-c723-43c6-a460-3e983cef98b7" valueTypeId="4749f241-adf5-4585-b852-3292b94a129e"/>
+    <recordManagerType typeId="ede82269-f7ad-4c44-b9e6-92c3016d1dad" valueTypeId="2646d15d-34a6-4eb0-8ffc-a15c2db36725"/>
+  </producedTypes>
+  <name>СчетчикиПоказовРекламы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Счетчики показов рекламы</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СчетчикиПоказовРекламы.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СчетчикиПоказовРекламы.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Данные показа рекламы</value>
+  </recordPresentation>
+  <resources uuid="33194abe-986d-4ecc-944d-def25ce20af6">
+    <name>Показы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показы</value>
+    </synonym>
+    <type>
+      <types>DefinedType.КоличествоПоказовРекламы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="82063ccf-cd3e-445f-8ba3-f751ccb8cc33">
+    <name>ДатаПоследнегоПоказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата последнего показа</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="c11fb12c-340e-496d-8589-99d59843f9dd">
+    <name>ИдентификаторРекламы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор рекламы</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ИдентификаторРекламы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b2d4629e-7157-45fd-be70-eb7c7bdcf9c7">
+    <name>ПрофильПотребителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Профиль потребителя</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПрофильПотребителяРекламы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="18aa8ff3-a381-4372-9a19-12635da4004b">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3f196bd8-0390-4468-a6cf-09399e45a343">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

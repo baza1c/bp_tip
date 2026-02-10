@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3ba74593-fe9a-4f42-b993-54ca05b320c3">
+  <name>ПроверитьДЗИПередЗаписьюНабораЗаписейЗарплатаКадрыРасширенная</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверить дату запрета изменения перед записью набора записей</value>
+  </synonym>
+  <source>
+    <types>InformationRegisterRecordSet.ВоинскийУчет</types>
+    <types>InformationRegisterRecordSet.СостоянияВБракеФизическихЛиц</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ДатыЗапретаИзменения.ПроверитьДатуЗапретаИзмененияПередЗаписьюНабораЗаписей</handler>
+</mdclass:EventSubscription>

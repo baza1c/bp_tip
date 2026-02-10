@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="04760c5b-851b-49be-83f2-22914f9870df">
+  <producedTypes>
+    <objectType typeId="c3d389b2-cf98-4f8b-89a9-3e1d15237ab1" valueTypeId="57452db3-febc-4f93-a157-2ede3f6b7c13"/>
+    <managerType typeId="157a91bd-f1d2-4306-b449-47863d6ee50d" valueTypeId="dd009448-f22c-4bd2-9c3f-82bcd2194ee7"/>
+  </producedTypes>
+  <name>ПодключенныеКассы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подключенные кассы</value>
+  </synonym>
+  <defaultForm>DataProcessor.ПодключенныеКассы.Form.ПодключенныеКассы</defaultForm>
+  <forms uuid="e27386a0-5c2f-4ee5-8365-57663ae6ba28">
+    <name>ПодключенныеКассы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подключенные кассы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a657b423-56ef-4ec8-9e88-99f7075f998b">
+    <name>ПомощникПодключенияКассы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Помощник подключения кассы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="53fce8ef-c515-46a3-a486-db74bcf4bb49">
+    <name>ПараметрыПодключения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры подключения</value>
+    </synonym>
+  </templates>
+  <commands uuid="5f732a0c-7277-4f5d-ad39-44531f45d7ed">
+    <name>ПодключенныеКассы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подключенные кассы</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="29eb0f28-0e19-4c6f-8f7b-45bed7fb93a0">
+    <name>ККМОфлайнВыгрузитьПрайс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузить прайс</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.ОфлайнОборудование</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Выгрузить изменения в прайс-листе</value>
+    </toolTip>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.ТоварыВыгрузить</picture>
+    </picture>
+  </commands>
+  <commands uuid="e0a61194-2287-40ac-887c-29e0d1350a9a">
+    <name>ККМОфлайнЗагрузитьПродажи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузить продажи</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.ОфлайнОборудование</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Загрузить продажи</value>
+    </toolTip>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.ТоварыЗагрузить</picture>
+    </picture>
+  </commands>
+  <commands uuid="10b81013-2422-49dd-a233-6574a1973f47">
+    <name>ККМОфлайнВыгрузитьНастройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузить настройки</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.ОфлайнОборудование</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Выгрузить настройки</value>
+    </toolTip>
+  </commands>
+  <commands uuid="b26b812a-6177-404a-bad9-30d138178044">
+    <name>ККМОфлайнВыгрузитьПолныйПрайсЛист</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузить полный прайс-лист</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.ОфлайнОборудование</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Выгрузить полный прайс-лист</value>
+    </toolTip>
+  </commands>
+  <commands uuid="ff8503b3-2f97-49c5-995f-cbc642eea162">
+    <name>ККМОфлайнОчиститьПрайсЛист</name>
+    <synonym>
+      <key>ru</key>
+      <value>Очистить прайс лист</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.ОфлайнОборудование</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Очистить прайс лист</value>
+    </toolTip>
+  </commands>
+</mdclass:DataProcessor>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6d138d09-e7af-47bc-a7c9-17b8555a9ca5">
+  <producedTypes>
+    <selectionType typeId="7d031333-e79d-420f-8ecb-ec86f7c6ef3f" valueTypeId="0ea4bafa-3cdd-4ae1-b3fc-3a8de9c0b6b1"/>
+    <listType typeId="84b5b5ca-1f5a-436c-925d-bac7031d6469" valueTypeId="a7327e75-2280-4879-899f-6a5ef5de51cb"/>
+    <managerType typeId="834bd95f-27de-4eb0-bb9f-e05fc9a25f06" valueTypeId="01130704-ec68-4b6c-b704-b49a724f85e2"/>
+    <recordSetType typeId="b137fb1b-5eb4-44ee-bfe9-48298a906ae5" valueTypeId="98a32cf0-76fc-4163-99cb-6433cea8ff08"/>
+    <recordKeyType typeId="a92a98e0-db96-4012-b43b-e11f575b9dec" valueTypeId="4813c606-ce99-4394-b2c8-3a6433ad5fd3"/>
+    <recordType typeId="cd53b150-3ef4-4816-a778-ce0a7bc6e850" valueTypeId="b625555c-a65a-4dc9-b4a0-1353e6f75c39"/>
+    <recordManagerType typeId="fe3de7af-abd1-4949-8c5a-7cba8fa3b811" valueTypeId="fbdeb813-77c3-4b10-9ca4-c6e84c66974b"/>
+  </producedTypes>
+  <name>НастройкиИнтеграцииBnovo</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки интеграции Bnovo</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.НастройкиИнтеграцииBnovo.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.НастройкиИнтеграцииBnovo.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="93cd250e-ce36-4a59-afca-88ae77ecc7ab">
+    <name>Покупатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Покупатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="031374ca-dd16-4179-9016-97fee5a3950e">
+    <name>ВидОплатыКартой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид оплаты картой</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыОплатОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Организация</name>
+      <field>InformationRegister.НастройкиИнтеграцииBnovo.Dimension.Организация</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="dff46267-70f0-4642-a6a8-3f41e4ea2cbc">
+    <name>ДатаПоследнейЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата последней загрузки бронирования</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8d56ccbc-bb18-478e-aa35-e9a7af3168b4">
+    <name>ЗагружатьОплатыНаличные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загружать оплаты наличными</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="98d67a73-5c17-439b-b20d-2404b97fa8ec">
+    <name>ЗагружатьОплатыКарта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загружать оплаты картой</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b819e4a9-82d7-41ee-9992-70f1a677108b">
+    <name>УчетнаяЗапись</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учетная запись</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="38d5fb2c-97e1-4b14-b90a-bf001f5ae365">
+    <name>РазделятьДоговораПоНомерамБроней</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разделять договора по номерам броней</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="7ae320e3-c117-4238-ad11-9f8f131d3bc3">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="568261cf-2b09-4e3c-9ae1-b6f3b1d17776">
+    <name>Гостиница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гостиница</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Гостиницы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="a234bc9a-20db-4e30-ad82-9ad4536f3c63">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f6f548f1-234f-47e1-9c8f-d568dca3096b">
+    <name>ПомощникПодключения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Помощник подключения</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a542a86c-e8ad-464f-9681-76a740b22d13">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="cd221c6b-a90a-448b-95d7-51c840ac6cfb">
+    <name>НастройкаИнтеграцииBnovo</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интеграция с Bnovo</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:InformationRegister>

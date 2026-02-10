@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5144a78b-7662-4a4f-ae95-57ab83749a19">
+  <producedTypes>
+    <selectionType typeId="14dcd269-05b7-4a40-84fd-cfc5d03357c6" valueTypeId="55e53452-5fa7-46e1-afe0-e904b514c481"/>
+    <listType typeId="0919f456-41a0-4d01-838d-10accfceb3b1" valueTypeId="8e2e0bf1-0b03-4a84-87b1-33d055824e6b"/>
+    <managerType typeId="38d53b95-eee6-439d-858e-47a809c2bcf5" valueTypeId="a6fb44fa-e121-4919-b968-dfd28436de8b"/>
+    <recordSetType typeId="8ffb69d1-ab7f-42aa-a08d-523bd0cbd879" valueTypeId="54ed2462-c3a7-464e-8ea7-3deb03161cda"/>
+    <recordKeyType typeId="dc7cc1d6-89c5-448e-886b-85adb47e0427" valueTypeId="87425d78-4c4b-4761-a372-0e8ad6f187c2"/>
+    <recordType typeId="9d31b13b-fb15-4837-abdf-87571e135789" valueTypeId="25c66455-b895-460e-a187-ef70f46b6757"/>
+    <recordManagerType typeId="8e69cc06-9835-4747-ab6b-ba3acc819487" valueTypeId="2a2a7312-9bbd-4d62-a6e8-3daa1fe20f63"/>
+  </producedTypes>
+  <name>РасчетСтавкиНалогаНаПрибыльЗаМесяц</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет ставки налога на прибыль за месяц</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c37a9e93-688f-4255-a7ce-e4ce6640f282">
+    <name>Ставка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчетная ставка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>8</precision>
+        <scale>6</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2d7ca739-d28b-48da-9dec-f0fd35774c83">
+    <name>СуммаНалога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма налога</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>18</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b58a2801-429c-4230-adcf-d4b0e57b92bb">
+    <name>СуммаБазы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма базы</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>18</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="3f641040-42f3-49aa-bb61-907918dbabc3">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c164212a-e6be-4365-bda5-f1f08bfb4126">
+    <name>ПериодРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период расчета</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

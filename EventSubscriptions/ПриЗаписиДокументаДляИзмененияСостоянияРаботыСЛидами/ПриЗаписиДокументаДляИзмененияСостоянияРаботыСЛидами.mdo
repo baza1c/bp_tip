@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c4b977fd-4fb8-4782-b7bd-0f0abf8de2c2">
+  <name>ПриЗаписиДокументаДляИзмененияСостоянияРаботыСЛидами</name>
+  <synonym>
+    <key>ru</key>
+    <value>При записи документа для изменения состояния работы с лидами</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ПрочееВзаимодействие</types>
+    <types>DocumentObject.КоммерческоеПредложение</types>
+    <types>DocumentObject.Встреча</types>
+    <types>DocumentObject.ТелефонныйЗвонок</types>
+    <types>DocumentObject.ЭлектронноеПисьмоИсходящее</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.РаботаСЛидами.ПриЗаписиДокументаУсловиеИзмененияСостояния</handler>
+</mdclass:EventSubscription>

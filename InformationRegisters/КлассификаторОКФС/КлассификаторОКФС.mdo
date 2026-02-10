@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="abea22d3-c587-4142-8539-9dc11f2dc2f8">
+  <producedTypes>
+    <selectionType typeId="ce7bd7fe-b4b3-4775-967d-462459ed5bc3" valueTypeId="12dad8b4-8fc6-4f59-ba9c-331f31a5edb2"/>
+    <listType typeId="b87d5fc2-8bc6-442f-8a2c-40ca0fe74c41" valueTypeId="c98518eb-fca6-41b3-832d-e115a103318c"/>
+    <managerType typeId="a46b278f-e34f-439e-a0bf-b16f8d39e82c" valueTypeId="230d90c2-faf8-456f-9e41-bec5f5964d93"/>
+    <recordSetType typeId="dcef8ddc-c2f6-4a69-a073-10e3e3bf9fae" valueTypeId="48dcdfb9-097f-4882-af1b-82848a23875b"/>
+    <recordKeyType typeId="39199f88-7c9a-4cba-a6d7-5e01c94b603c" valueTypeId="265abf50-441d-4923-a77a-21fe58ec0317"/>
+    <recordType typeId="5db63d20-2b96-4b99-80ca-7f44a3bb4b89" valueTypeId="11da5af1-ad55-477c-92ad-813284c0b950"/>
+    <recordManagerType typeId="d13c47d4-1567-45f7-bcf6-2523807f671f" valueTypeId="7752747a-f5ea-4bf0-b5a6-28899a6a127b"/>
+  </producedTypes>
+  <name>КлассификаторОКФС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Классификатор ОКФС</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.КлассификаторОКФС.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Код по классификатору ОКФС</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Классификатор ОКФС</value>
+  </listPresentation>
+  <resources uuid="b9f9f238-cb58-45c3-822f-e2da1cb30432">
+    <name>Наименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>254</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <dimensions uuid="413e60c5-1d6c-4877-8e35-73b831501282">
+    <name>Код</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>8</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="62444581-bf82-4997-b078-eafa1e9b5112">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="2eb4c6b8-166a-4d1c-97fe-046378e91160">
+    <name>ОКФС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ОКФС</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:InformationRegister>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="238e0920-134d-4589-92ef-a457f4721c6e">
+  <name>КалендарьОтчетности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Календарь отчетности</value>
+  </synonym>
+  <rootURL>ReportingCycles</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="3683cd8b-166e-4e24-87ce-e2f5fd639c5e">
+    <name>ПроверкаПодключения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверка подключения</value>
+    </synonym>
+    <template>/ping</template>
+    <methods uuid="bfeed373-060b-46d4-a3c8-4cb7959359b0">
+      <name>Проверить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Проверить</value>
+      </synonym>
+      <handler>ПроверкаПодключенияПроверить</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="ca97c4d9-1284-4b90-895c-eeb50cec3737">
+    <name>ОтчетныеКампанииЗапросы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчетные кампании (Запросы)</value>
+    </synonym>
+    <template>/requests</template>
+    <methods uuid="6d0a2278-8674-4fb0-bf3a-d39974eba20a">
+      <name>Запросить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Запросить</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>ОтчетныеКампанииЗапросыЗапросить</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="8551b811-beed-4e0e-bd00-204ace935adf">
+    <name>ОтчетныеКампанииОтветы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчетные кампании ответы</value>
+    </synonym>
+    <template>/requests/{RequestId}</template>
+    <methods uuid="993d340e-4432-4d85-97e4-1f72327735a0">
+      <name>Получить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получить</value>
+      </synonym>
+      <handler>ОтчетныеКампанииОтветыПолучить</handler>
+    </methods>
+    <methods uuid="70d296d8-71c0-4057-ad97-7c003be0af02">
+      <name>ПодтвердитьПолучение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подтвердить получение</value>
+      </synonym>
+      <httpMethod>DELETE</httpMethod>
+      <handler>ОтчетныеКампанииОтветыПодтвердитьПолучение</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="80bc4d9e-3180-46ee-83c3-a5c6a18d01c0">
+  <name>ПриПолученииФормыОтчетовВоинскогоУчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>При получении формы отчетов воинского учета</value>
+  </synonym>
+  <source>
+    <types>ReportManager.СведенияОбИзмененияхДляВоенкомата</types>
+    <types>ReportManager.ОбразованияСотрудников</types>
+    <types>ReportManager.АнализИзмененийЛичныхДанныхСотрудников</types>
+    <types>ReportManager.ВоинскийУчетОбщий</types>
+    <types>ReportManager.ВоинскийУчетБронирование</types>
+  </source>
+  <event>FormGetProcessing</event>
+  <handler>CommonModule.УчетЗарплатыВызовСервера.ПриПолученииФормыОтчетовВоинскогоУчета</handler>
+</mdclass:EventSubscription>

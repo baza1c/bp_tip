@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b1ddaa02-3c42-4fa9-bb60-70e1260ddc95">
+  <name>ВыключитьПоказНастройкиАвтоматическогоПриемаПриглашенийЭДО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выключить показ настройки автоматического приема приглашений ЭДО</value>
+  </synonym>
+  <source>
+    <types>ConstantValueManager.ПриниматьПриглашенияЭДОАвтоматически</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.ОбменСКонтрагентамиБП.ВыключитьПоказНастройкиАвтоматическогоПриемаПриглашенийЭДОПриЗаписи</handler>
+</mdclass:EventSubscription>

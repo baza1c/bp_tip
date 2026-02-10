@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="464ecd8c-847d-48d3-9e6f-b31a65af7c22">
+  <producedTypes>
+    <selectionType typeId="2a38bc04-0ff1-4947-9e2d-c9b7bd71644a" valueTypeId="5c4df248-2aa8-462d-94cd-a57c4a799e86"/>
+    <listType typeId="0d6b1670-b7ea-497d-9b75-9a60fb752f39" valueTypeId="6ef903e7-c6c5-4b95-a711-f29b57698d81"/>
+    <managerType typeId="c8bbec28-b41a-45e0-8189-4fea7ca633a6" valueTypeId="0a26b94a-f34c-4459-95df-7f8671b3e0fb"/>
+    <recordSetType typeId="efbd3f11-0f88-48a8-a107-3626a0169f75" valueTypeId="804b7cf1-ad0f-4955-9885-1010338eab0a"/>
+    <recordKeyType typeId="ba80a063-bc4f-4500-837a-8776d395564f" valueTypeId="c68b0102-cb50-485c-a1bd-5e4d6cdb6e30"/>
+    <recordType typeId="5772c9a6-505e-46d0-a188-2b5e47bbb692" valueTypeId="cbf26914-538d-4543-b93f-11b83fb8a893"/>
+    <recordManagerType typeId="93a686d4-b9d9-4c63-8095-00e5f7e132bc" valueTypeId="a1b6e981-b33c-4f6c-91aa-547c592d0fae"/>
+  </producedTypes>
+  <name>ПараметрыАннулированныхЧековМойНалог</name>
+  <synonym>
+    <key>ru</key>
+    <value>Периоды аннулированных чеков сервиса Мой налог</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="708f397e-5add-42d4-8af6-b895a2225730">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="ff978c53-5977-4abc-8fe4-0eeb949efe58">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

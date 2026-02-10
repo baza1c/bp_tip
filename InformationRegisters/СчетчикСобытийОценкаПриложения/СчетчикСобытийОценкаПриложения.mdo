@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4f6d21e3-bacd-49fc-b90a-3e80d935f84e">
+  <producedTypes>
+    <selectionType typeId="e39d1bac-e9ee-410e-a189-c2f8ddc099f0" valueTypeId="0f1beded-6be6-4ed6-9a8c-bfebf81eff86"/>
+    <listType typeId="8a4b69d5-b2cb-4c56-9d54-51e3394b862c" valueTypeId="132c8fab-c6ff-446b-bb32-ad43257f130b"/>
+    <managerType typeId="6ce5acbb-75af-4ec6-92dc-499efd1a8033" valueTypeId="fc5b081b-71fd-4da4-81d9-9e146e077880"/>
+    <recordSetType typeId="5c9eb229-66a6-4a5d-8dc3-a17a1376ccc0" valueTypeId="10734799-10da-45b8-bb05-f2aca9e2bbd2"/>
+    <recordKeyType typeId="85b4ce6d-3bd8-43e5-ae6f-5ca24da920c7" valueTypeId="88ffe67c-2d80-4cea-b4c4-91809f32972d"/>
+    <recordType typeId="571872f7-f9b1-4944-a582-70ec9c07a8ad" valueTypeId="13a1ff91-eff0-41bc-923f-8c5f9d71e5bd"/>
+    <recordManagerType typeId="9002b1cf-df97-4ea9-a47f-33ff75519fc4" valueTypeId="e0d99625-e018-4a70-9f76-eb4d11d957fe"/>
+  </producedTypes>
+  <name>СчетчикСобытийОценкаПриложения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Счетчик событий оценка приложения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="7588d4b8-1e93-4de6-ac28-e3418ed24f9c">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="63fdd6d1-d1ea-4fa2-8365-588248a23526">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d99790da-16bc-4717-a19d-5ae474d1286d">
+    <name>ИдентификаторОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор операции</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

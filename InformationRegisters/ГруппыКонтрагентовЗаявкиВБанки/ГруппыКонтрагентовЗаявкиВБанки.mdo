@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6dfe67fb-3984-40c6-ad39-45f4192f0b80">
+  <producedTypes>
+    <selectionType typeId="bdc9a380-9518-4f42-b5b2-ffecbb79ea84" valueTypeId="16537230-e6af-4cdb-9632-be1d977292d5"/>
+    <listType typeId="ea01cc31-98fb-42eb-9fc3-fb4e3d6c38ba" valueTypeId="6360a008-135e-4bb8-bf03-e8e5e0455bf6"/>
+    <managerType typeId="e86b88e9-9583-4f7a-8795-0da7817050f9" valueTypeId="3ea5cec8-8ed4-4eed-ab23-4133944a1379"/>
+    <recordSetType typeId="cf2b606a-9d73-4baa-9792-9909a1596202" valueTypeId="b6d34c49-648c-4a34-be0d-96530b218a70"/>
+    <recordKeyType typeId="a81fc5b4-831d-493a-88dd-19095027bdb8" valueTypeId="238706eb-95ba-447e-8110-e72888db2b62"/>
+    <recordType typeId="8d63a0c2-944f-4c2b-851b-c84c610a508a" valueTypeId="7a9d792a-8353-4ebe-894a-ed2a056ea8c1"/>
+    <recordManagerType typeId="bbfb0e8d-2b72-487d-bbd9-a1387e569430" valueTypeId="ee9ce933-4a6e-402e-adf5-ca51477b526a"/>
+  </producedTypes>
+  <name>ГруппыКонтрагентовЗаявкиВБанки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Группы контрагентов (заявки в банки)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="cc28260b-c7cb-4361-8657-10648dc664ed">
+    <name>Банк</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банк</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.БанкиУниверсальногоОбмена</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="06904416-9630-4035-9e59-ba741d910531">
+    <name>ГруппаКонтрагентов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа контрагентов</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3ba19b59-ffdc-45da-b8ce-7d77683050d2">
+    <name>ИНН</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИНН</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

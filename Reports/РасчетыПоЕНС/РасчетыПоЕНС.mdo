@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9af680d0-b2a3-4cdd-9378-32b196d0de43">
+  <producedTypes>
+    <objectType typeId="dbd5af95-e5e1-4621-940f-3dc77fc5de9a" valueTypeId="c631f77f-acac-48be-bc5a-107492430060"/>
+    <managerType typeId="08ae8473-7e95-4281-845e-1700050ef59b" valueTypeId="d4fc0cd0-ed0a-4e50-9f41-487d9a786d0b"/>
+  </producedTypes>
+  <name>РасчетыПоЕНС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчеты по ЕНС</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.РасчетыПоЕНС.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.РасчетыПоЕНС.Template.РасчетыПоЕНС</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <attributes uuid="ca063a9c-b908-4912-be94-5d445187d8bd">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d680e901-073b-4352-b4a8-ddbbe3770e0b">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2ccd4bfc-7c54-4976-86be-b666d298fea8">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="e6765a60-a146-421c-961f-f236bbc121c2">
+    <name>РежимРасшифровки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим расшифровки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7d08bbab-48db-4471-955b-2d1096ab233b">
+    <name>ВключатьОбособленныеПодразделения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Включая обособленные подразделения</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="14c3c529-fc4f-44b0-a5b6-b0a714a4c560">
+    <name>ВариантОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант отчета</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="2fea7030-522b-41ce-80f5-2940781d40b0">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="90ab7f32-2cd3-440a-87cc-360ad7e60ed2">
+    <name>РасчетыПоЕНС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчеты по ЕНС</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="e3b48b0c-4863-4ecb-9638-4cd8224240f3">
+    <name>РасчетыПоНалогамНаЕНС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчеты по налогам на ЕНС</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="816b3f66-0925-4229-a3ea-5bd3ec00eeed">
+    <name>РасчетыПоЕНС2023</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчеты по ЕНС для 2023 года</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="fdb40913-114a-4c4e-92fe-6523cdd3948b">
+    <name>ВедомостьПоЕНС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ведомость по ЕНС</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

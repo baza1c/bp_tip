@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cc55002f-0e9f-4cb9-bd39-e61180f50a08">
+  <producedTypes>
+    <selectionType typeId="5d321639-54a0-4af9-b68e-c57f9a956ee8" valueTypeId="9e84efd5-30f3-4fd6-a0db-a3d072521567"/>
+    <listType typeId="d519212b-ca39-444f-9c61-5d6c0d0112fb" valueTypeId="d7573dac-660d-4dbd-92ed-53150e9f7af4"/>
+    <managerType typeId="09200830-456e-4a50-b20d-5f1d3aec2f6f" valueTypeId="10e57d5c-978f-4054-8e87-9ef7d2efe0a0"/>
+    <recordSetType typeId="5d6f5fd6-0331-4286-9e90-df1cefb34544" valueTypeId="e92cd564-42fb-44a3-a7a9-69b740a637f8"/>
+    <recordKeyType typeId="8e705fb8-e166-4079-938b-bbebf1b74576" valueTypeId="4e59cf51-4b2b-4029-a037-53792d50af34"/>
+    <recordType typeId="3e7cab24-cc95-4937-b3ff-04f87f2d440f" valueTypeId="c31bad6d-fb3d-4d9d-a1ac-30e16d0be061"/>
+    <recordManagerType typeId="d941ec43-ae1e-4288-906c-3fa67fdee0eb" valueTypeId="94f0023e-5138-492b-8694-95f008f7c3ed"/>
+  </producedTypes>
+  <name>ПредупрежденияПриЗагрузкеОтчетовМаркетплейсов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Предупреждения при загрузке отчетов маркетплейсов</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="0b9ba76c-b87f-4508-bbf3-95496673577e">
+    <name>СтатусДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус документа</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыПроблемАвтозагрузкиОтчетовМаркетплейсов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a78479f9-ddae-4ad1-9d44-da1485d85f89">
+    <name>ДанныеОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные отчета</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="7336244b-e97f-4393-aba0-e239258fb70e">
+    <name>ОписаниеОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание ошибки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <dimensions uuid="e5416983-8fd5-4501-bb75-fa4aa9e26755">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ВозвратТоваровОтПокупателя</types>
+      <types>DocumentRef.ОтчетКомиссионераОПродажах</types>
+      <types>DocumentRef.ОтчетМаркетплейса</types>
+      <types>DocumentRef.РеализацияТоваровУслуг</types>
+      <types>DocumentRef.РеализацияОтгруженныхТоваров</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="660a23a8-f600-4a4e-850c-4ad664c239ea">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ef02751d-9013-484e-b6a1-4dbfc26cccea">
+    <name>Маркетплейс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Маркетплейс</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыМаркетплейсов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

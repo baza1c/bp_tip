@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ea477959-26b7-4b6c-8859-a76f68e9dfcc">
+  <producedTypes>
+    <selectionType typeId="3c26e388-ca51-42ba-b900-57b179e87e91" valueTypeId="7e660311-5cd2-4c31-b582-87dc71e85b01"/>
+    <listType typeId="7ae188bc-594e-487f-b130-8efae5eed94d" valueTypeId="cd99c91d-82cd-4587-8559-c4ffc46c5aba"/>
+    <managerType typeId="d44f6d42-a3c1-4318-bbcb-54f4ecc011f2" valueTypeId="d013e4e7-3abc-4910-8691-1e058e9c0982"/>
+    <recordSetType typeId="1caa091f-b1f8-4954-b7b3-7b29dc231ddf" valueTypeId="87b1ec62-3c29-4ddf-b31f-8a5a686efcce"/>
+    <recordKeyType typeId="2793a726-3fab-455c-9516-4ccaf75a8752" valueTypeId="c677da04-34f1-4991-aaac-992a1a0c3831"/>
+    <recordType typeId="2be137e6-101c-4043-a697-aaff1ee75c55" valueTypeId="480322a6-6878-4da5-b588-09f673526612"/>
+    <recordManagerType typeId="18c98934-d60a-42d8-95c5-a012944ae317" valueTypeId="5a6c438b-5e08-40e3-a0f6-f72625e1c880"/>
+  </producedTypes>
+  <name>РезультатыЗакрытияМесяца</name>
+  <synonym>
+    <key>ru</key>
+    <value>Результаты закрытия месяца</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Результат закрытия месяца</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Результаты закрытия месяца</value>
+  </listPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Хранит в себе последние отчеты после выполнения закрытия месяца, и актуализации</value>
+  </explanation>
+  <resources uuid="f486de05-fa97-4943-89f9-6c46257e2cb4">
+    <name>ОтчетОбОшибках</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет об ошибках</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Табличный документ, который будет показан пользователю. Содержит ошибки, возникшие при последней актуализации.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="03907a93-8c07-4163-a9ed-97f57b5b8bcf">
+    <name>ПериодОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период отчета</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Период, в котором завершилось выполнение актуализации и был записан отчет об ошибках.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6d7f4d5c-22e2-45c0-9dab-81866e1d10f7">
+    <name>ДатаВыполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата выполнения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата, когда закрытие месяца выполнялось в последний раз.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c4926e6e-7ea6-4673-8833-7e5179a103f3">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь, от имени которого выполнялась последняя актуализация.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="64a65d0f-2f69-4ea4-a633-c2afe762e55c">
+    <name>Выполнено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнено</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Результат последнего запуска актуализации или закрытия месяца.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="842d9566-c9f3-40e6-a9ac-6b564eb3d501">
+    <name>ИдентификаторФоновогоЗадания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор фонового задания</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Используется для поиска работаюшего фонового задания закрытия месяца</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="dbed3c92-32ec-4d7c-966a-a98e668bd2a6">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="908900b5-d68d-4f53-a567-cbbe24e64fdd">
+    <name>ФормаОтсутствиеОшибок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отсутствие ошибок</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="aa6d59f4-b8ba-44ec-ad8d-f8970d758c43">
+    <name>ОтчетыОРезультатах</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчеты о результатах</value>
+    </synonym>
+  </templates>
+</mdclass:InformationRegister>

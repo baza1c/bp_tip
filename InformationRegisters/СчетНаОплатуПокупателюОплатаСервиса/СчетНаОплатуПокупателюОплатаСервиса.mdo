@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6d5da90a-9ed2-49d7-a417-09d2f9465212">
+  <producedTypes>
+    <selectionType typeId="f743e191-e5c9-43b9-b6d2-30fbeacf4d54" valueTypeId="e6d3634f-5314-498f-97ce-98ea89b84e5e"/>
+    <listType typeId="c1cc10ae-be26-4d85-bb27-2ca0e2d67eb3" valueTypeId="b217d686-0ec1-4fcc-8413-13e1f8c4dff3"/>
+    <managerType typeId="965de909-268f-4705-86d5-15cae62453d7" valueTypeId="f22402cd-d44c-483f-84af-26aeb5a93fb6"/>
+    <recordSetType typeId="f61aff76-9be4-4cb4-bb19-883ba36aa0ec" valueTypeId="131be6d8-be60-4ae9-8655-fe92c4d5a69e"/>
+    <recordKeyType typeId="2067e057-0775-4342-8332-b4e1058d84be" valueTypeId="88683815-d769-4ad1-834f-ab8030b81baf"/>
+    <recordType typeId="479d2674-da78-44a7-98a4-415bae823691" valueTypeId="799c7ea2-7a1b-4218-9091-f97a0b281a64"/>
+    <recordManagerType typeId="8932add7-be91-4b26-be09-30fc160b3134" valueTypeId="873bce77-955f-4e7a-ba74-e59b4e34a538"/>
+  </producedTypes>
+  <name>СчетНаОплатуПокупателюОплатаСервиса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Счет на оплату покупателю (оплата сервиса)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="df1397e1-86b6-4fd3-b209-83d552dd9ae7">
+    <name>КодПокупателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код покупателя</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="74a06bc3-2067-4e7f-a139-2d7a59aa0788">
+    <name>ПочтаПокупателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Почта покупателя</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="c14ad8e3-8c75-4b63-ad00-632d6ecd13cc">
+    <name>ПлатежнаяСсылка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Платежная ссылка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="a41b7366-d2b4-4b62-95a9-b49d93a5e701">
+    <name>КодПродавца</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код продавца</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="7a3d5bc5-c32a-429a-b514-4b86fe0431c3">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="0c8ff839-1da8-40b0-9d36-cd7cf7ecdcf0">
+    <name>СчетНаОплатуПокупателю</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет на оплату покупателю</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.СчетНаОплатуПокупателю</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="48683041-a65b-48f1-a495-1966b0bc9512">
+    <name>Биллинг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Биллинг</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="fbcda2a3-9d67-4ef3-b764-4ce1172dbf39">
+    <name>Биллинг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Биллинг</value>
+    </synonym>
+    <group>FormNavigationPanelSeeAlso</group>
+    <commandParameterType>
+      <types>DocumentRef.СчетНаОплатуПокупателю</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:InformationRegister>
