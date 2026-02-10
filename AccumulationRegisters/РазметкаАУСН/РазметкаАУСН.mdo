@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b9afd1e6-627c-4d0b-b4e2-d1877c069678">
+  <producedTypes>
+    <selectionType typeId="11fb3aea-86b9-47d0-afb3-842bfa301727" valueTypeId="cfc910a4-6eee-4bb4-8a59-9d559086e0ad"/>
+    <listType typeId="c34faba8-205d-4d5e-98b9-e14e26d9c506" valueTypeId="dce45d27-6a3c-4588-827a-a587440c2dad"/>
+    <managerType typeId="b4f3b6e7-6922-40f4-a371-c6463a54a2ae" valueTypeId="5e95acef-f5d4-45ab-a3ca-712de78312e7"/>
+    <recordSetType typeId="3c0bc721-7607-47ac-b75e-f54b23cce1e9" valueTypeId="0b8098c7-b5e9-40ba-811f-6b475e9315fe"/>
+    <recordKeyType typeId="92d744b6-2fe2-416c-9679-62896b3e165d" valueTypeId="256e2fa6-210d-462f-8a9b-3a8a8ac55f35"/>
+    <recordType typeId="0d2a3281-7b1f-4668-afdc-f3b332535f9b" valueTypeId="033f8bab-5621-4eb7-99f6-3ff7b548033a"/>
+  </producedTypes>
+  <name>РазметкаАУСН</name>
+  <synonym>
+    <key>ru</key>
+    <value>Банковские операции АУСН</value>
+  </synonym>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <listPresentation>
+    <key>ru</key>
+    <value>Разметка Автоматизированная УСН</value>
+  </listPresentation>
+  <resources uuid="2f2aad88-b214-48fc-a456-49f5e2f7a76e">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ДенежнаяСуммаЛюбогоЗнака</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="3bd09d25-f4fa-4686-80a4-b4aff397ebde">
+    <name>ВалютнаяСумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валютная сумма</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ДенежнаяСуммаЛюбогоЗнака</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="b2d19fc7-59b3-4513-802a-87341dd7751e">
+    <name>Источник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок расчета</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ИсточникиРазметкиАУСН</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="9dd78fc0-07a9-46a7-9a91-1cbed060f965">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="b5085b33-c420-4886-b396-fe64c9fbe38f">
+    <name>БанковскаяОперация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банковская операция</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.СписаниеСРасчетногоСчета</types>
+      <types>DocumentRef.ПоступлениеНаРасчетныйСчет</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="669056b9-e4a9-462d-bf86-2c5d83807505">
+    <name>ПризнакНалоговойБазы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Признак налоговой базы</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПризнакиНалоговойБазыАУСН</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="12ec77bf-4f5e-4ed0-a95a-837f18cc1405">
+    <name>КатегорияОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория операции</value>
+    </synonym>
+    <type>
+      <types>EnumRef.КатегорииОперацийАУСН</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

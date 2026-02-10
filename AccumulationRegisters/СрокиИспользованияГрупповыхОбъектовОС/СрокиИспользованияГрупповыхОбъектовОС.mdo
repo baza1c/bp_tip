@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c46168b3-8954-454a-8b88-65160975fbec">
+  <producedTypes>
+    <selectionType typeId="73f283ce-0643-4d02-ab00-7499a56eafd8" valueTypeId="44e699fd-cc0c-4884-8bd1-0393a9abaedf"/>
+    <listType typeId="fcf59478-843f-4dc8-8459-b737e2d0297e" valueTypeId="410039b7-1ac9-4f3e-9658-4dc182e03cdf"/>
+    <managerType typeId="b1ac999d-71a5-4ca2-b239-b58a510e9ec6" valueTypeId="12a71523-a416-47e6-81ff-5a8349d978c8"/>
+    <recordSetType typeId="4dc53024-7f38-400d-8330-b010d7ad84c6" valueTypeId="256c58c5-864e-45b6-9e7e-004864cc5146"/>
+    <recordKeyType typeId="d58056e3-9aea-4ea4-bc2c-36b82497949a" valueTypeId="efe5e597-3589-439f-8dca-66594b906c63"/>
+    <recordType typeId="fdea7398-1396-457e-bfad-12ecee66108f" valueTypeId="5a0d5cd9-0d7a-461e-a25f-6d174b74c580"/>
+  </producedTypes>
+  <name>СрокиИспользованияГрупповыхОбъектовОС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сроки использования групповых объектов ОС</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>RecordType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <resources uuid="26017bb0-bd11-4bf9-99a9-cf6e01171343">
+    <name>СрокИспользования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок использования, мес.</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="50e146b9-57f2-434f-b10f-7ea90b7f0932">
+    <name>ЭтоАмортизация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это амортизация</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="55e64dc6-c784-4af0-baaf-0f46e813d084">
+    <name>ОсновноеСредство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основное средство</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОсновныеСредства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ЕдиницаУчета</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ЕдиницыУчетаОС.EnumValue.ГрупповойОбъект</value>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="4db0c66e-261d-4ba9-a02d-f56acd69940f">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="587e6c80-2786-469c-8e9b-6a309cf403fa">
+  <producedTypes>
+    <selectionType typeId="a6668538-3d10-41a8-a639-50ac456fa48c" valueTypeId="212d9e30-ae0e-4e18-8d0f-b183eb6d7a23"/>
+    <listType typeId="b6ddfeb2-6d8f-47f0-94f3-ba8222d564dd" valueTypeId="078012e0-d385-4bf7-a34d-339100e62911"/>
+    <managerType typeId="6da7cb41-8e95-423d-aed4-189f21c74036" valueTypeId="24a7cdd6-5765-4890-8e1e-a47af78339ae"/>
+    <recordSetType typeId="26ec1099-458a-4776-b886-9997c54dc53a" valueTypeId="19744785-b03c-4f86-a7aa-295230639dc4"/>
+    <recordKeyType typeId="78cfc762-c13a-4bd9-9b80-7b5b11cb4fe3" valueTypeId="1e0458a6-cd06-452f-a5fd-772fb9e16ff6"/>
+    <recordType typeId="75e47dd0-c78f-49f9-9099-d601e0465698" valueTypeId="75a83142-32ab-430b-b6c1-0687dccf64a6"/>
+  </producedTypes>
+  <name>ЗадолженностьСамозанятыхПоРеестру</name>
+  <synonym>
+    <key>ru</key>
+    <value>Задолженность самозанятым по реестру</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>RecordType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <listPresentation>
+    <key>ru</key>
+    <value>Задолженность самозанятым по реестрам</value>
+  </listPresentation>
+  <resources uuid="f4e94331-4d0d-43cd-91d3-26f3c13a1139">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="4987af8f-9568-48c4-8e71-8851cbe49a12">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="1322f8c0-48ad-4dc0-ba97-3b02987f5bc8">
+    <name>РеестрВыплатыСамозанятым</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реестр выплаты самозанятым</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ВыплатыСамозанятым</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="b56283d4-0171-4c2d-96af-b109c387959b">
+    <name>Самозанятый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Самозанятый</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ЮридическоеФизическоеЛицо</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ЮридическоеФизическоеЛицо.EnumValue.ФизическоеЛицо</value>
+      </value>
+    </choiceParameters>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="2c7d6745-16b0-4f5c-8558-0422bcf2996b">
+    <name>СчетСамозанятого</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет самозанятого</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.БанковскиеСчета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Самозанятый</name>
+      <field>AccumulationRegister.ЗадолженностьСамозанятыхПоРеестру.Dimension.Самозанятый</field>
+    </choiceParameterLinks>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

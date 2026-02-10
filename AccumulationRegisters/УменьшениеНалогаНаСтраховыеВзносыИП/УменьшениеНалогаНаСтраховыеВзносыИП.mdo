@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9233da2d-7475-4df7-8503-23c95a1b9514">
+  <producedTypes>
+    <selectionType typeId="52b58f7c-36e0-4dec-90b5-7ccd610d7ca2" valueTypeId="f1068f40-96cb-452a-a814-57da0d085539"/>
+    <listType typeId="87f7ab02-88e8-4037-af9c-85c251d810c6" valueTypeId="bae562f4-d97c-4b01-ac34-74d79c7a8144"/>
+    <managerType typeId="22d14689-802d-4c06-b793-5eb7a44b08db" valueTypeId="451ea8fc-b456-407f-9c8e-61ab40150d94"/>
+    <recordSetType typeId="0ec2e402-4479-49b3-bf05-8bbf4b501518" valueTypeId="7a074507-1b4f-4e63-b919-c45e48f9e28c"/>
+    <recordKeyType typeId="f80ba487-d62c-4f9a-9f77-f28db89ae467" valueTypeId="a394c9ec-f8ab-413c-a592-25f8f932a229"/>
+    <recordType typeId="e4317b0b-690b-4d20-9370-d20f62295ee5" valueTypeId="d3be6b45-d740-4d57-adaa-aadcf9c1cffd"/>
+  </producedTypes>
+  <name>УменьшениеНалогаНаСтраховыеВзносыИП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уменьшение налога на страховые взносы ИП</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="cce6d6af-4671-4934-ae17-fb8956063a32">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ДенежнаяСуммаЛюбогоЗнака</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="98ffb5df-450b-4cb5-8ce9-9edf2300c547">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="35a84db8-1af9-49a8-bfb6-79ef0a0bf875">
+    <name>СистемаНалогообложения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Система налогообложения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СистемыНалогообложения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f56ea7ad-3a99-4224-9b55-c0e564c31fb9">
+    <name>ВидВзноса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид взноса</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыФиксированныхВзносовПодлежащихУплате</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="6088b125-0b93-449f-881c-b647da84c857">
+    <name>СтраховойПериод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страховой период</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <forms uuid="7d0765e3-8a9c-4a96-85cb-44e89f338e9b">
+    <name>ВзносыИПИспользованныеДляУменьшения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Взносы ИП использованные для уменьшения</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="97b5a884-09f2-41c9-ae3d-6f1afa8e3759">
+    <name>РасшифровкаУменьшенияНалогаНаВзносыИП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка уменьшения налога на взносы ИП за себя</value>
+    </synonym>
+  </templates>
+</mdclass:AccumulationRegister>
